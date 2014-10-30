@@ -8,8 +8,13 @@ e_num = 4 # fix 4 enermy
 
 e_x = array('i',[1,2,3,4])    # array ko fai 1 2 3 4 ma co the la ma 100 cho start_e_x ...
 e_y = array('i',[1,2,3,4])
+
+# level cua enermy 
 e_lv = array('i',[1,2,3,4])
+
 e_idx = array('i',[1,2,3,4])
+
+#wtf?
 e_behv = array('i',[1,2,3,4])
 e_snow_y = array('i',[1,2,3,4])
 e_snow_x = array('i',[1,2,3,4])
@@ -20,6 +25,8 @@ e_fire_time = array('i',[1,2,3,4])
 e_ppang_item = array('i',[1,2,3,4])
 e_ppang_time = array('i',[1,2,3,4])
 e_move_dir = array('i',[1,2,3,4])
+
+#
 dis_count =  array('i',[1,2,3,4])
 
 def e_attack_ai(i):
@@ -33,6 +40,12 @@ def e_attack_ai(i):
     else:
         i1 = h_x - e_x[i]
         l = i
+
+    # i1 wtf
+    # Có vẻ như ý tưởng AI ở đây cũng đơn giản như khi tìm cách để enermy tiến gần hero hoặc ít ra là snow(fire)
+    # Khi hẻro di chuyển thì enermy đi theo, ở đay có thể là cả ênrmy lẫn snow bay đến hero.
+    # j ở đay có thể là hướng hay step enermy di chuyển theo hero.
+    # Cơ bản là vậy nhưng để enermy đi lại smooth thì cần xem xét thêm.
     if (i1 >= -9) and (i1 <= -6):
         if e_lv[l] >= 2 or k > 100:
             j1 = get_random(3)
