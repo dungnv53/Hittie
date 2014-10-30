@@ -1,8 +1,8 @@
 from random import randrange
 from array import array
 
-e_boss_x = 10;
-e_boss_y = 6;
+e_boss_x = 10
+e_boss_y = 6
 h_x = 200
 e_num = 4 # fix 4 enermy
 
@@ -46,6 +46,9 @@ def e_attack_ai(i):
     # Khi hẻro di chuyển thì enermy đi theo, ở đay có thể là cả ênrmy lẫn snow bay đến hero.
     # j ở đay có thể là hướng hay step enermy di chuyển theo hero.
     # Cơ bản là vậy nhưng để enermy đi lại smooth thì cần xem xét thêm.
+
+    # Viec truyen i 102 101 va ham attack_ai ko cover het th khi runtime vi con nhieu argument khac 
+    # cung thay doi khi enermy di chuyen, nem bong ...
     if (i1 >= -9) and (i1 <= -6):
         if e_lv[l] >= 2 or k > 100:
             j1 = get_random(3)
