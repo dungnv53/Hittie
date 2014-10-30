@@ -1,0 +1,52 @@
+/******************************************  
+ CUSTOM STYLESHEET
+*******************************************/
+
+/*
+* You can place your custom CSS statements in this file, after this message.
+* It is better to write everything custom here
+* because this file won't be replaced during updates.
+* 
+* Simply copy an existing style from style.css to this file, 
+* and modify it to your liking.
+*/
+
+.single h1{
+   text-align:left;
+   margin-top: 25px;
+}
+
+.single .ui-tabs ul li {
+	list-style-type:none;
+}
+
+.guide-nav{
+    width:600px;
+    margin-top:20px; 
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+}
+
+.single.fullwidth {
+width: 880px;
+padding-left: 35px;
+padding-right: 35PX;
+}
+
+tr:nth-child(2n){
+	background-color:white;
+}
+
+.egg-icon img{
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+border: 1px solid #a8a8a8;
+}
+
+#header{
+		background-image: url(images/head.png);
+    background-position: bottom;
+}
+

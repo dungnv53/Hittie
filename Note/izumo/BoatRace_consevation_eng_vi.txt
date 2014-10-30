@@ -1,0 +1,1746 @@
+Takurou Ogasawara | 小笠原: __(Ogasawara)
+Takurou Ogasawara | 小笠原: CSS Sprite
+Takurou Ogasawara | 小笠原: http://dynamiteboatrace-fbapp.jp/facebook/albums/
+↓
+http://dynamiteboatrace-fbapp.jp/facebook/album/xxxxxxxx
+Takurou Ogasawara | 小笠原: 「アルバム一覧へ戻る」ButtonもREDへ差替え
+{ `Arubamu ichiran e modoru' botan mo reddo e sashikae }
+Takurou Ogasawara | 小笠原: スクリーンショット
+Takurou Ogasawara | 小笠原 sent a file to this group:
+SS_2014-08-04 21.09.27.png
+Takurou Ogasawara | 小笠原: SSは、100枚以上あるアルバムを開いたときの画面です。
+Takurou Ogasawara | 小笠原: ３行目で、サムネイルの表示が終わってしまう。
+Takurou Ogasawara | 小笠原: Scroll Bar？ (overflow:scroll)
+Takurou Ogasawara | 小笠原: HTML/CSSの修正でOK？
+System的には、表示されていないThumbsもLoadされている？
+[8/5/14 9:51:41 AM] Takurou Ogasawara | 小笠原: FrontEndの修正
+OKです。
+Takurou Ogasawara | 小笠原: 20:00～22:00（日本時間）本日修正対応リミット
+Nguyen Quy Son: Nguyen Quy Son added Pham Manh Lan to this conversation
+Nguyen Quy Son: ＞Sonさん
+▼【Facebookから選ぶ】画像を選択　画面
+
+現在、Thumbsを100枚ほどに増やしました。
+http://br-app.nadeco.net/05_fb_thumbs.html
+・Thumbsが多い場合のスクロールは元からHTMLで実現していました。
+シートに修正タスクを追加しました。
+http://goo.gl/OVVoZ7
+
+Takurou Ogasawara | Ogasawara: 
+Takurou Ogasawara | Ogasawara: CSS Sprite 
+Takurou Ogasawara | Ogasawara: http://dynamiteboatrace-fbapp.jp/facebook/albums/ 
+↓ 
+http://dynamiteboatrace-fbapp.jp/facebook/album/xxxxxxxx 
+Takurou Ogasawara | Ogasawara: "Back to the album list" Button also replaced to RED 
+Takurou Ogasawara | Ogasawara Screenshot: 
+Takurou Ogasawara | Ogasawara sent a file to this group: 
+SS_2014-08-04 21.09.27.png 
+Takurou Ogasawara | Ogasawara: SS is the screen when you open the album there are 100 or more sheets. 
+Takurou Ogasawara | Ogasawara: The third line, the display of thumbnails will end. 
+Takurou Ogasawara | Ogasawara: Scroll Bar? (overflow: scroll) 
+OK in the modification of the HTML / CSS: Ogasawara | Takurou Ogasawara? 
+Thumbs of The System, the not being displayed are also Load? 
+Modification of the FrontEnd: Ogasawara | [8/5/14 9:51:41 AM] Takurou Ogasawara 
+Is OK. 
+Takurou Ogasawara | Ogasawara: 20:00 to 22:00 (Japan time) today remediation limit 
+Nguyen Quy Son: Nguyen Quy Son added Pham Manh Lan to this conversation 
+Nguyen Quy Son:> Son's 
+▼ The selection screen [to choose from] the Facebook image 
+
+Currently, I have increased to about 100 sheets of Thumbs. 
+http://br-app.nadeco.net/05_fb_thumbs.html 
+· It was realized by the HTML from the original scroll when Thumbs often. 
+I added a remediation task in sheet. 
+http://goo.gl/OVVoZ7 
+
+-----------------------------------------------------------------------------------------------------
+
+No.37
+アルバム内の写真すべてを読み込めていない。
+（例：75枚写真があるはずのアルバムから、25枚しか読み込めていない。）
+
+こちら、急ぎで検証をお願いします。
+[8/5/14 11:21:41 AM] Nguyen Quy Son: すぐ対応します。
+[8/5/14 11:29:12 AM] Takurou Ogasawara | 小笠原: Sonさん
+すべて平行して進めてもらいたいのですが、困難な検証よりも、テキスト追加やボタンの差替えなど、簡単な修正からご対応をお願いします。
+[8/5/14 11:30:49 AM] Takurou Ogasawara | 小笠原: と言ってすぐ気付きました、修正片付いてますね。
+Done確認します。
+[8/5/14 11:37:34 AM] Nguyen Quy Son: ３６行以外の修正タスクが完了しました。
+３６行のHTMLをお願いします。
+[8/5/14 11:38:17 AM] Takurou Ogasawara | 小笠原: ありがとうございます。
+No.32 テキストに誤字が入っていますので、K列の内容をご確認の上、修正をお願いします。
+Nguyen Quy Son: 確認しています。
+dzung nguyen: 32 ok
+Nguyen Quy Son: ご確認ください。
+Takurou Ogasawara | 小笠原: ありがとうございます！
+Takurou Ogasawara | 小笠原: ＞Sonさん
+No. 36のHTMLを更新しました。
+実装側へ反映をお願いします！
+[8/5/14 11:50:27 AM] Takurou Ogasawara | 小笠原: Done確認済みタスクはGray Outしていってます
+[8/5/14 11:51:17 AM] Nguyen Quy Son: 了解です。
+[8/5/14 12:01:16 PM] Takurou Ogasawara | 小笠原: Sonさん
+No.37の確認は今行っています。
+修正Doneとのことですが、読み込まれない画像があった原因は判明していますか？
+[8/5/14 12:05:16 PM] Nguyen Quy Son: 少しお待ちください。
+[8/5/14 12:15:29 PM] Nguyen Hoang Tuan (とあん): FBのAPIの一回のリミットがデフォルトで２５枚しかないです。パラメーターを修正し、より多い写真を読み込めるようにしました。
+[8/5/14 12:15:59 PM] Takurou Ogasawara | 小笠原: 了解です。
+現在、MAXが何枚に設定されていますか？
+[8/5/14 12:16:17 PM] Nguyen Quy Son: 500です。
+[8/5/14 12:16:25 PM] Takurou Ogasawara | 小笠原: 了解です！
+[8/5/14 12:59:28 PM] Takurou Ogasawara | 小笠原: ＞Sonさん
+No.36　の対応中と思います。
+
+クライアントからのFB要望・修正があり、
+No.38からNo.42までを追加しています。
+ご確認をお願いします。
+
+内容がイエローになっている項目を、なるべく速く返答ください。
+[8/5/14 1:01:43 PM] Nguyen Quy Son: 了解です。
+[8/5/14 1:03:57 PM] dzung nguyen: nut do e van chua thay ảnh mới ( 36)
+[8/5/14 1:08:11 PM] Nguyen Quy Son: 36番の　HTML　はどこに更新しましたか。
+[8/5/14 1:08:49 PM] Takurou Ogasawara | 小笠原: http://br-app.nadeco.net/05_fb_thumbs.html
+[8/5/14 1:09:18 PM] Takurou Ogasawara | 小笠原: I列39行目のcellです。
+[8/5/14 1:12:15 PM] dzung nguyen: nut màu bạc sang đỏ : 「アルバム一覧へ戻る
+[8/5/14 1:12:36 PM] Nguyen Quy Son: ボタンの色はシルバのままですね。
+[8/5/14 1:13:00 PM] Takurou Ogasawara | 小笠原: キャッシュをクリアしてみてください。
+[8/5/14 1:13:04 PM] dzung nguyen: This message has been removed.
+[8/5/14 1:14:18 PM] dzung nguyen: This message has been removed.
+[8/5/14 1:16:34 PM] Nguyen Hoang Tuan (とあん): 了解です。
+[8/5/14 1:18:19 PM] Nguyen Hoang Tuan (とあん): 私はトアンです。通翻訳を担当しています。ソンさんがいないとき、代わりに回答します。よろしくお願いします。
+[8/5/14 1:18:37 PM] Takurou Ogasawara | 小笠原: こちらこそ、よろしくお願いします。
+[8/5/14 1:38:39 PM] Takurou Ogasawara | 小笠原: ＞トアンさん
+Youtubeアップロード画面で、現在
+"Whoops, looks like something went wrong."
+というErrorが出て、止まっています。
+至急、修復をお願いします。
+
+http://goo.gl/OVVoZ7
+(No.40)
+[8/5/14 1:43:39 PM] Nguyen Hoang Tuan (とあん): はい。
+[8/5/14 1:54:09 PM] Nguyen Hoang Tuan (とあん): アップロードできたりできなかったりします。
+また、できてもできなくても「投稿完了」となります。
+
+投稿できた場合→投稿完了
+投稿できなかった場合→エラー表示
+と画面遷移できますか？
+[8/5/14 1:54:38 PM] Nguyen Hoang Tuan (とあん): について、どのデバイスでエラーが出ましたか。
+[8/5/14 1:55:24 PM] Nguyen Hoang Tuan (とあん): 使用したYoutube ID を提供していただけますか。こちらで確認します。
+[8/5/14 1:56:04 PM] Nguyen Hoang Tuan (とあん): 現在、テストしてもそのようなエラーが出ないからです。
+[8/5/14 1:56:57 PM] Nguyen Hoang Tuan (とあん): 【Youtube投稿】
+"Whoops, looks like something went wrong." 15:30 Ogasawara
+[8/5/14 1:57:14 PM] Takurou Ogasawara | 小笠原: 上記はClientの指摘なので、確認に時間がかかります。
+
+15:30の時点で
+"Whoops, looks like something went wrong."
+Errorが確認できたのは、MacOS / Chromeです。
+[8/5/14 1:58:23 PM] Nguyen Hoang Tuan (とあん): 了解です。
+[8/5/14 1:58:45 PM] Nguyen Hoang Tuan (とあん): こちらも同じ環境でテストしました。
+[8/5/14 2:06:01 PM] Nguyen Hoang Tuan (とあん): すみません、No.４１が見えなくなりました。だれかに消されたですか。
+[8/5/14 2:07:33 PM] Takurou Ogasawara | 小笠原: こちらは、トアンさんはチェック不要です！
+僕のほうで対応する用件でした（UI HTML）
+[8/5/14 2:08:04 PM] Nguyen Hoang Tuan (とあん): 了解です。
+[8/5/14 2:08:35 PM] Takurou Ogasawara | 小笠原: ※僕がセルを選択したままだったので、他UserがDocument更新した時に消えたのだと思います
+[8/5/14 2:17:28 PM] Takurou Ogasawara | 小笠原: >sonさん
+Skype通話繋げますか？
+[8/5/14 2:18:03 PM] Kenta Momose: いつまでにレスできますか？本沢さんからよりあおられています。
+[8/5/14 2:18:16 PM] Nguyen Quy Son: はい。大丈夫です。
+[8/5/14 2:26:12 PM] Takurou Ogasawara | 小笠原: 800 x 440 px
+[8/5/14 3:21:45 PM] Kenta Momose: 18時までに報告をしてください。そうクライアントに応えました。
+[8/5/14 3:23:16 PM] Takurou Ogasawara | 小笠原: ＞百瀬さん
+山口さんに返答メールしています。
+[8/5/14 3:23:31 PM] Kenta Momose: じゃあ、大丈夫だね。よろしく。
+[8/5/14 3:23:36 PM] 山口 千佳: 小笠原さん
+app+のメールアカウントを作成したので、ccに含めてます。
+director@appp.co.jp
+[8/5/14 3:24:18 PM] 山口 千佳: 本日中に対応という文章を、明日午前中までにに変更していますので、
+本日中と宣言したものは、本日中にご対応お願いします。
+[8/5/14 3:26:00 PM] Takurou Ogasawara | 小笠原: 了解です。
+
+＞Team Hanoi
+検証中の項目、実装対応中の項目は、それぞれ時間になったら確認しますので、引き続きよろしくお願いします。
+[8/5/14 3:26:17 PM] Takurou Ogasawara | 小笠原: こちら待ちのものもありますね、
+[8/5/14 3:27:33 PM] Takurou Ogasawara | 小笠原: ・Youtubeの失敗する条件の組み合わせ(OS/ブラウザ/アカウント)
+・非推奨ブラウザのリスト
+　→その場合に表示する注意テキスト
+[8/5/14 3:28:29 PM] Nguyen Hoang Tuan (とあん): はい。
+[8/5/14 3:29:17 PM] Nguyen Hoang Tuan (とあん): 今、No.36 ,38 完了しました。
+[8/5/14 3:29:40 PM] Takurou Ogasawara | 小笠原: 確認します！ありがとうございます。
+[8/5/14 3:29:56 PM] Nguyen Hoang Tuan (とあん): すみません、
+[8/5/14 3:30:20 PM] Nguyen Hoang Tuan (とあん): ちょっとすこし修正するのがあります。
+[8/5/14 3:30:32 PM] Nguyen Hoang Tuan (とあん): まだ、確認できないです。
+[8/5/14 3:30:43 PM] Takurou Ogasawara | 小笠原: 了解しました。
+[8/5/14 3:36:00 PM] Nguyen Hoang Tuan (とあん): Youtubeの失敗する条件の組み合わせ(OS/ブラウザ/アカウント)
+こちら、使用したIDを提供できますでしょうか。
+[8/5/14 3:36:44 PM] Takurou Ogasawara | 小笠原: はい！少々お待ちください。
+[8/5/14 3:39:27 PM] Nguyen Hoang Tuan (とあん): No.36 , 38 確認できるようになりました。
+[8/5/14 3:40:15 PM] Takurou Ogasawara | 小笠原: ありがとうございます。
+[8/5/14 3:45:46 PM] Takurou Ogasawara | 小笠原: ＞Team Hanoi
+【合成画面】ボタンが
+「画像を選ぶ」から「MAKE ANOTHER」になってしまっています。
+[8/5/14 3:46:01 PM] Takurou Ogasawara | 小笠原: http://dynamiteboatrace-fbapp.jp/screens/screen04
+[8/5/14 3:46:23 PM] Nguyen Hoang Tuan (とあん): すぐ確認します。
+[8/5/14 3:46:44 PM] Takurou Ogasawara | 小笠原: お願いします。
+[8/5/14 3:55:58 PM] Takurou Ogasawara | 小笠原: もしかして、下記画像を更新したら変わってしまった可能性がありますか？
+
+▼CSS Sprite Img
+http://dynamiteboatrace-fbapp.jp/asset/img/sprite2x-s33da56352b.png
+ Nguyen Hoang Tuan (とあん): はい、確認します。
+ Nguyen Hoang Tuan (とあん): 今、こちらのミスを直しました。
+ Nguyen Hoang Tuan (とあん): すみません、確認お願いします。
+ Kenta Momose: 報告メールしましたか？
+ Takurou Ogasawara | 小笠原: 確認できました。CSSの更新ですかね。
+ Nguyen Hoang Tuan (とあん): 今、CSS更新しました。
+ Takurou Ogasawara | 小笠原: 先方への報告メールは、17:22に山口さんから送信してもらっています。
+ Kenta Momose: 報告ありがとう。
+ Pham Manh Lan: Pham Manh Lan has left the conversation
+ Nguyen Hoang Tuan (とあん): 小笠原さん、
+ Takurou Ogasawara | 小笠原: はい。
+ Nguyen Hoang Tuan (とあん): これから、サーバ更新しても大丈夫ですか。
+ Nguyen Hoang Tuan (とあん): ５分程度かかります。
+ Nguyen Hoang Tuan (とあん): This message has been removed.
+ Takurou Ogasawara | 小笠原: その判断は、僕ではできないです。
+更新-再起動が必要で、5分程度アクセス不可になるということですね？
+ Nguyen Hoang Tuan (とあん): そうですね。
+ Nguyen Hoang Tuan (とあん): API のYoutubeの新バージョンを更新したいためですが、..
+ Takurou Ogasawara | 小笠原: 再起動、OKです、お願いします。
+ Nguyen Hoang Tuan (とあん): これから、一旦５分程度アクセス不可になりますので、ご注意ください。
+ Takurou Ogasawara | 小笠原: 了解しました。
+ Nguyen Hoang Tuan (とあん): This message has been removed.
+ Nguyen Hoang Tuan (とあん): はい。
+ Nguyen Hoang Tuan (とあん): 今、サーバ更新が終わりました。ありがとうございます。
+ Takurou Ogasawara | 小笠原: 了解です、動作確認します。
+ Takurou Ogasawara | 小笠原: ＞トアンさん
+No.40 【Youtube投稿】の問題ですが、
+[8/5/14 5:14:13 PM] Takurou Ogasawara | 小笠原: Youtube(有効なGoogleアカウント)にログインしていない状態だと、Error "Whoops, looks like something went wrong."がでます。
+
+以前なら、【get-access-token】の画面に遷移していたはずです。
+ Nguyen Hoang Tuan (とあん): remove cookie laravel_session
+ Takurou Ogasawara | 小笠原: これは、同一ブラウザでどんなFacebookアカウントにログインしていても同じ状態のようです。（OS / Browserも問いません）
+問題は、Googleアカウント情報の取得にErrorが起きている可能性が高いです。
+[8/5/14 5:16:21 PM] Takurou Ogasawara | 小笠原: >remove cookie laravel_session
+了解です。それで再度試してみます。
+[8/5/14 5:55:57 PM] Takurou Ogasawara | 小笠原: ＞Sonさん、Team Hanoi
+お疲れさまです。
+現在、修正・検証中の内容について確認させてください。
+ Takurou Ogasawara | 小笠原: Skype繋げられますか？
+ Nguyen Hoang Tuan (とあん): わたしに繋げてください。
+ Nguyen Quy Son: https://nadia.backlog.jp/file/DHE_BOATRACE/%E5%8B%95%E7%94%BB/final_66544.mp4
+ Takurou Ogasawara | 小笠原: ありがとうございます、確認します。
+ Takurou Ogasawara | 小笠原: ＞Sonさん、Team Hanoi
+
+画質、問題ないです。
+これで、サーバー側への実装を進めていただいてOKです。
+=========
+Start～13s
+28s～END
+
+※合成のない上記の秒間での画質を低下させてファイルサイズ縮小
+　30MB⇒16MB（平均4割は軽減できる感じですね）
+=========
+ Nguyen Hoang Tuan (とあん): 今、  No.41 を進めています。できたらこちらを行います。
+ Takurou Ogasawara | 小笠原: はい、お願いします (bow)
+ Takurou Ogasawara | 小笠原: ＞トアンさん
+No.43もお願いします。textの差替えのみです。
+記入が遅くなりすみません。
+ Nguyen Hoang Tuan (とあん): はい、了解です。
+ Nguyen Hoang Tuan (とあん): すみません。
+ Nguyen Hoang Tuan (とあん): ４４番
+ Nguyen Hoang Tuan (とあん): 意味わかりますが、
+ Nguyen Hoang Tuan (とあん): 今の設定はupload image の中心と顔の中心が一致するようになっています。
+ Nguyen Hoang Tuan (とあん): なので、右寄りになります。
+ Takurou Ogasawara | 小笠原: なるほどです。
+REDフレームの”顔の穴”が右に寄っているから、Up Imgも右寄りになる、ということですね。
+ Nguyen Hoang Tuan (とあん): そうです。
+ Takurou Ogasawara | 小笠原: 配慮していただいた実装なのは、分かります。
+しかし、Up Imgの中心に合成したい“顔”があるとも限らないので、単純な中心に揃えてもらうことはできますでしょうか？
+ Nguyen Hoang Tuan (とあん): 一応できます。
+ Nguyen Hoang Tuan (とあん): じゃ、中心揃い修正します。
+ Takurou Ogasawara | 小笠原: 単純な中心（X.Y座標）を設定をお願いします (bow)
+ Nguyen Hoang Tuan (とあん): はい。
+ Kenta Momose: 小笠原さん、まずいって、個人のFacebookアカウントで公開されてるよ。
+ Kenta Momose: 即削除してください？
+ Takurou Ogasawara | 小笠原: すみません、いま設定し直しました。
+ Takurou Ogasawara | 小笠原: 公開範囲設定の反映確認のためにやったものです。
+ちなみにNadia以外の友達がいない業務アカウントなので、セーフです。
+Takurou Ogasawara | 小笠原: 気をつけます。
+Kenta Momose: あ、了解です。
+Kenta Momose: 公開してるやつかと。安心しました。
+Takurou Ogasawara | 小笠原: ですが、こういう詰めの甘さがアウトなんですよね
+以後、無いように徹底します。
+ Nguyen Hoang Tuan (とあん): 小笠原さん、
+ Nguyen Hoang Tuan (とあん): 何回もテストを行いました。
+ Nguyen Hoang Tuan (とあん): うまく行きました。
+ Takurou Ogasawara | 小笠原: はい、No.44でしょうか？それともNo.39でしょうか？
+ Nguyen Hoang Tuan (とあん): No.40
+ Nguyen Hoang Tuan (とあん): 一番すぐわかる方法はテストで失敗した使用ID があると、いいですが、
+ Takurou Ogasawara | 小笠原: はい。
+いま、Backlogから送りますので、5分くらいお待ちください。
+[8/5/14 7:37:26 PM] Nguyen Hoang Tuan (とあん): はい。
+[8/5/14 7:41:20 PM] Takurou Ogasawara | 小笠原: ＞トアンさん
+Backlog(Wiki)
+http://goo.gl/V7jTpq
+Takurou Ogasawara | 小笠原: User追加します！
+Nguyen Hoang Tuan (とあん): このアカウントはNo.40 のエラーが出ましたか。
+Takurou Ogasawara | 小笠原: Reloadしてみてください。
+Takurou Ogasawara | 小笠原: トアンさん
+どのnadiaアカウントになりますか？
+tuannq@nadia.bz
+tuannv@nadia.bz
+anhnt@nadia.bz
+ Nguyen Hoang Tuan (とあん): どれでもないです。
+ Nguyen Hoang Tuan (とあん): tuannh@nadia.bz
+ Takurou Ogasawara | 小笠原: 了解です。別の手段で
+ Nguyen Hoang Tuan (とあん): だけど、ソンさんのID
+ Nguyen Hoang Tuan (とあん): 持っていますので、
+ Nguyen Hoang Tuan (とあん): 今大丈夫です。
+ Takurou Ogasawara | 小笠原: 了解です！
+ Nguyen Hoang Tuan (とあん): ４４、４１、３９は　　ok です。
+ Nguyen Hoang Tuan (とあん): ４０は小笠原のアカウントでテストしました。
+ Nguyen Hoang Tuan (とあん): youtubeのアカウントで確認お願いします。
+ Takurou Ogasawara | 小笠原: では、
+No.４０ 【Youtube】クライアントの返答待ちで、他を優先してください。
+[8/5/14 7:53:49 PM] Nguyen Hoang Tuan (とあん) sent a file to this group:
+Screen Shot 2014-08-05 at 7.50.12 PM.png
+[8/5/14 7:55:08 PM] Takurou Ogasawara | 小笠原: Yes.
+Googleアカウントが、Youtubeログインに有効なアカウントであれば投稿は成功します。
+[8/5/14 7:59:28 PM] Nguyen Hoang Tuan (とあん): すみません。
+[8/5/14 7:59:29 PM] Nguyen Hoang Tuan (とあん): Error Case 1 [Fb_IN / Ggl_IN(@nadia) / Yt_OUT]
+Mac/Chrome
+Nguyen Hoang Tuan (とあん): どうやって再現しますか。。
+Nguyen Hoang Tuan (とあん): youtubeアカウントをログアウトしたら、googleアカウントもログアウトになります。
+Takurou Ogasawara | 小笠原: これは、@nadia.bzのGoogleアカウントで
+「Youtubeの利用を開始していない」
+状態です。
+ Takurou Ogasawara | 小笠原: 例外的なのですが、
+ Nguyen Hoang Tuan (とあん): そうですか。
+ Nguyen Hoang Tuan (とあん): Error Case 2 [Fb_IN / Ggl_OUT / Yt_OUT]
+Win8/IE10
+ Nguyen Hoang Tuan (とあん): これはどうですか。
+ Takurou Ogasawara | 小笠原: これらは特殊な状態です。
+この状態を再現するには他の方の協力が必要ですね。
+
+@nadia.bzで先日google apps for businessの利用を開始したばかりで
+[8/5/14 8:06:15 PM] Takurou Ogasawara | 小笠原: 「GoogleアカウントとしてのYoutube利用を開始していない状態」だったから、Errorが出ていたと思うのですが
+
+そもそもcookie(Youtube APIのVer.Upに起因するtokenの不整合)が原因だったかもしれません。
+[8/5/14 8:07:04 PM] Takurou Ogasawara | 小笠原: とにかく、No.40【Youtube】はクライアントの返答待ちの部分もあり、今日の検証はStopで大丈夫です。
+ Nguyen Hoang Tuan (とあん): はい、
+ Nguyen Hoang Tuan (とあん): こちらもそろそろかえります。
+ Takurou Ogasawara | 小笠原: はい、No.41の反映は確認済みです。
+ Takurou Ogasawara | 小笠原: No.44もですね。
+ Takurou Ogasawara | 小笠原: ＞Team Hanoi
+おつかれさまです。小笠原です。
+11:30からSkypeMTG、ちょっと遅れます。
+ Ta Duy Anh: 了解です。
+ Nguyen Quy Son: Nguyen Quy Son added thanhhai to this conversation
+ Takurou Ogasawara | 小笠原: 準備できました。
+Anhさんに繋げばOKですか？
+ Nguyen Quy Son: 大丈夫です。
+ Nguyen Hoang Tuan (とあん): すみません。僕に繋げてください。
+ Takurou Ogasawara | 小笠原: 了解です
+ Takurou Ogasawara | 小笠原: Sonさん
+No.39 Done =>確認します。ありがとうございます。
+[8/6/14 9:47:50 AM] Takurou Ogasawara | 小笠原: Video 30MB => 16MB くらいまで圧縮
+=========
+Start～13s
+28s～END
+
+※合成のない上記の秒間での画質を低下させてファイルサイズ縮小
+　30MB⇒16MB（平均4割は軽減できる感じですね）
+=========
+[8/6/14 9:52:04 AM] Takurou Ogasawara | 小笠原: No.40
+今後、Youtube API のVersion UPがあっても、Userに
+「Cookie の削除」をしてもらう必要がないようにしたいです。
+[8/6/14 10:01:46 AM] Takurou Ogasawara | 小笠原: No.42
+▼Not Recommend Browser
+InternetExplorer 6/7/8/9
+
+▼Not Recommend OS
+Android 2.x以前
+iOS 6以前
+[8/6/14 10:08:44 AM] Takurou Ogasawara | 小笠原: ▽Notice Text (Dialog Window)
+ご利用中の閲覧環境は動作を保証しておりません。「You can be BOATNYA!」アプリは最新のデバイスでお楽しみください。
+[8/6/14 10:18:12 AM] Takurou Ogasawara | 小笠原: No.40
+Youtube自分のアップ動画
+https://www.youtube.com/my_videos?o=U
+ Takurou Ogasawara | 小笠原: TOP > (ハンバーガーMENU)マイチャンネル > 動画の管理
+ Nguyen Hoang Tuan (とあん): [8/6/14 10:18:13 AM] Takurou Ogasawara | 小笠原: Youtube自分のアップ動画
+https://www.youtube.com/my_videos?o=U
+[8/6/14 10:19:25 AM] Takurou Ogasawara | 小笠原: TOP > (ハンバーガーMENU)マイチャンネル > 動画の管理
+そうですね。
+ Takurou Ogasawara | 小笠原: はい！
+ Takurou Ogasawara | 小笠原: ※SkypeMTGのMEMO、失礼しました
+ Nguyen Hoang Tuan (とあん): No.40 Error Case 1 [Fb_IN / Ggl_IN(@nadia) / Yt_OUT]
+Mac/Chrome ですが、
+Nguyen Hoang Tuan (とあん): 修正できました。
+Nguyen Hoang Tuan (とあん): 現在、下記のメッセージが出ています。
+Youtube channel was not created. Make sure create new channel before processing．
+Nguyen Hoang Tuan (とあん): 再度、エラーが出た各ケースを確認していただきますか。
+Takurou Ogasawara | 小笠原: 了解です、確認まで少々お待ちください。
+Takurou Ogasawara | 小笠原: トアンさん
+No.40 Error Case 1 [Fb_IN / Ggl_IN(@nadia) / Yt_OUT]
+しばらくお待ちください。
+[8/6/14 11:35:34 AM] Nguyen Hoang Tuan (とあん): はい。
+[8/6/14 11:45:17 AM] Takurou Ogasawara | 小笠原: 別件で、至急下記のご確認をお願いします
+No.47, 48
+
+不明点があれば、Skype通話で説明させてください！
+ Nguyen Hoang Tuan (とあん): 確認しますが、
+ Nguyen Hoang Tuan (とあん): お待ちください。
+ Nguyen Hoang Tuan (とあん): 上限設定が必要な理由を教えてください。
+意味がわかりにくいですが、、、、
+ Takurou Ogasawara | 小笠原: 日本語、ReWriteしますね
+ Takurou Ogasawara | 小笠原: No.47 Re Write済みです。
+ Nguyen Hoang Tuan (とあん): はい。
+ Takurou Ogasawara | 小笠原: ＞トアンさん
+No.48だけでも、早めに回答ほしいです。
+今、Skype通話つなげられますか？
+[8/6/14 12:19:31 PM] Nguyen Hoang Tuan (とあん): はい。
+[8/6/14 12:19:37 PM] Takurou Ogasawara | 小笠原: ＞Team Hanoi
+どなたか、Skype Talk繋げられますか？
+[8/6/14 12:19:38 PM] Nguyen Hoang Tuan (とあん): How many photos can I upload?
+You can upload about 1000 photos per album.
+ Takurou Ogasawara | 小笠原: 昼食休憩でしょうか
+ Nguyen Hoang Tuan (とあん): はい。
+ Nguyen Hoang Tuan (とあん): 今大丈夫です。
+ Nguyen Hoang Tuan (とあん): FB のほうが上限1000枚と指定しいます。　
+ Takurou Ogasawara | 小笠原: ありがとうございます。
+今、繋ぎますね。
+ Takurou Ogasawara | 小笠原: 「Fbのサポートの上限が1000枚となっている」
+ Takurou Ogasawara | 小笠原: https://developers.facebook.com/apps/871419956220400/app-details/
+ Takurou Ogasawara | 小笠原: Promotional Images
+Screenshots
+[8/6/14 12:27:49 PM] Takurou Ogasawara | 小笠原: ↓
+https://www.facebook.com/games/?fbs=100&app_id=871419956220400
+[8/6/14 1:40:06 PM] Nguyen Hoang Tuan (とあん): 小笠原さん、
+No.40 Error Case 1 [Fb_IN / Ggl_IN(@nadia) / Yt_OUT]
+しばらくお待ちください。
+確認できましたか？
+[8/6/14 1:43:27 PM] Takurou Ogasawara | 小笠原: すみません、まだです。
+（No.40は、クライアント待ちのPendingです。）
+
+何かを進展させるために、こちらのチェックが必要ですか？
+[8/6/14 1:46:39 PM] Nguyen Hoang Tuan (とあん): No.40 Error Case 1 [Fb_IN / Ggl_IN(@nadia) / Yt_OUT]
+このケースを修正しましたが、もしかしてこのケースができることによって、ほかのケースもできるようになるので、
+[8/6/14 1:53:54 PM] Nguyen Hoang Tuan (とあん): No.48 調べました。
+Promotional Images, screenshotsを変え、更新するとき、再びsubmit する必要があります。FB側がそれをチェックし、approveするためです。　
+[8/6/14 1:54:32 PM] Nguyen Hoang Tuan (とあん): それから、それらの変更が公開されます。
+[8/6/14 1:54:50 PM] Nguyen Hoang Tuan (とあん) sent a file to this group:
+Screen Shot 2014-08-06 at 1.27.56 PM.png
+[8/6/14 1:55:46 PM] Takurou Ogasawara | 小笠原: ありがとうございます！
+＞再びsubmit する必要があります
+これを行うことで、Appへのアクセスは一時的にDev.登録者のみになりますか？
+ Nguyen Hoang Tuan (とあん): はい、そうです。
+ Nguyen Hoang Tuan (とあん): またapp detailsもresubmitしてください。
+ Takurou Ogasawara | 小笠原: ＞トアンさん
+いま、app detailsの更新をSubmit for Reviewするところです。
+[8/6/14 2:28:07 PM] Takurou Ogasawara | 小笠原: 確認なのですが、AppへのアクセスがDeveloperのみに制限されるのは、App全体でしょうか？
+ Nguyen Hoang Tuan (とあん): 少しお待ちください。
+ Takurou Ogasawara | 小笠原: はい、
+ Nguyen Hoang Tuan (とあん): いいえ、違います。Developerのみに限らないです。
+ Nguyen Hoang Tuan (とあん): 今、誰でもアクセスできます。
+ Nguyen Hoang Tuan (とあん): もうsubmit しましたか。
+[8/6/14 2:39:02 PM] Takurou Ogasawara | 小笠原: 回答ありがとうございます！であれば、全く問題ないです。
+（app detailsの更新申請はSystemに影響ないですもんね）
+ Takurou Ogasawara | 小笠原: いま、Screenshotひとつ更新すればSubmitします。
+ Takurou Ogasawara | 小笠原: Submitしました。pending reviewとなっています。
+ Nguyen Hoang Tuan (とあん): はい、img 更新を確認できましたか。
+ Takurou Ogasawara | 小笠原: いいえ、img の更新はまだですね。
+明日には承認されて、下記ページに更新反映されることを願います。
+https://www.facebook.com/games/?fbs=100&app_id=871419956220400
+いままでの承認サイクルでいくと、大丈夫だと思います。
+[8/6/14 3:09:42 PM] Nguyen Hoang Tuan (とあん): はい。
+[8/6/14 5:48:03 PM] Nguyen Hoang Tuan (とあん): ４６はokです。
+[8/6/14 5:48:30 PM] Takurou Ogasawara | 小笠原: ＞トアンさん
+はい！復帰しました。諸々確認します。
+[8/6/14 6:23:07 PM] 山口 千佳: ＞とあんさん
+41版追加したので、対応可能か、できないか、回答お願いします。
+https://docs.google.com/spreadsheets/d/1IgJBM9P8M7DmTcqK_CJIgSUXhqa4vM0ITkPQe5Rdfik/edit#gid=326146045
+ Nguyen Hoang Tuan (とあん): 遅くなってすみませんが、
+ Nguyen Hoang Tuan (とあん): 今、エンジニア帰ってしまったので、確認できないです。
+[8/6/14 7:55:00 PM] Takurou Ogasawara | 小笠原: 了解しました。
+明日、朝に内容確認をお願いします。急ぎでQA Sheetに記載しましたが、
+修正タスクシートに移したほうがいいでしょうかね？
+ Nguyen Hoang Tuan (とあん): そうですね。
+ Takurou Ogasawara | 小笠原: 了解です。
+ Takurou Ogasawara | 小笠原: 本日、複数の修正を完了していただきありがとうございました (bow)
+ Nguyen Hoang Tuan (とあん): はい、こちらこそ。ありがとうございます。
+ Nguyen Hoang Tuan (とあん): では、お疲れさまでした。
+ Takurou Ogasawara | 小笠原: 明日が修正対応の最終日です。
+お疲れさまでした。
+[8/7/14 9:01:17 AM] Takurou Ogasawara | 小笠原: > Team Hanoi
+おはようございます！
+ Nguyen Hoang Tuan (とあん): FB　approve  失敗でした。
+ Nguyen Hoang Tuan (とあん): https://developers.facebook.com/apps/871419956220400/app-details/
+ Nguyen Hoang Tuan (とあん): 原因はBannersのことでした。
+Prominently include your app's name on all banners. See more here.
+[8/7/14 9:05:56 AM] Takurou Ogasawara | 小笠原: これらは、ちゃんとApp Nameが入っていると思うんですが、
+[8/7/14 9:07:07 AM] Takurou Ogasawara | 小笠原: [Dev.]Apps > Settings > Basic
+Display Name
+：BoatRaceServer
+
+これがApp Nameとして認識された可能性はありますか？
+[8/7/14 9:07:31 AM] Takurou Ogasawara | 小笠原: BoatRaceServer => You can be BOATNYA!
+変更して保存しました。
+[8/7/14 9:20:04 AM] Nguyen Hoang Tuan (とあん): https://www.facebook.com/games/?fbs=-1&app_id=871419956220400
+変更するために、再度submitする必要があります。
+[8/7/14 9:25:29 AM] Takurou Ogasawara | 小笠原: ＞トアンさん
+助言がほしいです。
+現状で、Bannersのimgに修正を加える必要がありますか？
+
+Unapprovedの原因が、App Nameを更新しただけで改善するなら、すぐに再度submitします。
+[8/7/14 9:43:01 AM] Nguyen Hoang Tuan (とあん): はい、そうです。
+[8/7/14 10:09:59 AM] Nguyen Hoang Tuan (とあん): あと、すみません。
+[8/7/14 10:11:09 AM] Nguyen Hoang Tuan (とあん): facebook・youtube【投稿完了】の画面に、「ログアウトはこちら」のように各サイトのログアウト画面へのリンクを設置できますか？
+ Nguyen Hoang Tuan (とあん): こちらはできますが、
+ Nguyen Hoang Tuan (とあん): それぞれのFlowが違います。
+ Takurou Ogasawara | 小笠原: ＞とあんさん
+はい、Skype Talkできますか？
+僕からもいくつか聞きたいことがあります。
+
+（App DetailsのRe Submissionするにあたって）
+[8/7/14 10:15:18 AM] Nguyen Hoang Tuan (とあん): Youtube の場合は　「ログアウトはこちら」みたいのボタンをクリックすると、Screen１０ Postに戻ります
+ Takurou Ogasawara | 小笠原: なるほどです。
+ Nguyen Hoang Tuan (とあん): はい。
+ Nguyen Hoang Tuan (とあん): それじゃ、少しskypeに繋ぎましょう。
+ Takurou Ogasawara | 小笠原: お願いします。
+ Takurou Ogasawara | 小笠原: Youtube => ボタンでログアウトさせた後、Screen 10 postに移動
+ Takurou Ogasawara | 小笠原: Facebook => ボタンでログアウト状態にした後、TOP画面に移動
+ Takurou Ogasawara | 小笠原: 「ログアウトが完了しました」画面を追加できるか？
+ Takurou Ogasawara | 小笠原: Review Submission Form
+ Takurou Ogasawara | 小笠原: https://developers.facebook.com/apps/871419956220400/review-status/
+ Takurou Ogasawara | 小笠原: Review Submission Form
+ Takurou Ogasawara | 小笠原: Review Instructions
+
+Please include detailed instructions to assist our team in expediting your app review. The instructions should cover a basic overview of what your app is and does and where to locate your Facebook Login integration within your app.
+[8/7/14 10:31:50 AM] Takurou Ogasawara | 小笠原: Dear,
+[8/7/14 10:33:22 AM] Takurou Ogasawara | 小笠原: https://www.facebook.com/apppman
+あぷり 太郎
+[8/7/14 10:34:02 AM] Takurou Ogasawara | 小笠原: Screenshots
+[8/7/14 12:57:16 PM] Takurou Ogasawara | 小笠原: ＞とあんさん、Anhさん
+No.42 【TOP画面】Notice Text (Dialog Window)
+textの微調整をお願いします。
+外側のカギかっこ「」を取り除きます。
+[8/7/14 1:37:58 PM] Nguyen Hoang Tuan (とあん): はい。
+[8/7/14 1:41:08 PM] Takurou Ogasawara | 小笠原: ＞とあんさん
+No.51、52についても、Mock Up HTMLを更新しました。
+下記をもとにログアウト処理の機能追加を進めてください。
+▼Facebook投稿完了
+http://br-app.nadeco.net/11_fb_postfinish.html
+▼Youtube投稿完了
+http://br-app.nadeco.net/12_yt_postfinish.html
+Takurou Ogasawara | 小笠原: ※ボタンではなくテキストリンクになりました
+Nguyen Hoang Tuan (とあん): はい。
+Nguyen Hoang Tuan (とあん): ＝＞No.50, No.51 完了しました。
+Takurou Ogasawara | 小笠原: ありがとうございます！
+Takurou Ogasawara | 小笠原: ＞とあんさん
+修正、追加依頼があります。取り急ぎ情報共有します。
+（追ってGoogle Sheetに詳細説明）
+
+▼合成プレビュー
+http://br-app.nadeco.net/07_preview_composite.html
+↓
+右上の「保存」ボタンを押す。
+Smartphoneの場合のみ、下記の画面へ遷移
+↓
+▼保存画面
+http://br-app.nadeco.net/08_preview_download.html
+※初心者向けに説明テキストを載せた画面です
+[8/7/14 2:42:04 PM] Nguyen Hoang Tuan (とあん): はい、確認します。
+[8/7/14 3:39:18 PM] Takurou Ogasawara | 小笠原: ＞とあんさん
+No.51,52は確認済みです、ご対応ありがとうございました。
+[8/7/14 3:45:17 PM] Takurou Ogasawara | 小笠原: No.53と、追加で静的テキスト更新（No.54,55,56）をお願いします。
+[8/7/14 3:47:19 PM] Nguyen Hoang Tuan (とあん): 了解ですが、他にテキスト更新するのがまだありますか。もしありそうなら、まとめて更新します。
+[8/7/14 3:48:22 PM] Takurou Ogasawara | 小笠原: テキスト更新、他はもう無いはずですが、
+一応確認し５分後に返答します。
+ Nguyen Hoang Tuan (とあん): はい。
+ Takurou Ogasawara | 小笠原: テキスト更新は、54,55,56のみです。お願いします。
+ Nguyen Hoang Tuan (とあん): はい、かしこまりました。
+ Takurou Ogasawara | 小笠原: No.57 【合成画面】操作UIの調整
+これで実装側の修正は最後となります。こちら難しければ相談しますので、ご確認をお願いします。
+[8/7/14 4:12:12 PM] Nguyen Hoang Tuan (とあん): 別件でfacebook fanpageに組み付けることについて、facebookに認証できますが、googleに認証できないです。
+[8/7/14 4:13:51 PM] Takurou Ogasawara | 小笠原: それは私にもKnow-howがないので、どういう問題解決が必要か、具体的に教えてください。
+SkypeTalk繋げますか？
+ Nguyen Hoang Tuan (とあん): 今、ちょっと
+ Nguyen Hoang Tuan (とあん): facebook fanpageに組み付けるのは難しく、調査し続けると時間かかりそうですが、
+ Takurou Ogasawara | 小笠原: Staff Resource的に今すぐ調査対応が難しいのですね。
+ Nguyen Hoang Tuan (とあん): youtube認証なしであれば、facebook fanpageに組み付けることができます。
+ Nguyen Hoang Tuan (とあん): Staff Resource的に今すぐ調査対応が難しいのですね。
+＝＞これが問題ではないです。google許可しないからの問題です。
+[8/7/14 4:27:28 PM] Takurou Ogasawara | 小笠原: 仕様が問題なのですね。
+
+問題を明確にしたいので、質問です
+Facebook
+Google
+どちら側のPolicyが、今回の仕様を許可しないのでしょうか？
+[8/7/14 4:31:13 PM] Nguyen Hoang Tuan (とあん): google側がiframeを通して認証を許可しないですが、facebook fanpageがiframeを使ってウェーブサイトを組み付ける。
+[8/7/14 4:31:28 PM] Nguyen Hoang Tuan (とあん): なので、できないです。
+[8/7/14 4:35:51 PM] Takurou Ogasawara | 小笠原: なるほどです。
+
+facebook fanpageの認識を共有したいのですが、
+
+▼ダイナマイト ボートレース（Dynamite BOAT RACE）
+https://www.facebook.com/dynamiteboatraceforce
+
+●Left Column > アプリ
+に、
+http://dynamiteboatrace-fbapp.jp/
+へのLinkを追加したい。
+[8/7/14 4:37:23 PM] Takurou Ogasawara | 小笠原: これが、8/8 リリース時に達成したい目的なのです。
+これについて、google側の認証許可が必要なのでしょうか？
+ Nguyen Hoang Tuan (とあん): Aboutのところに ウェーブサイトリンクを張りたい場合はgoogle側の認証許可必要がないです。
+ Nguyen Hoang Tuan (とあん): Aboutのところに ウェーブサイトリンクを張るのが目的でしょうか。
+ Takurou Ogasawara | 小笠原: そうです！
+このApp自体をfanpage（= Facebook Page）にする必要はありません (y)
+ Nguyen Hoang Tuan (とあん): これなら、とくに問題ないです。
+ Nguyen Hoang Tuan (とあん): 認証なんか必要ないです。
+ Nguyen Hoang Tuan (とあん): このfanpageを管理するものでもはることができます。
+ Takurou Ogasawara | 小笠原: であれば、安心しました。
+ Takurou Ogasawara | 小笠原: ただ、このFbページでのAppの告知については、
+クライアントが希望するGOALを、あらためて確認する必要があります。
+その後、Helpをお願いすると思います。
+
+可能なこと・不可能なことがあると思うので、
+のちほど管理者アカウントで入った上で検証します。
+[8/7/14 4:58:27 PM] Nguyen Hoang Tuan (とあん): はい。
+[8/7/14 5:59:30 PM] Takurou Ogasawara | 小笠原: ＞とあんさん
+お疲れさまです。保留となっていたYoutube投稿フローの確認が完了しました。
+[8/7/14 6:00:00 PM] Takurou Ogasawara | 小笠原: クライアントからの指摘も、一部は知識不足による勘違いでした。問題ありません。
+[8/7/14 6:01:19 PM] Takurou Ogasawara | 小笠原: 最後のNo.53～57 => Done
+ご対応ありがとうございます。この後、確認します。
+ Nguyen Hoang Tuan (とあん): はい。
+ Nguyen Hoang Tuan (とあん): ありがとうございます。
+ Nguyen Hoang Tuan (とあん): これからかえりますんで　
+ Nguyen Hoang Tuan (とあん): お疲れ様でした。
+ Takurou Ogasawara | 小笠原: 修正あれば、明日朝すぐに対応してもらえますか？
+多分大丈夫だと思いますが。
+[8/7/14 6:13:11 PM] Nguyen Hoang Tuan (とあん): はい。わかりました。
+[8/7/14 6:20:15 PM] Takurou Ogasawara | 小笠原: ほぼ完了ですね。
+
+１点、No.53の修正、画面遷移はばっちりなのですが（iPhoneで確認）
+なぜか画面遷移と同時に、合成imageがBlank pageで開きます。
+こちら、Googleに修正を依頼しておきます。
+すぐ対応可能なら、今日済ませてほしいですが、SEは対応不可ですか？
+ Nguyen Hoang Tuan (とあん): 明日対応お願いしたいです。
+ Nguyen Hoang Tuan (とあん): SEが帰りました。
+ Takurou Ogasawara | 小笠原: 了解です。明日朝一番にお願いしますね。
+お疲れさまでした (bow)
+[8/7/14 6:23:28 PM] Nguyen Hoang Tuan (とあん): はい、よろしくお願いします。
+[8/7/14 9:28:48 PM] Takurou Ogasawara | 小笠原: Fbページの「いいね！」数が10,000強。
+リリース告知直後、サイト訪問数100人程度は想定されます。
+動画合成プロセスは、同時10人くらいは捌けるそうですが
+サーバーダウンを念頭に入れておくべきです。
+[8/8/14 8:14:34 AM] Takurou Ogasawara | 小笠原: ＞Team Hanoi
+おはようございます！【ボートレース】今日が公式リリース日です。
+[8/8/14 8:15:47 AM] Takurou Ogasawara | 小笠原: 修正はほぼ完了していますが、
+No.53の「Blank page」の件をご確認・修正ください。
+[8/8/14 8:16:19 AM] Takurou Ogasawara | 小笠原: あと、軽微ですがNo.59とNo.60も、ご対応をお願いします。
+[8/8/14 8:27:21 AM] Nguyen Hoang Tuan (とあん): おはようございます。
+[8/8/14 8:28:27 AM] Nguyen Hoang Tuan (とあん): こちら、Googleに修正を依頼しておきますと昨日書いたが、
+＝＞どういう意味でしょうか。
+[8/8/14 8:30:19 AM] Takuro Ogasawara | 小笠原: 言葉が足りなかったですね (bow) すみません。
+
+・Googleに修正を依頼しておきます
+↓
+・Google docsの修正タスクシートに、依頼を記入しておきます
+http://goo.gl/OVVoZ7
+[8/8/14 8:31:17 AM] Nguyen Hoang Tuan (とあん): あ、はい。そういうことですね。
+[8/8/14 8:31:37 AM] Takuro Ogasawara | 小笠原: そうです、ご確認ください。
+[8/8/14 8:36:19 AM] Takuro Ogasawara | 小笠原: ＞トアンさん、ソンさん
+昨夜、TOP画面からDebug Modeのような画面に接続されました。
+公式リリース後は絶対にこの画面に行かないようにできますか？
+ Nguyen Hoang Tuan (とあん): テストのため、Debug Modeを入れましたので、終わったら、外すようにしますので、ご安心ください。
+ Takuro Ogasawara | 小笠原: 了解です！
+ Takuro Ogasawara | 小笠原: あと、
+App Details > Promotional Images > Banners がUnapprovedですね。
+これは昨日と同じ問題かと思いますが、原因や対策方法がわかれば
+助言がほしいです。
+[8/8/14 8:48:07 AM] Takuro Ogasawara | 小笠原: Settings > Display Name は「You can be BOATNYA!」に変更して
+Submitしましたが、実際の表示名はBoatRaceServerのままです。
+これが原因だとすれば、
+Bannersのimageに「BoatRaceServer」と入れれば、approvedされるのでしょうかね。
+[8/8/14 8:49:00 AM] Nguyen Hoang Tuan (とあん): 確認します。
+[8/8/14 8:49:19 AM] Takuro Ogasawara | 小笠原: すみませんが、ご協力お願いします。
+[8/8/14 9:12:45 AM] Takuro Ogasawara | 小笠原: ＞トアンさん
+ひとつ、No.61に検証のお願いを追加します。
+[8/8/14 9:13:14 AM] Nguyen Hoang Tuan (とあん): はい。
+[8/8/14 9:24:04 AM] Takuro Ogasawara | 小笠原: いま、No.60のimgをBacklogに格納しました。
+（br_app_icon.png）
+https://nadia.backlog.jp/file/DHE_BOATRACE/icon/br_app_icon.png
+[8/8/14 9:25:26 AM] Nguyen Hoang Tuan (とあん): 了解です。
+[8/8/14 9:29:43 AM] Takuro Ogasawara | 小笠原: あと、No.61,62に
+HTMLへのtagの追加をいくつか依頼します。
+（Staticなものです）
+[8/8/14 9:36:54 AM] Nguyen Hoang Tuan (とあん): はい。
+[8/8/14 9:50:44 AM] Takuro Ogasawara | 小笠原: ＞トアンさん
+２つ確認事項あります。Skype Talk繋げますか？
+
+1) 現在上がっている修正タスクの完了予定時間
+　▼優先順
+　No.60, 62, 63（静的追加）
+　No.61（検証、可能なら修正）
+
+2) Serverの負荷テストに協力してほしい
+Nguyen Hoang Tuan (とあん): 今、技術者他の案件の会議中なので、
+Nguyen Hoang Tuan (とあん): 終わり次第、こちらから連絡していいですか。
+Takuro Ogasawara | 小笠原: 了解です。ご連絡待ってます。
+Takuro Ogasawara | 小笠原: Skype Talk可能な目処が立ちましたら時間をおしえてください。
+Nguyen Hoang Tuan (とあん): はい。
+Nguyen Hoang Tuan (とあん):   あと１５分程度ですが、
+ Nguyen Hoang Tuan (とあん): こちら、今、Skype Talkできます。
+ Nguyen Hoang Tuan (とあん): いつでも繋いでいいです。
+ Takuro Ogasawara | 小笠原: すみません！少々おまちください。
+いまから日本で同時接続（動画合成）負荷テストやります。
+[8/8/14 10:10:44 AM] Nguyen Hoang Tuan (とあん): はい、わかりました。
+[8/8/14 10:45:59 AM] Takuro Ogasawara | 小笠原: ＞Team Hanoi
+お疲れさまです。ちょっとSkype Talkは時間をずらして後でお願いします。
+No.59　確認しました。ありがとうございました。
+No.60,62,63は、お願いします。修正目処が立ったらお知らせください。
+
+No.61は、検証が必要だと思います。それについては後ほどご相談します。
+[8/8/14 10:47:40 AM] Nguyen Hoang Tuan (とあん): はい。
+[8/8/14 10:49:44 AM] Takuro Ogasawara | 小笠原: あと、Server負荷の一斉テストにご協力をお願いします。
+13:15(Tokyo,Sapporo)／11:15(Hanoi)で、動画合成のプロセスを時間が合うように予定してます。
+
+トアンさんだけでなく、ソンさん、アンさんにもご協力いただけると助かります。
+ Takuro Ogasawara | 小笠原: ちょっと離席します。
+ Nguyen Hoang Tuan (とあん): はい。
+ Nguyen Hoang Tuan (とあん): こちら、同時５台テストします。
+ Nguyen Hoang Tuan (とあん): １１：１５ですね。
+ Nguyen Hoang Tuan (とあん): わかりました。
+ Nguyen Hoang Tuan (とあん): いま、いいですか
+ Takuro Ogasawara | 小笠原: はい、開始します。
+ 山口 千佳: してます！
+ 山口 千佳: きました
+ Nguyen Hoang Tuan (とあん): こっちは１０台行いました。
+ Nguyen Hoang Tuan (とあん): 全部来ました
+ Takuro Ogasawara | 小笠原: ご協力ありがとうございます！素晴らしいです！
+ Takuro Ogasawara | 小笠原: ぼくも8アカウント分を走らせました。
+（操作にもたついて1,2分タイムラグありますが…）
+
+全部で20人くらいでしょうか。
+合成自体は、人数が倍増しても劇的に遅くなったりはしてませんね。むしろ先程山口さんとテストしたときより早かったような気がします。
+ Takuro Ogasawara | 小笠原: 処理が途中で止まった方、Videoの合成に失敗した方はいませんか？
+ Nguyen Hoang Tuan (とあん): ベトナムチームのほうは大丈夫です。
+ Nguyen Hoang Tuan (とあん): 通常より時間かかったが、全部いきました。
+ Takuro Ogasawara | 小笠原: ありがとうございます。
+僕の8アカウント分も、すべて成功しました。
+[8/8/14 11:27:54 AM] Takuro Ogasawara | 小笠原: 1人：15～20秒 (iPhone / OfficeのWi-Fi)
+20人：40秒
+[8/8/14 11:29:26 AM] Takuro Ogasawara | 小笠原: ＞とあんさん
+もう一度、一斉テストにご協力いただきたいです。
+今度は、合成用にアップする画像のサイズをかなり大きめにして試してもらいたいです。（3MB～5MB）
+ Takuro Ogasawara | 小笠原: 時間は、そちらで可能な時間で合わせます。
+ Nguyen Hoang Tuan (とあん): 今から、大きめ写真準備をしますので、少しお待ちください。
+ Takuro Ogasawara | 小笠原: はい、お昼過ぎでも構わないです。
+ Nguyen Hoang Tuan (とあん): わかりました、昼過ぎでお願いします。
+ Takuro Ogasawara | 小笠原: ＞とあんさん
+修正タスクの完了目処について、確認とれましたか？
+あと、昨日依頼して朝一番で対応をお願いしていた
+No.53
+「画面遷移と同時に合成imageがBlank pageで開いてしまうのを、開かないようにする」
+こちらは進んでいますでしょうか。
+[8/8/14 12:28:44 PM] Takuro Ogasawara | 小笠原: 休憩から戻りましたら、SkypeTalk繋ぎましょう。
+残タスクの優先順位を明確にしてご連絡します。
+[8/8/14 1:11:12 PM] Nguyen Hoang Tuan (とあん): はい。今大丈夫です。
+[8/8/14 1:15:04 PM] Takuro Ogasawara | 小笠原: 少々お待ちください、、、
+[8/8/14 1:20:59 PM] Takuro Ogasawara | 小笠原: お待たせしました。
+
+▼優先順位
+1番_ No.53 「画面遷移時に合成imageがBlank pageで開かないようにする」
+2番_ No.60,62,63の対応
+3番_ No.61「Facebookから選ぶ」読み込まない画像がある件の検証
+4番_ No.64 動画合成プロセスの速度改善について
+5番_ No.48 【app details再申請】Banners がUnapprovedになる件の検証
+
+6番_ Server負荷テスト
+[8/8/14 1:21:49 PM] Takuro Ogasawara | 小笠原: 上記はメモです。いますぐ読まなくてOKです。
+繋ぎます。
+ Takuro Ogasawara | 小笠原: とあんさんに繋いでOKですか？
+ Nguyen Hoang Tuan (とあん): はい。
+ Kenta Momose: 本沢さんから連絡が来ています。レスできていますか？
+ Kenta Momose: 今ミーティング中のためレスができません。
+ Takuro Ogasawara | 小笠原: 小笠原→Hanoi Skype通話中です
+ 山口 千佳: 今電話してます。私もミーティング中でした
+ Kenta Momose: ありがとう。
+ Nguyen Hoang Tuan (とあん): 小笠原さん、
+3番_ No.61「Facebookから選ぶ」アルバム内で読み込まない画像がある件。
+多分これが原因だと思いますが、
+読み込む写真と読み込まない写真をFacebook ブラウザで確認しましたが、
+読み込んだ写真は直接アルバムにアップロードした写真です。
+これに対して読み込まなかった写真は FB wallにポストし、アブバムに追加した写真です。
+[8/8/14 2:33:26 PM] Nguyen Hoang Tuan (とあん) sent a file to this group:
+Screen Shot 2014-08-08 at 2.25.11 PM.png
+[8/8/14 2:33:32 PM] Takuro Ogasawara | 小笠原: おお！
+[8/8/14 2:33:49 PM] Takuro Ogasawara | 小笠原: 検証感謝します！
+[8/8/14 2:34:19 PM] Nguyen Hoang Tuan (とあん) sent a file to this group:
+Screen Shot 2014-08-08 at 2.34.02 PM.png
+[8/8/14 2:34:47 PM] Nguyen Hoang Tuan (とあん): 後の写真は読みこめた写真です。
+[8/8/14 2:35:28 PM] Takuro Ogasawara | 小笠原: 先：読み込み失敗
+後：読み込み成功
+[8/8/14 2:35:39 PM] Nguyen Hoang Tuan (とあん): はい、そうです。
+[8/8/14 2:58:50 PM] Nguyen Hoang Tuan (とあん): 1番_ No.53 「画面遷移時に合成imageがBlank pageで開かないようにする」
+iOSの場合、
+アブバムに保存のボタンをクリックするとき、合成imageがBlank pageで開かずに合成画面が写真のページに移動し、そこで手動で写真を保存する。そしてBackを押すと合成画面に戻る。
+ Nguyen Hoang Tuan (とあん): こちらのflow ならできますが、
+ Takuro Ogasawara | 小笠原: （60,62,63 確認済みです、ありがとうございました）
+ Takuro Ogasawara | 小笠原: ＞とあんさん
+そのFlowでいう「合成画面が写真のページに移動」とは、
+ Nguyen Hoang Tuan (とあん): そうです。
+ Nguyen Hoang Tuan (とあん): 合成画面が合成imageのページに移動ですね。
+ Takuro Ogasawara | 小笠原: http://br-app.nadeco.net/07_preview_composite.html
+↓
+http://br-app.nadeco.net/08_preview_download.html
+ Takuro Ogasawara | 小笠原: この移動を、_blankではなく_selfのwindowで可能ということですね？
+ Takuro Ogasawara | 小笠原: それが理想です。
+ Nguyen Hoang Tuan (とあん): これがios の場合はできないですね。
+ Takuro Ogasawara | 小笠原: んんん
+ Nguyen Hoang Tuan (とあん): http://br-app.nadeco.net/07_preview_composite.html
+↓
+http://br-app.nadeco.net/08_preview_download.html
+ダウンロードなしでは問題ないですが
+[8/8/14 3:19:50 PM] Takuro Ogasawara | 小笠原: えーと、自動ダウンロードはSmartphoneの場合はなしでOKですよ？
+[8/8/14 3:20:16 PM] Takuro Ogasawara | 小笠原: 日本語のTEXTで注釈を入れているから、ユーザーは「画像を保存」できるんです。
+[8/8/14 3:20:56 PM] Nguyen Hoang Tuan (とあん): iOSでsafariではダウンロード機能をサポートしないです。
+[8/8/14 3:21:40 PM] Nguyen Hoang Tuan (とあん): 使用者がダウンロードしたければ、写真に長押しし、ダウンロードします。
+[8/8/14 3:21:46 PM] Takuro Ogasawara | 小笠原: そのために、
+“
+画像をタップして長押し「画像を保存」を選んでください。
+”
+の案内を書いているのです。
+Nguyen Hoang Tuan (とあん): 自動ダウンロードはSmartphoneの場合はなしでOKです。
+Nguyen Hoang Tuan (とあん): これで直しますね。
+Takuro Ogasawara | 小笠原: お願いします (bow)
+Nguyen Hoang Tuan (とあん): 今までは自動ダウンロードするとともに画面移動もするという認識でした。
+これなら、時間かからないです。
+ Nguyen Hoang Tuan (とあん): できました。
+ Nguyen Hoang Tuan (とあん): 確認お願いします。
+ Takuro Ogasawara | 小笠原: ありがとうございます！確認します！
+ Takuro Ogasawara | 小笠原: 動作OKでした。（本来の目的はこの形式）
+ Nguyen Hoang Tuan (とあん): 認識が違ってたので、時間かかりました。
+ Nguyen Hoang Tuan (とあん): よかったです。
+ Takuro Ogasawara | 小笠原: 公開は8/11月曜になります。
+ですが、残タスクの検証は進めてください。
+（本日クライアントに報告する必要があるため）
+[8/8/14 4:01:05 PM] Nguyen Hoang Tuan (とあん): はい。
+[8/8/14 4:26:52 PM] Nguyen Hoang Tuan (とあん): This message has been removed.
+[8/8/14 4:30:06 PM] Nguyen Hoang Tuan (とあん): 4番_ No.64 動画合成プロセスの速度改善について
+CPU：8core
+MEM：12GB
+＝＞調査しましたが、CPU, Memoryを２倍しましたが、速度はほとんど上がらない。
+改善する方法は以下の内容と考えられますが、確実にできるかどうかまだ不明です。
+ボトルネックはDisk I/Oであると考えられます。処理時間が多くカットでるますが、研究する時間がかかりそうです。
+１．ライブラリーをチェンジ、imagick ＝＞ gmagick
+２．Disk I/Oを下げる方法。
+[8/8/14 4:46:08 PM] Takuro Ogasawara | 小笠原: ありがとうございます！
+[8/8/14 5:04:51 PM] Takuro Ogasawara | 小笠原: ＞とあんさん
+１．ライブラリーをチェンジ、imagick ＝＞ gmagick
+
+これは、どのくらいの速度向上を見込めますか？
+また、システムが完成している現在、可能なのですか？
+ Kenta Momose: ライブラリって、画像合成の部分？？imagemagickですよね？
+ Nguyen Hoang Tuan (とあん): 速度が向上できると推測していますが、実際に速度改善できるかどうかははっきり言えません。
+ Kenta Momose: 動画合成と、画像合成ってどうやって関連しているんですか？
+ Kenta Momose: 僕も動画合成の仕組みに何をどう使っているか教えてほしいです。
+ Nguyen Hoang Tuan (とあん): 動画合成はたくさんの画像合成からできています。
+ Kenta Momose: というと？
+ Nguyen Hoang Tuan (とあん): １秒の動画は３０枚の画像
+ Kenta Momose: 合成した後に動画にしてるってことですか？
+ Kenta Momose: 処理フローがしりたいのでした。
+ Kenta Momose: その合成のロジックってimagick使ってるってことは言語phpですよね？もし可能ならソースって見れますか？
+ Nguyen Hoang Tuan (とあん) sent a file to this group:
+VideoProcessing.php
+[8/8/14 5:26:36 PM] Kenta Momose: これ１枚ずつ画像を合成している部分と、ffmpeg使って画像を動画化している部分のどっちがボトルネックになっていますか？
+[8/8/14 5:29:20 PM] Nguyen Hoang Tuan (とあん): exec("cp -r {$material_path}buffer_800/*.png $face_dir/ 2>&1", $out, $log);
+exec("$ffmpeg -i {$videoPath}output_$name.mp4 -i {$material_path}audio.wav -c:v libx264 -c:a aac  -strict experimental -preset ultrafast {$videoPath}final_$name.mp4", $out_aud, $v_aud);
+        unlink("{$videoPath}output_$name.mp4");
+[8/8/14 5:29:33 PM] Nguyen Hoang Tuan (とあん): 可能性はこの２カ所
+[8/8/14 5:30:27 PM] Kenta Momose: discI/Oが原因だとすると、画像ファイルを合成して、そのをファイル化するときのジャーナリングに時間がかかってそうな印象ですが、
+[8/8/14 5:30:44 PM] Kenta Momose: これプログラムの処理の時間をログで出すようにして、このソースのどこがボトルネックになっているかを確認してみたらどうでしょうか？
+[8/8/14 5:33:03 PM] Nguyen Hoang Tuan (とあん): imagick: 12-13s ffmpeg 4-5s
+[8/8/14 5:33:13 PM] Kenta Momose: やっぱり画像合成ですね。
+[8/8/14 5:33:45 PM] Kenta Momose: 結局１回の動画合成何枚の静止画を合成していることになりますか？
+[8/8/14 5:34:20 PM] Nguyen Hoang Tuan (とあん): 225枚
+[8/8/14 5:40:16 PM] Kenta Momose: えっと、この画像合成をファイル化せずにメモリ上で変数として持つ（擬似的も含む）ことでI/Oを減らすことで高速化できないですかね？
+ Nguyen Hoang Tuan (とあん): これは難しいですね。
+ Kenta Momose: ちょいまち。
+ Kenta Momose: http://d.hatena.ne.jp/i_ogi/20100217/stream
+ Kenta Momose: こちでphp://memory
+ Kenta Momose: をつかってファイルを書き出して、
+ Kenta Momose: あ、ダメだOSレベルでメモリをマウントしたディレクトリとかが無いと成立しないですね。
+ Kenta Momose: http://hesonogoma.com/linux/RAMDiskPerformance.html
+ Kenta Momose: これをサーバ側に対応してもらうことで高速化できる？？
+ Nguyen Hoang Tuan (とあん): わからないので、研究します。
+ Kenta Momose: 一応今サーバ担当社に動いてもらっています。
+ Kenta Momose: パスが決まり次第送りますので試験してみてください。
+ Kenta Momose: 諦めたら負けです。
+ Nguyen Hoang Tuan (とあん): はい、
+ Nguyen Hoang Tuan (とあん): すみません、これから僕一時退社しますんで
+ Kenta Momose: Linux上で擬似的にメモりをHDDとしてマウントします。
+ Kenta Momose: なので、HDDに普通にファイルをIOしてもらえればいいです。
+ Kenta Momose: mount -t tmpfs -o size=2048m tmpfs /mnt/ram/
+ Kenta Momose: 今このコマンドで /mnt/ram/
+ Kenta Momose: にメモリをマウントしたので、ここにファイルを書き出してもらって、IOを試験してみてください。
+ Kenta Momose: 2GBです。
+ Kenta Momose: ちなみに、メモリは12gbあるので、使用メモリと、アクセス数によって増える合成用の容量を調整はできるので、
+ Kenta Momose: 必要な容量は提示してください。
+ Kenta Momose: いつ確認できますか？
+ Takuro Ogasawara | 小笠原: ＞Sonさん
+PM、SEで残っているスタッフで、本日確認できませんか？
+[8/8/14 6:46:48 PM] Kenta Momose: ファイルパス変えるだけだから3秒でできますよ。
+[8/8/14 6:47:19 PM] Kenta Momose: 権限は777にしてますから。
+[8/8/14 7:10:20 PM] Takuro Ogasawara | 小笠原: ＞百瀬さん
+Hanoiメンバー連絡とれません。（Facebookでも）
+本番サーバ入れたら誰でもできる記述変更ですかね？
+[8/8/14 8:02:37 PM] Kenta Momose: う〜ん、やっぱり作った人が見た方がいいと思いますよ。
+[8/8/14 8:05:36 PM] Takuro Ogasawara | 小笠原: 了解です。
+作った人が事務所にのこっているかも返答がないですが、、
+ナムさんかランさん連絡つきますか？
+
+公式リリースは8/11になったのですが、試して効果ない場合
+の判断が今日できないとマズいですよね。
+ Kenta Momose: そーなのよね。
+ Takuro Ogasawara | 小笠原: みんなで呑みにいってるらしいです。（古坐さん情報）
+ Kenta Momose: こまったね。。
+ Kenta Momose: 明日作業してもらいますか。
+ Kenta Momose: 午前中。
+ Takuro Ogasawara | 小笠原: はい。修正タスクシートにも、追記しました。
+ Kenta Momose: ありがとうです。
+ Takuro Ogasawara | 小笠原: SonさんにFacebookでも一報しております。
+No.64 J列に内容追加
+[8/9/14 10:59:18 AM] Takuro Ogasawara | 小笠原: > Team Hanoi
+お疲れさまです。修正タスクシートを更新しました。
+http://goo.gl/OVVoZ7
+
+No.64 => 検証をお願いします。
+No.65 => ご確認ください。問題なければDev. modeに戻して
+　　　　 App Name変更し再申請を試みます。
+　　　　 これについて、問題がないかどうか返答ください。
+Son: 了解です
+Son: No 64 は 検証しています。
+Son: No.65はDev.modeに戻してAppNameが変更できません。
+Son: AppNameを変更するために、Facebook申請必要です。
+Son: 今日の朝は再申請しました。
+Son: 結果を待っています。
+ Takuro Ogasawara | 小笠原: >Team Hanoi
+おはようございます。本日日本時間の11:00がリリースとなります。
+サーバ側の速度向上策、（No.64）使えるようになってますか？
+ Takuro Ogasawara | 小笠原: http://goo.gl/OVVoZ7
+ Nguyen Hoang Tuan (とあん): おはようございます。
+ Takuro Ogasawara | 小笠原: おはようございます。
+ Nguyen Hoang Tuan (とあん): 少しお待ちください
+ Takuro Ogasawara | 小笠原: No.64 どうですか？
+Linux側は変更が済んでいるので、プログラム側でそれらを使えるように改変加えてください。
+[8/11/14 8:46:49 AM] Takuro Ogasawara | 小笠原: ＞Team Hanoi
+クライアントにお願いし、11:00リリースを延期しました。
+
+＞トアンさん
+No.64の進捗の目処と、No.65申請側の相談で
+Skype Talkがしたいです。
+小笠原いつでもOKです。連絡待ってます。
+ Nguyen Hoang Tuan (とあん): すみません。遅くなりました。今、スカイプ繋いで大丈夫でしょうか。
+ Takuro Ogasawara | 小笠原: いま戻りました。繋げられます
+ Nguyen Hoang Tuan (とあん): はい。
+ Takuro Ogasawara | 小笠原: --
+Linux上で擬似的にMemoryをHDDとしてマウントさせる。
+mount -t tmpfs -o size=2048m tmpfs /mnt/ram/
+上記コマンドで /mnt/ram/ にMemory(2GB)をマウントした。
+ここでDisk I/Oを試験してほしい。
+
+権限は777になっています。
+--
+[8/11/14 10:05:04 AM] Takuro Ogasawara | 小笠原: http://dynamiteboatrace-fbapp.jp/
+[8/11/14 10:05:22 AM] Takuro Ogasawara | 小笠原: 【Sample動画をCHECK!】
+[8/11/14 10:15:58 AM] Takuro Ogasawara | 小笠原: ＞トアンさん、Team Hanoi
+「Memory(2GB)をマウントしてDisk I/Oをおこなう」こちらを使えるようにプログラムに改変を加えたのが、いつ頃なのか分かれば教えてください。
+[8/11/14 10:27:09 AM] Nguyen Hoang Tuan (とあん): １０台テストして、だいたい１分から１分半かかりました。
+[8/11/14 10:38:15 AM] Takuro Ogasawara | 小笠原: ご報告ありがとうございます。
+MemoryをDiskとしてマウントし、そこで処理を行っても改善が見られないということが判明したという見解ですね。
+それを金曜から土曜にかけて判断してほしかったですが…
+
+「数日かけて別の方法を検証」との判断のまえに、、、
+現在のプログラムはMemoryをDiskとして扱えているんでしょうか？
+[8/11/14 10:38:57 AM] Takuro Ogasawara | 小笠原: あるいは、Linux側のコマンドが機能していない可能性もありますよね。
+[8/11/14 10:57:14 AM] Takuro Ogasawara | 小笠原: ＞トアンさん
+No.67 至急ご対応をお願いします。（Static HTML Tagの差替え）
+[8/11/14 10:58:20 AM] Nguyen Hoang Tuan (とあん): はい。
+[8/11/14 10:59:36 AM] Takuro Ogasawara | 小笠原: よろしくお願いします！
+[8/11/14 11:02:04 AM] 山口 千佳: ＞とあんさん
+いつ完了しますか？
+すぐにお願いしたいです
+ Nguyen Hoang Tuan (とあん): いま、行っています。
+ Nguyen Hoang Tuan (とあん): １５分後完了します。
+ 山口 千佳: はい。よろしくおねがいします
+ Nguyen Hoang Tuan (とあん): 今、完了しました。
+ Takuro Ogasawara | 小笠原: ありがとうございます！
+ 山口 千佳: ありがとうございます。確認します
+ Takuro Ogasawara | 小笠原: ＞トアンさん、アンさん、ソンさん
+No.68のご確認をお願いします。
+※Backlogに説明imageをUPしています
+https://nadia.backlog.jp/view/DHE_BOATRACE-17#comment-1103476459
+[8/11/14 1:04:11 PM] Nguyen Quy Son: 了解です。
+[8/11/14 1:04:30 PM] Nguyen Quy Son: 確認しています。
+[8/11/14 1:06:30 PM] Takuro Ogasawara | 小笠原: ＞ソンさん
+よろしくお願いします。
+
+＞トアンさん
+金曜に一度返答もらっている、No.66の件でSkype Talkしたいです。
+管理アカウントで画面共有した上で、確認してほしいです。
+ thanhhai: トアンさんは別件で忙しいですので、代わりに私はブリッジとしてやります
+ Takuro Ogasawara | 小笠原: ありがとうございます、少々おまちください。
+ thanhhai: No.66の件については今日の16:30VNでよろしいでしょうか？
+ Takuro Ogasawara | 小笠原: それは、
+トアンさんがSkype Talkできる時間は16:30VNまで待たなければいけない、ということですね。
+[8/11/14 2:01:39 PM] thanhhai: トアンさんは参加せずに、私は通訳などを担当します。
+[8/11/14 2:02:46 PM] Takuro Ogasawara | 小笠原: 了解です。
+日本時間だと18:30ですね？
+[8/11/14 2:03:17 PM] thanhhai: はい
+[8/11/14 2:05:28 PM] 山口 千佳: ＞ハイさん
+この案件は、本当は8/8に納品完了していなければならない案件でした。
+本日もう8/11で遅れているので、早急に確認したいです。
+Skype Talkできる時間を早めることは可能ですか？
+[8/11/14 2:24:37 PM] Takuro Ogasawara | 小笠原: ＞ハイさん、Team Hanoi
+No.68【画像選択】画面で、textの追加をお願いします。（HTML MockUp用意してます）
+断続的なタスクですみません。
+[8/11/14 2:26:06 PM] Takuro Ogasawara | 小笠原: No.66については、誰にも相談できませんか？
+[8/11/14 2:48:44 PM] thanhhai: No.68は対応しています。
+No.66は検討中です。
+[8/11/14 2:56:19 PM] Takuro Ogasawara | 小笠原: はい。管理ユーザーのアカウントはタスクシートに記載していますが、
+Facebookページ（ex. Facebook FunPage）は、クライアントのものなので
+テストする場合は一報ほしいです。
+【厳重注意】でお願いします。
+[8/11/14 3:05:32 PM] thanhhai: 了解です。
+[8/11/14 3:10:04 PM] Takuro Ogasawara | 小笠原: No.68のtext追加、確認しました。ありがとうございます。
+[8/11/14 5:42:47 PM] Takuro Ogasawara | 小笠原: ＞Team Hanoi
+お疲れさまです。haiさん、もしくはトアンさんでもいいです
+No.66について、今からSkype Talkと画面共有で相談することは可能ですか？
+ Takuro Ogasawara | 小笠原: Response ください。
+ thanhhai: いいですよ。
+ Takuro Ogasawara | 小笠原: ありがとうございます。
+ Takuro Ogasawara | 小笠原: 準備します
+ Takuro Ogasawara | 小笠原: お待たせしました、haiさんに繋ぎます
+ Takuro Ogasawara | 小笠原: > Team Hanoi
+haiさんOffLineみたいですが、どうなってますか？
+[8/11/14 6:33:53 PM] Takuro Ogasawara | 小笠原: haiさん
+ありがとうございました。いくつかの問題が解決したので助かりました。
+[8/11/14 6:34:39 PM] thanhhai: こちらこそ、よろしくお願いします。
+[8/11/14 7:22:53 PM] Takuro Ogasawara | 小笠原: ＞haiさん、Team Hanoi
+Facebook Appとして接続（Fb内での利用）した場合、
+http://dynamiteboatrace-fbapp.jp/?fbs=100&fb_appcenter=1
+画面上での「Youtubeで投稿」は消えますか？表示されたままですか？
+[8/11/14 7:25:34 PM] Takuro Ogasawara | 小笠原: これは、
+App Name変更承認がおりて『ページタブを追加』が完了するまでは検証できませんか？
+[8/12/14 7:56:13 AM] Takuro Ogasawara | 小笠原: > Team Hanoi
+おはようございます。
+App Nameの変更、申請通りませんね。
+[8/12/14 8:02:12 AM] Takuro Ogasawara | 小笠原: このまま、「BoatRaceServer」のApp Nameで公開状態のまま申請を繰り返すより、新しく「You can be BOATNYÂ!」名で作って申請したほうが素直に通るような気がしませんか？
+
+下記の流れになると思いますが。
+-----
+現状の「BoatRaceServer」Dev.Fb Appsを非公開に
+↓
+(Delete)
+↓
+新規Dev.Db Appとして「You can be BOATNYÂ!」名で作成
+↓
+申請
+-----
+[8/12/14 8:06:10 AM] Kenta Momose: 百瀬宛に本沢さんから連絡ありました。山口さんからメールした内容をそのままつたえて起きましたが、
+[8/12/14 8:06:15 AM] Kenta Momose: １週間かかるものなんですか？
+[8/12/14 8:08:39 AM] Takuro Ogasawara | 小笠原: Hanoiのスタッフとして昨日時点の見解は、
+下記１のほうが早いとのことでしたが
+１）「このままApp Nameの変更申請を続ける」
+２）「新しいApp Nameで立てて新規申請する」
+[8/12/14 8:13:19 AM] Takuro Ogasawara | 小笠原: このまま闇雲に変更申請を続けても先が見えないので、確実な方法をとるべきだと思うのですが、どうでしょうか。
+[8/12/14 8:22:12 AM] Kenta Momose: １週間かかるのは問題ということになっています。方法はないですか？
+[8/12/14 8:28:21 AM] Takuro Ogasawara | 小笠原: 下記を考えたのですが、8/9(Sat)にSonさんに「非公開にするのは意味が無い」といわれています。
+-----
+現状の「BoatRaceServer」Dev.Fb Appsを非公開に
+↓
+App Nameを「You can be BOATNYÂ!」に変更
+↓
+再申請
+-----
+
+ただ、非公開（Switch to development mode）状態のものはApp Nameの変更がすぐ全体に適用されると、僕は思うのですが。
+[8/12/14 8:39:37 AM] Kenta Momose: とりあえず早急にすぐ対応できる方法を考えて、報告してください。今の状況になってこれはまずいです。
+[8/12/14 8:39:58 AM] Takuro Ogasawara | 小笠原: >Team Hanoi
+Facebook Submitについて
+あらためて相談したいです。
+[8/12/14 8:41:49 AM] Takuro Ogasawara | 小笠原: Skype Talkの時間を作ってほしいです。
+時間は合わせます。
+[8/12/14 8:46:58 AM] thanhhai: こちらは解決方法を探しています。確認できたら報告します。
+今Skype Talkをしても、無駄ですけど
+[8/12/14 8:47:53 AM] Takuro Ogasawara | 小笠原: 了解です、引き続きお願いします！
+本当に、AppNameさえ変わってBannerが更新されれば、公開できる状況なので。
+ Kenta Momose: 千佳、やりとりできない？本沢さんと。
+ Kenta Momose: レスが無いから結局俺のところにくるんだけど。まあフォローはするけどね。
+ 山口 千佳: 今病院言ってたんで
+ Kenta Momose: それは言ってもらわないとね。
+ Kenta Momose: 行くからフォローしてって。
+ Takuro Ogasawara | 小笠原: ごめんなさい、僕が共有すべきでした
+ 山口 千佳: いや、、小笠原さんには伝えてますし
+ 山口 千佳: 本沢さんにはのちほど電話しますとメールでつたえてます
+ Kenta Momose: 小笠原さんにつたえているかどうかは、俺はしらん。
+ Kenta Momose: ここに書けば良いだけの話じゃん？
+ Kenta Momose: 考え方として。
+ Kenta Momose: 小笠原さんが悪いのではなくて、小笠原さんに任せた千佳が悪いってこと。もちろん小笠原さんがつたえなかった事も悪いんだけどね。
+[8/12/14 9:24:40 AM] Kenta Momose: そこは責任逃れに見えるわけ。
+[8/12/14 9:37:08 AM] 山口 千佳: ＞百瀬さん
+口頭でお伝えしましたが、小笠原さんに責任をなすりつけているわけではないです。
+いつもSkypeやメールベースでちくちく言うのやめてください。
+
+＞小笠原さん
+今電話できますか？
+ほんさわさんとお話したので共有します
+[8/12/14 9:37:59 AM] Takuro Ogasawara | 小笠原: MTG抜けます少々お待ちください！
+[8/12/14 9:42:03 AM] Kenta Momose: バナーにBoatRaceServerを入れて解決するならそれでいってもらえればと、角谷さんからと確認したとのこと。
+[8/12/14 9:43:24 AM] Kenta Momose: 千佳が電話中？のため百瀬に連絡はいりました。
+[8/12/14 9:43:48 AM] Kenta Momose: これから外出するので、レス遅くなります。
+[8/12/14 11:12:13 AM] Takuro Ogasawara | 小笠原: ＞Team Hanoi
+No.69　の"Mobile Uploads" ThumbnailsはBacklogに更新しました。
+[8/12/14 11:13:05 AM] Takuro Ogasawara | 小笠原: あと、
+Bannersに「BoatRaceServer」の文言を入れた画像で再申請することになります。
+[8/12/14 11:13:55 AM] thanhhai: 了解です。
+[8/12/14 11:14:15 AM] Takuro Ogasawara | 小笠原: > haiさん
+いま、画像のチェックをお願いできますか？
+ちらっとみてもらえれば。
+[8/12/14 11:15:30 AM] thanhhai: Bannersですか？
+[8/12/14 11:15:51 AM] Takuro Ogasawara | 小笠原: はい、画像を送っても大丈夫ですか？
+[8/12/14 11:16:01 AM] thanhhai: お願いします。
+[8/12/14 11:16:17 AM] Takuro Ogasawara | 小笠原: facebookからNGが出ないように、下記３つの観点で、
+1_文字サイズ
+2_文字の見え方
+3_文字の位置
+[8/12/14 11:16:21 AM] Takuro Ogasawara | 小笠原 sent files to this group:
+BRapp_info_GU.png
+BRapp_info_top.png
+BRapp_info_webbnr.png
+[8/12/14 11:20:17 AM] Takuro Ogasawara | 小笠原: Main Titleが「You can be BOATNYÂ!」なので
+それにくらべて「BoatRaceServer」は極端に小さいです。
+[8/12/14 11:22:42 AM] Takuro Ogasawara | 小笠原: これで再申請して問題なさそうですか？
+[8/12/14 11:23:28 AM] thanhhai: rejectされたら、三日間申請出来ませんので、
+[8/12/14 11:23:59 AM] thanhhai: この３日間を使って、対策を考えましょう。
+[8/12/14 11:24:32 AM] Takuro Ogasawara | 小笠原: つぎに再申請できるのは、8/15？
+[8/12/14 11:25:10 AM] thanhhai: はい
+[8/12/14 11:25:39 AM] 山口 千佳: ？？？
+今日申請できないと困るんですけど
+[8/12/14 11:25:52 AM] Takuro Ogasawara | 小笠原: "You have been temporarily blocked from submitting your app for review because you received the following feedback on your last 3 submissions. Please address this feedback before resubmitting. You may submit again in 3 days."
+[8/12/14 11:30:34 AM] Takuro Ogasawara | 小笠原: Fbには、App Nameを変えたいことは伝わっているのでしょうか。
+[8/12/14 11:32:03 AM] thanhhai: もちろんです。
+[8/12/14 11:37:28 AM] Takuro Ogasawara | 小笠原: Facebookから、App Name変更に対して具体的なアドバイスは今日迄にありましたか？
+[8/12/14 11:45:19 AM] Takuro Ogasawara | 小笠原: Facebookは、機械的に下記の反応を繰り返していませんか？
+App Name変更のお願い => no message（無視）
+Banners => "include your app's name on all banners."
+[8/12/14 11:54:24 AM] Takuro Ogasawara | 小笠原: 現状で「3日後に再申請」が確実であれば、Facebook Appとしてのリリースが最短でも来週になりますよね。
+[8/12/14 11:56:37 AM] Takuro Ogasawara | 小笠原: クライアントは一刻も早く「公開」したいが、サービス開始が遅れている状況です。
+Skype Talkで、相談できませんか？
+[8/12/14 11:57:57 AM] 山口 千佳: ＞ハイさん
+はやく回答ください。
+[8/12/14 12:22:25 PM] Takuro Ogasawara | 小笠原: > Team Hanoi
+お昼休憩から戻りましたら、お声掛けください。
+[8/12/14 1:13:50 PM] thanhhai: Skype Talkが大丈夫です。
+[8/12/14 1:19:45 PM] Takuro Ogasawara | 小笠原: ありがとうございます、準備します。
+[8/12/14 1:22:51 PM] Takuro Ogasawara | 小笠原: haiさん
+繋ぎます
+[8/12/14 1:23:21 PM] thanhhai: はい
+[8/12/14 1:28:00 PM] Takuro Ogasawara | 小笠原: No.69 Done 確認しました。完了です。
+[8/12/14 2:18:04 PM] Takuro Ogasawara | 小笠原: > Haiさん Team Hanoi
+You can be BOATNYÂ! (test version of BoatRaceServer)
+https://developers.facebook.com/apps/884209028274826/roles/
+こちらを、申請まで進めるにはどうすればいいですか？
+助言をお願いします。
+[8/12/14 2:18:47 PM] Kenta Momose: 本沢さんから鬼電です。
+[8/12/14 2:19:07 PM] Kenta Momose: どういう状況か教えてもらえますか？もしくは千佳から電話してもらえますか？
+[8/12/14 2:19:46 PM] Takuro Ogasawara | 小笠原: いま、山口さんがコールバックしているはずです。
+[8/12/14 2:23:36 PM] Kenta Momose: 今電話しているのは本沢さん？
+[8/12/14 3:54:51 PM] Takuro Ogasawara | 小笠原: ＞haiさん、Team Hanoi
+
+ご報告と相談があります。
+クライアントにお願いし、暫定的な公開方針を決定しました。
+
+本日時点で、
+・Web App（Browser App）としてリリースします。
+http://dynamiteboatrace-fbapp.jp/
+[8/12/14 3:59:24 PM] Takuro Ogasawara | 小笠原: 平行して、
+・Facebook Appの申請を続ける
+⇒承認されたら、公式Facebookページの「アプリ」欄に追加
+https://www.facebook.com/dynamiteboatraceforce
+
+⇒承認されたら、Banners＆App紹介ページが更新される
+https://www.facebook.com/games/?fbs=100&app_id=871419956220400
+[8/12/14 4:02:31 PM] thanhhai: 了解です。
+[8/12/14 4:02:34 PM] Takuro Ogasawara | 小笠原: この進め方について、下記２つの観点で悪い影響がありますか？
+・申請中の内容
+・システムの動作
+
+Skype Talk繋げられます。どなたか、ご返答ください。
+[8/12/14 4:04:24 PM] thanhhai: 先ほどスカイプで話しましたので、もうトークが必要ないと思いますけど、
+[8/12/14 4:07:24 PM] Takuro Ogasawara | 小笠原: はい。では、
+一般ユーザーが、Fbからではなくドメインに直接アクセスして利用することについて、問題があるかどうか？SEに相談してください。
+http://dynamiteboatrace-fbapp.jp/
+[8/12/14 4:13:53 PM] 山口 千佳: ＞ハイさん
+スカイプで話そうといっているのは、返答が遅いからですよ。
+本日公開なので、早めに回答ください。
+[8/12/14 4:16:56 PM] thanhhai: ＞一般ユーザーが、Fbからではなくドメインに直接アクセスして利用することについて、問題があるかどうか？SEに相談してください。
+＞http://dynamiteboatrace-fbapp.jp/
+問題ないです。
+[8/12/14 4:18:00 PM] Takuro Ogasawara | 小笠原: ありがとうございます。
+申請を平行して続けることにも、影響はないですね。
+[8/12/14 4:18:20 PM] thanhhai: はい
+[8/12/14 4:19:01 PM] Takuro Ogasawara | 小笠原: ありがとうございます。
+[8/13/14 9:54:02 AM] Takuro Ogasawara | 小笠原: ＞ソンさん、トアンさん、アンさん、ハイさん
+
+おはようございます。お疲れさまです。
+No.71 に【全ページ】Google Analytics Tagの追加を依頼しています。
+http://goo.gl/OVVoZ7
+
+なるべくはやくご対応をお願いします！
+[8/13/14 11:04:02 AM] Takuro Ogasawara | 小笠原: ＞トアンさん
+No.71 Done ありがとうございます。
+全画面への適応を確認しました。
+
+※いそがしいのは分かります。しかし対応／完了報告だけはください。簡単で構いませんので。
+[8/13/14 11:47:55 AM] 山口 千佳: 完了の報告しちゃいますね？
+[8/13/14 11:48:36 AM] Takuro Ogasawara | 小笠原: ＞山口さん
+すみません、お願いします (bow)
+[8/14/14 5:43:45 PM] Nguyen Quy Son: > 小笠原さん
+No.64のご確認をお願いします。
+[8/14/14 5:44:21 PM] Takuro Ogasawara | 小笠原: ＞Sonさん
+お疲れさまです。
+確認しますので、少々お待ちください。
+[8/14/14 6:40:38 PM] Takuro Ogasawara | 小笠原: ＞Sonさん、Team Hanoi
+返答遅くなりすみません。いま９アカウント分の接続で動画合成を行ったのですが、ご報告あった通り20秒程度まで速度向上しています。
+取り急ぎ、感謝です！
+[8/14/14 6:49:35 PM] Takuro Ogasawara | 小笠原: クライアントの当初の要求には満たないですが、ImageMagick改善前に1分超えだったことを考えると大分改善されたと思います。
+[8/14/14 6:50:52 PM] Takuro Ogasawara | 小笠原: 8/18(Mon)に、再度の一斉同時テストにご協力をお願できると助かります。
+
+公開後のエンドユーザーのアクセスに対して、プログラムとサーバがどう振る舞うか、は未知数で不可抗力の部分が大きいですが、ひとつ不安要素が減りました。
+引き続きよろしくお願いします！
+[8/15/14 6:52:10 AM] Takuro Ogasawara | 小笠原: おはようございます。
+申請側の制限、予想通り解除されました。
+[8/15/14 6:55:40 AM] Takuro Ogasawara | 小笠原: 下記要素を変更し、再度Submitを行いました。
+・バナー3点（BoatRaceServerの文言を追加）
+・Descriptionの変更「このコンテンツでは、…」
+・スクリーンショット1点（TOP、「このコンテンツでは、」）
+[8/15/14 6:58:48 AM] Takuro Ogasawara | 小笠原: ＞Sonさん、山口さん
+もし、内容に不備がある場合はご連絡ください。今日中であれば、一度Cancel Submissionを行って再申請しても、タイムラグはないはず。
+[8/15/14 8:32:06 AM] Nguyen Quy Son: Nguyen Quy Son added linhpt nadia to this conversation
+[8/18/14 8:23:05 AM] Takuro Ogasawara | 小笠原: お疲れさまです、速報です。
+
+【Fb申請側】
+完了しました。App Nameも「You can be BOATNYÂ!」になり、バナー関連の更新も適用されています。
+https://www.facebook.com/games/?fbs=100&app_id=871419956220400
+ 山口 千佳: おー！ありがとうございます！報告します
+ Takuro Ogasawara | 小笠原: ＞ソンさん
+お疲れさまです。
+【ボートレース案件チーム解散】のメール確認しました。
+おおむね問題ないと思います。
+
+cronjob実施について、メールでも返答を残します。
+（キャッシュ削除は毎朝の日本4:30／ベトナム2:30でお願いします）
+ Takuro Ogasawara | 小笠原: 本日最後に、もう一度だけ一斉テストにご協力いただけると助かります (bow)
+ Nguyen Quy Son: 了解です。
+今朝のメールをご返答お願いします。 (bow)
+[8/19/14 5:37:24 PM] Takuro Ogasawara | 小笠原: ＞ソンさん
+お疲れさまです。
+最後の「一斉サーバー負荷テスト」ですが、今日は時間が確保できませんので、また別の日にあらためてご相談します。
+（前回同様、Hanoiで20アカウント前後で一瞬ご協力いただければ助かります）
+ Nguyen Quy Son: 了解です。
+ Takuro Ogasawara | 小笠原: ＞ソンさん
+お疲れさまです。【cronjob実行設定】完了しました。
+https://nadia.backlog.jp/view/DHE_BOATRACE-19
+ Nguyen Quy Son: 了解です。
+ Takuro Ogasawara | 小笠原: ＞haiさん、Team Hanoi
+どなたか Facebook のPage TabでHELPお願いできますか？
+
+▼Facebookページ
+https://www.facebook.com/dynamiteboatraceforce
+↓
+▼今回追加したPage Tabのリンク先
+https://www.facebook.com/dynamiteboatraceforce/app_871419956220400
+=> 白紙のページになってしまいます。
+
+目的は「下記のAppの情報を乗せたい」です。検証が必要ですか？
+https://www.facebook.com/games/?fbs=100&app_id=871419956220400
+thanhhai: はい、確認します。
+Takuro Ogasawara | 小笠原: ご協力、お願いします。
+Takuro Ogasawara | 小笠原: ＞haiさん
+何か判明しましたでしょうか。
+developers.facebook.comのSettingsでは、Page TabのURLの指定しか変更できません。
+
+https://www.facebook.com/dynamiteboatraceforce/app_871419956220400
+の白紙部分はiflameで読み込んでいるようですね。
+この読み込み先をEditして下記の情報を記載できればいいのですが。
+https://www.facebook.com/games/?fbs=100&app_id=871419956220400
+thanhhai: 修正中です。
+Takuro Ogasawara | 小笠原: 助かります (bow)
+thanhhai: 修正しましたので、確認してもらいますか？
+Takuro Ogasawara | 小笠原: ありがとうございます、確認します！
+Takuro Ogasawara | 小笠原: なるほど！iflameでAppを表示させると、こうなりますよね。
+Kenta Momose: 横幅を一杯にするのは厳しい感じですかね？PCでみた時です。
+Kenta Momose: 後、スマホのFBアプリにはアプリ一覧として掲載されない感じなんですね。
+
+
+
+---------------------------- ENGLISH TRANSLATE -------------------------------
+
+
+No.37 
+You have not read all the photos in the album. 
+(. Examples: from the album that should be of 75 photo sheets, it is not only read 25 pages) 
+
+Here, thank you verified in hurry. 
+I will correspond immediately: [8/5/14 11:21:41 AM] Nguyen Quy Son. 
+[8/5/14 11:29:12 AM] Takurou Ogasawara | Ogasawara: Son's 
+I would like to have proceeded in parallel all, than the difficult verification, thank you for your correspondence, such as replacement of buttons and text added, from simple modification. 
+[8/5/14 11:30:49 AM] Takurou Ogasawara | Ogasawara: I noticed immediately to say, I have tidy fix. 
+You Done confirmation. 
+[8/5/14 11:37:34 AM] Nguyen Quy Son: Modify tasks other than line 36 has been completed. 
+Please give me the HTML of 36 lines. 
+Thank you: Ogasawara | [8/5/14 11:38:17 AM] Takurou Ogasawara. 
+Typographical error because you have entered the text No.32, on the check, thank you to modify the contents of the K column. 
+Has confirmed: Nguyen Quy Son. 
+dzung nguyen: 32 ok 
+Please check: Nguyen Quy Son. 
+Thank you: Ogasawara | Takurou Ogasawara! 
+Takurou Ogasawara | Ogasawara:> Son's 
+I have updated the HTML of No. 36. 
+Thank you to reflect implementation side! 
+[8/5/14 11:50:27 AM] Takurou Ogasawara | Ogasawara: Done confirmed task has began to Gray Out 
+Is OK: [8/5/14 11:51:17 AM] Nguyen Quy Son. 
+[8/5/14 12:01:16 PM] Takurou Ogasawara | Ogasawara: Son's 
+I'm going now to check the No.37. 
+It is the fixes and Done, but cause there was not loading images do you found? 
+Please wait a little: [8/5/14 12:05:16 PM] Nguyen Quy Son. 
+I only have 25 sheets by default limit of one of the API of FB: (Toan) [8/5/14 12:15:29 PM] Nguyen Hoang Tuan. You have to be able to read a lot and more, to modify the parameters photo. 
+Is OK: Ogasawara | [8/5/14 12:15:59 PM] Takurou Ogasawara. 
+Currently, many pieces MAX has not been set? 
+Is 500: [8/5/14 12:16:17 PM] Nguyen Quy Son. 
+Is OK: Ogasawara | [8/5/14 12:16:25 PM] Takurou Ogasawara! 
+[8/5/14 12:59:28 PM] Takurou Ogasawara | Ogasawara:> Son's 
+I think during the corresponding No.36. 
+
+There is a FB requests and fixes from the client, 
+I have to add up to No.42 from No.38. 
+We ask for your confirmation. 
+
+Please reply quickly as possible, the item content is in yellow. 
+Is OK: [8/5/14 1:01:43 PM] Nguyen Quy Son. 
+[8/5/14 1:03:57 PM] dzung nguyen: nut do e van chua thay ảnh mới (36) 
+Where did you updated HTML of No. 36: [8/5/14 1:08:11 PM] Nguyen Quy Son. 
+[8/5/14 1:08:49 PM] Takurou Ogasawara | Ogasawara: http://br-app.nadeco.net/05_fb_thumbs.html 
+It is a cell of the line 39 column I: Ogasawara | [8/5/14 1:09:18 PM] Takurou Ogasawara. 
+[8/5/14 1:12:15 PM] dzung nguyen: nut màu bạc sang đỏ: I go back to "Album List 
+[8/5/14 1:12:36 PM] Nguyen Quy Son: the color of the button I remain Silva. 
+Please try to clear the cache: Ogasawara | [8/5/14 1:13:00 PM] Takurou Ogasawara. 
+[8/5/14 1:13:04 PM] dzung nguyen: This message has been removed. 
+[8/5/14 1:14:18 PM] dzung nguyen: This message has been removed. 
+[8/5/14 1:16:34 PM] Nguyen Hoang Tuan (Toan): is OK. 
+I am Toan: (Toan) [8/5/14 1:18:19 PM] Nguyen Hoang Tuan. I am responsible for the translation through. If there are no Sung, I will answer instead. Thank you very much in advance. 
+[8/5/14 1:18:37 PM] Takurou Ogasawara | Ogasawara: Welcome here, thank you. 
+[8/5/14 1:38:39 PM] Takurou Ogasawara | Ogasawara:> Mr. Toan 
+On Youtube Upload screen, current 
+"Whoops, looks like something went wrong." 
+Error that comes out, I'm stopped. 
+As soon as possible, thank you repair. 
+
+http://goo.gl/OVVoZ7 
+(No.40) 
+[8/5/14 1:43:39 PM] Nguyen Hoang Tuan (Toan): Yes. 
+I might or might not be available for upload: (Toan) [8/5/14 1:54:09 PM] Nguyen Hoang Tuan. 
+In addition, it will be "post completion" and even if you can not even be. 
+
+If → post completion that could be posted 
+→ If error display that could not be posted 
+Can I screen transitions? 
+For, if the error came out on any device: (Toan) [8/5/14 1:54:38 PM] Nguyen Hoang Tuan. 
+Would you please provide a Youtube ID that was used: (Toan) [8/5/14 1:55:24 PM] Nguyen Hoang Tuan. I will check here. 
+Currently, such an error is because do I still get to test: (Toan) [8/5/14 1:56:04 PM] Nguyen Hoang Tuan. 
+[8/5/14 1:56:57 PM] Nguyen Hoang Tuan (Toan): ## Posts Youtube] 
+"Whoops, looks like something went wrong." 15:30 Ogasawara 
+Because it is pointed out that the Client, the time it takes to verify the above: Ogasawara | [8/5/14 1:57:14 PM] Takurou Ogasawara. 
+
+At the time of 15:30 
+"Whoops, looks like something went wrong." 
+Was able to confirm the Error is the MacOS / Chrome. 
+[8/5/14 1:58:23 PM] Nguyen Hoang Tuan (Toan): is OK. 
+Here was also tested in the same environment: (Toan) [8/5/14 1:58:45 PM] Nguyen Hoang Tuan. 
+I'm sorry, No.41 became invisible: (Toan) [8/5/14 2:06:01 PM] Nguyen Hoang Tuan. You that was erased by someone. 
+[8/5/14 2:07:33 PM] Takurou Ogasawara | Ogasawara: here, Mr. Toan is a check required! 
+Was the corresponding requirements in the better of me (UI HTML) 
+[8/5/14 2:08:04 PM] Nguyen Hoang Tuan (Toan): is OK. 
+I think ※ Because remained that I have selected the cell, and he was gone when the other User has Document Updated: Ogasawara | [8/5/14 2:08:35 PM] Takurou Ogasawara 
+[8/5/14 2:17:28 PM] Takurou Ogasawara | Ogasawara:> son's 
+Do you connect Skype calls? 
+Can you less in forever: [8/5/14 2:18:03 PM] Kenta Momose? It is fueled more from Honzawa's. 
+Yes: [8/5/14 2:18:16 PM] Nguyen Quy Son. Okay. 
+[8/5/14 2:26:12 PM] Takurou Ogasawara | Ogasawara: 800 x 440 px 
+Please have the report before 18:00: [8/5/14 3:21:45 PM] Kenta Momose. I was responding to the client so. 
+[8/5/14 3:23:16 PM] Takurou Ogasawara | Ogasawara:> Momose's 
+I have e-mail reply to Yamaguchi. 
+[8/5/14 3:23:31 PM] Kenta Momose: Well, I'm fine. Regards. 
+[8/5/14 3:23:36 PM] Yamaguchi Chika: Ogasawara 
+Now that you have created a mail account of app +, and are included in the cc. 
+director@appp.co.jp 
+Since it has been changed to morning till tomorrow, make a statement that corresponds to the current day,: [8/5/14 3:24:18 PM] Yamaguchi Chika 
+The thing that was declared today during you for your correspondence please to today during. 
+Is OK: Ogasawara | [8/5/14 3:26:00 PM] Takurou Ogasawara. 
+
+> Team Hanoi 
+Items items during verification of implementation being addressed, so make sure Once the time each, thank you continue. 
+I and some of these are here waiting,: Ogasawara | [8/5/14 3:26:17 PM] Takurou Ogasawara 
+[8/5/14 3:27:33 PM] Takurou Ogasawara | Ogasawara: combinations of conditions that fail of · Youtube (OS / browser / account) 
+List of non-recommended browser 
+→ Note text to be displayed in that case 
+[8/5/14 3:28:29 PM] Nguyen Hoang Tuan (Toan): Yes. 
+Now, No.36, I have completed 38: (Toan) [8/5/14 3:29:17 PM] Nguyen Hoang Tuan. 
+Make sure: Ogasawara | [8/5/14 3:29:40 PM] Takurou Ogasawara! Thank you. 
+[8/5/14 3:29:56 PM] Nguyen Hoang Tuan (Toan): I'm sorry, 
+It is it is to fix a little bit: (Toan) [8/5/14 3:30:20 PM] Nguyen Hoang Tuan. 
+Still, I can not be confirmed: (Toan) [8/5/14 3:30:32 PM] Nguyen Hoang Tuan. 
+[8/5/14 3:30:43 PM] Takurou Ogasawara | Ogasawara: I understand. 
+(Toan) [8/5/14 3:36:00 PM] Nguyen Hoang Tuan: combinations of conditions that fail of Youtube (OS / browser / account) 
+Here, what you can provide an ID that was used. 
+Yes: Ogasawara | [8/5/14 3:36:44 PM] Takurou Ogasawara! Hold on, please. 
+No.36, I can now confirm 38: (Toan) [8/5/14 3:39:27 PM] Nguyen Hoang Tuan. 
+Thank you: Ogasawara | [8/5/14 3:40:15 PM] Takurou Ogasawara. 
+[8/5/14 3:45:46 PM] Takurou Ogasawara | Ogasawara:> Team Hanoi 
+Is [synthetic] screen button 
+It has turned into "MAKE ANOTHER" and from the "choose an image". 
+[8/5/14 3:46:01 PM] Takurou Ogasawara | Ogasawara: http://dynamiteboatrace-fbapp.jp/screens/screen04 
+I will check immediately: (Toan) [8/5/14 3:46:23 PM] Nguyen Hoang Tuan. 
+Thank you: Ogasawara | [8/5/14 3:46:44 PM] Takurou Ogasawara. 
+[8/5/14 3:55:58 PM] Takurou Ogasawara | Ogasawara: Did you mean, do you might have changed if you update the picture below? 
+
+▼ CSS Sprite Img 
+http://dynamiteboatrace-fbapp.jp/asset/img/sprite2x-s33da56352b.png 
+  Nguyen Hoang Tuan (Toan): Yes, I'll make sure. 
+  Nguyen Hoang Tuan (Toan): Now, I correct the mistake here. 
+  Nguyen Hoang Tuan (Toan): Excuse me, I ask you for a check. 
+  Did you report mail: Kenta Momose? 
+  Was able to confirm: Ogasawara | Takurou Ogasawara. If I explain the update the CSS. 
+  Nguyen Hoang Tuan (Toan): Now, I've updated CSS. 
+  Reported mail to the other party, 17:: | Takurou Ogasawara Ogasawara we ask them to send from Yamaguchi 22. 
+  Thank you for reporting: Kenta Momose. 
+  Pham Manh Lan: Pham Manh Lan has left the conversation 
+  Nguyen Hoang Tuan (Toan): Mr. Ogasawara, 
+  Yes: Ogasawara | Takurou Ogasawara. 
+  Nguyen Hoang Tuan (Toan): from now on, is it okay to update server. 
+  It takes about 5 minutes: (Toan) Nguyen Hoang Tuan. 
+  Nguyen Hoang Tuan (Toan): This message has been removed. 
+  Takurou Ogasawara | Ogasawara: judgment that is not possible with me. 
+It is that it requires a restart, that is 5 minutes inaccessible - update? 
+  Nguyen Hoang Tuan (Toan): Well. 
+  Nguyen Hoang Tuan (Toan): This is because you want to update the new version of the Youtube API, but .. 
+  Takurou Ogasawara | Ogasawara: restart is OK, thank you. 
+  Nguyen Hoang Tuan (Toan): from now on, it will be in about five minutes once inaccessible, please note. 
+  Takurou Ogasawara | Ogasawara: I understand. 
+  Nguyen Hoang Tuan (Toan): This message has been removed. 
+  Nguyen Hoang Tuan (Toan): Yes. 
+  Nguyen Hoang Tuan (Toan): Now, server Update complete. Thank you. 
+  The Takurou Ogasawara | Ogasawara: is OK, and verify the operation. 
+  Takurou Ogasawara | Ogasawara:> Mr. Toan 
+Although it is a problem of No.40 [Youtube] post, 
+When I state that you are not logged in (valid Google account), Error ". Whoops, looks like something went wrong" is de Youtube: Ogasawara | [8/5/14 5:14:13 PM] Takurou Ogasawara. 
+
+In the past, you should have a transition to the screen of get-access-token]. 
+  Nguyen Hoang Tuan (Toan): remove cookie laravel_session 
+  Takurou Ogasawara | Ogasawara: This seems to state the same even if you log in to any Facebook account in the same browser. (It does not matter even OS / Browser) 
+The problem is likely to Error has occurred to get the Google account information is high. 
+[8/5/14 5:16:21 PM] Takurou Ogasawara | Ogasawara:> remove cookie laravel_session 
+Is OK. So I'll try again. 
+[8/5/14 5:55:57 PM] Takurou Ogasawara | Ogasawara:> Son-san, Team Hanoi 
+Cheers for good work is. 
+Currently, please allowed to check the contents of the correction and verification during. 
+  Can you connect Skype: Ogasawara | Takurou Ogasawara? 
+  Please lead to me: (Toan) Nguyen Hoang Tuan. 
+  Nguyen Quy Son: https://nadia.backlog.jp/file/DHE_BOATRACE/%E5%8B%95%E7%94%BB/final_66544.mp4
+  Takurou Ogasawara | Ogasawara: Thank you, I'll make sure. 
+  Takurou Ogasawara | Ogasawara:> Son-san, Team Hanoi 
+
+Image quality is no problem. 
+Now, it is OK if I have promoted the implementation of the server-side.
+========= 
+Start ~ 13s 
+28s ~ END 
+
+※ file size reduction by lowering the image quality in the second of the above with no synthetic 
+30MB⇒16MB (4 percent average I feel that it is possible to reduce) 
+========= 
+  Nguyen Hoang Tuan (Toan): Now, I'm promoting the No.41. This is done here if you can. 
+  Takurou Ogasawara | Ogasawara: Yes, thank you (bow) 
+  Takurou Ogasawara | Ogasawara:> Mr. Toan 
+Please also No.43. Only replacement of text. 
+Sorry entry is slow. 
+  Nguyen Hoang Tuan (Toan): Yes, it is OK. 
+  Nguyen Hoang Tuan (Toan): I'm sorry. 
+  Nguyen Hoang Tuan (Toan): 44th 
+  Nguyen Hoang Tuan and (Toan): but you know the meaning, 
+  The center of the face and the center of the upload image is turned to match the setting of now: Nguyen Hoang Tuan (Toan). 
+  Nguyen Hoang Tuan (Toan): So, it will be to the right. 
+  Is: I see Ogasawara | Takurou Ogasawara. 
+It is that "hole in the face" of the RED frame because relies on the right, Up Img also called, be to the right. 
+  Nguyen Hoang Tuan (Toan): That's right. 
+  The Takurou Ogasawara | Ogasawara: implementation Nanoha that had you care, you know. 
+However, it is not necessarily even that there is a "face" I want to synthesize the center of Up Img, or would you be able to get aligned with the simple center? 
+  I can once: (Toan) Nguyen Hoang Tuan. 
+  Nguyen Hoang Tuan (Toan): Well, I'll fix center aligned. 
+  Takurou Ogasawara | Ogasawara: Please set the simple center (XY coordinates) (bow) 
+  Nguyen Hoang Tuan (Toan): Yes. 
+  Kenta Momose: Ogasawara, I bad, it has been published in the Facebook account of the individual. 
+  Please be immediately deleted: Kenta Momose? 
+  Takurou Ogasawara | Ogasawara: I'm sorry, I've re-set now. 
+  It is the thing that you've done for confirmation reflects the public range setting: Ogasawara | Takurou Ogasawara. 
+By the way, because the business account that does not have a friend of Nadia other than, it is safe. 
+I will take care: Ogasawara | Takurou Ogasawara. 
+Kenta Momose: Oh, it is OK. 
+Whether the guy you are publishing: Kenta Momose. I'm relieved. 
+The Takurou Ogasawara | Ogasawara: is, but the sweetness of this kind of padded I'm an out 
+After that, I will carry out thorough as no. 
+  Nguyen Hoang Tuan (Toan): Mr. Ogasawara, 
+  Nguyen Hoang Tuan (Toan): How many times were also tested. 
+  I went well: (Toan) Nguyen Hoang Tuan. 
+  Takurou Ogasawara | Ogasawara: Yes, I would No.44? Or would No.39? 
+  Nguyen Hoang Tuan (Toan): No.40 
+  Nguyen Hoang Tuan (Toan): When there is a use ID that failed in the test method can be seen most immediately, it is nice, 
+  Yes: Ogasawara | Takurou Ogasawara. 
+Now, I will send from the Backlog, please wait about 5 minutes. 
+[8/5/14 7:37:26 PM] Nguyen Hoang Tuan (Toan): Yes. 
+[8/5/14 7:41:20 PM] Takurou Ogasawara | Ogasawara:> Mr. Toan 
+Backlog (Wiki) 
+http://goo.gl/V7jTpq 
+User will add: Ogasawara | Takurou Ogasawara! 
+Error of No.40 Did De this account: (Toan) Nguyen Hoang Tuan. 
+Please try to Reload: Ogasawara | Takurou Ogasawara. 
+Takurou Ogasawara | Ogasawara: Mr. Toan 
+Do you become what nadia account? 
+tuannq@nadia.bz 
+tuannv@nadia.bz 
+anhnt@nadia.bz 
+  Nguyen Hoang Tuan and (Toan): Is not Any. 
+  Nguyen Hoang Tuan (Toan): tuannh@nadia.bz 
+  Is OK: Ogasawara | Takurou Ogasawara. By other means 
+  Nguyen Hoang Tuan and (Toan): But I, ID Son's 
+  Nguyen Hoang Tuan (Toan): Since you have, 
+  It's okay now: Nguyen Hoang Tuan (Toan). 
+  Is OK: Ogasawara | Takurou Ogasawara! 
+  44,41,39 is ok: (Toan) Nguyen Hoang Tuan. 
+  I've tested on account of Ogasawara 40: Nguyen Hoang Tuan (Toan). 
+  I ask you for a check in the account of youtube: Nguyen Hoang Tuan (Toan). 
+  In: Ogasawara | Takurou Ogasawara 
+In reply waiting for No.40 [Youtube] client, please give priority to others. 
+[8/5/14 7:53:49 PM] Nguyen Hoang Tuan (Toan) sent a file to this group: 
+Screen Shot 2014-08-05 at 7.50.12 PM.png 
+[8/5/14 7:55:08 PM] Takurou Ogasawara | Ogasawara: Yes. 
+Posts will succeed Google account, if a valid account to login Youtube.
+[8/5/14 7:59:28 PM] Nguyen Hoang Tuan (Toan): I'm sorry. 
+[8/5/14 7:59:29 PM] Nguyen Hoang Tuan (Toan): Error Case 1 [Fb_IN / Ggl_IN (nadia) / Yt_OUT] 
+Mac / Chrome 
+Do you want to reproduce: How (Toan) Nguyen Hoang Tuan. . 
+(Toan) Nguyen Hoang Tuan: Once you log out of your youtube account, google account will also be logged out. 
+Takurou Ogasawara | Ogasawara: This is a Google Account @ nadia.bz 
+"I have not started the use of Youtube" 
+Is the state. 
+  But I exceptional: Ogasawara | Takurou Ogasawara 
+  Nguyen Hoang Tuan (Toan): I see. 
+  Nguyen Hoang Tuan (Toan): Error Case 2 [Fb_IN / Ggl_OUT / Yt_OUT] 
+Win8 / IE10 
+  Nguyen Hoang Tuan (Toan): What is this? 
+  Takurou Ogasawara | Ogasawara: These are a special state. 
+It requires the cooperation of other people to reproduce this state. 
+
+It just started to use the google apps for business the other day at @ nadia.bz 
+Although I think it is because it was "state that has not started Youtube use as a Google Account", Error has come out: Ogasawara | [8/5/14 8:06:15 PM] Takurou Ogasawara 
+
+The first place (token mismatch due to Ver.Up of Youtube API) cookie might be was the cause. 
+[8/5/14 8:07:04 PM] Takurou Ogasawara | Ogasawara: Anyway, there is also a part of the reply waiting for client No.40 [Youtube], verification of today is fine Stop. 
+  Nguyen Hoang Tuan (Toan): Yes, 
+  I'll be back soon also here: Nguyen Hoang Tuan (Toan). 
+  Takurou Ogasawara | Ogasawara: Yes, a reflection of No.41 is confirmed. 
+  Takurou Ogasawara | Ogasawara: No.44 is, too. 
+  Takurou Ogasawara | Ogasawara:> Team Hanoi 
+Cheers for good work is. Is Ogasawara. 
+SkypeMTG, I am a little late from 11:30. 
+  Is OK: Ta Duy Anh. 
+  Nguyen Quy Son: Nguyen Quy Son added thanhhai to this conversation 
+  Was ready: Ogasawara | Takurou Ogasawara. 
+You OK if connected to Anh's? 
+  Okay: Nguyen Quy Son. 
+  Nguyen Hoang Tuan (Toan): I'm sorry. Please lead to me. 
+  Is OK: Ogasawara | Takurou Ogasawara 
+  Takurou Ogasawara | Ogasawara: Son's 
+No.39 Done => I'll make sure. Thank you. 
+Compressed to about Video 30MB => 16MB: Ogasawara | [8/6/14 9:47:50 AM] Takurou Ogasawara 
+========= 
+Start ~ 13s 
+28s ~ END 
+
+※ file size reduction by lowering the image quality in the second of the above with no synthetic 
+30MB⇒16MB (4 percent average I feel that it is possible to reduce) 
+========= 
+[8/6/14 9:52:04 AM] Takurou Ogasawara | Ogasawara: No.40 
+Future, even if there is a Version UP of Youtube API, the User 
+I want to ensure there is no need to ask them to "Deleting a Cookie". 
+[8/6/14 10:01:46 AM] Takurou Ogasawara | Ogasawara: No.42 
+▼ Not Recommend Browser 
+InternetExplorer 6/7/8/9 
+
+▼ Not Recommend OS 
+Android 2.x or earlier 
+iOS 6 previous 
+[8/6/14 10:08:44 AM] Takurou Ogasawara | Ogasawara: ▽ Notice Text (Dialog Window) 
+View your environment in is not guaranteed to operate. Please enjoy the latest device "You can be BOATNYA!" App. 
+[8/6/14 10:18:12 AM] Takurou Ogasawara | Ogasawara: No.40 
+Up their own Youtube videos 
+https://www.youtube.com/my_videos?o=U 
+  Management TOP> of (hamburger MENU) My Channel> Video: Ogasawara | Takurou Ogasawara 
+  Up Youtube videos yourself: Ogasawara | [8/6/14 10:18:13 AM] Takurou Ogasawara: Nguyen Hoang Tuan (Toan) 
+https://www.youtube.com/my_videos?o=U 
+[8/6/14 10:19:25 AM] Takurou Ogasawara | Ogasawara: TOP> Management (hamburger MENU) My Channel> Videos 
+Well. 
+  Yes: Ogasawara | Takurou Ogasawara! 
+  Takurou Ogasawara | Ogasawara: MEMO of ※ SkypeMTG, I was rude 
+  Nguyen Hoang Tuan (Toan): No.40 Error Case 1 [Fb_IN / Ggl_IN (nadia) / Yt_OUT] 
+But is Mac / Chrome, 
+Nguyen Hoang Tuan I (Toan): I could fix. 
+Nguyen Hoang Tuan (Toan): Currently, the following message has gone out. 
+Youtube channel was not created. Make sure create new channel before processing. 
+Nguyen Hoang Tuan (Toan): again, or will be asked to confirm each case you get an error. 
+Please wait a little is OK, to confirm: Ogasawara | Takurou Ogasawara. 
+Takurou Ogasawara | Ogasawara: Mr. Toan 
+No.40 Error Case 1 [Fb_IN / Ggl_IN (nadia) / Yt_OUT] 
+Please be patient. 
+[8/6/14 11:35:34 AM] Nguyen Hoang Tuan (Toan): Yes. 
+[8/6/14 11:45:17 AM] Takurou Ogasawara | Ogasawara: in another incident, thank you to confirm the following as soon as possible 
+No.47, 48 
+
+If there is any questions, please let described in Skype calls! 
+  Nguyen Hoang Tuan and (Toan): but make sure, 
+  Nguyen Hoang Tuan (Toan): Please wait. 
+  Please tell us why you need the upper limit setting: (Toan) Nguyen Hoang Tuan. 
+It is difficult to understand the meaning, but,,,, 
+  Takurou Ogasawara | Ogasawara: Japanese, and I will ReWrite 
+  Is already No.47 Re Write: Ogasawara | Takurou Ogasawara. 
+  Nguyen Hoang Tuan (Toan): Yes. 
+  Takurou Ogasawara | Ogasawara:> Mr. Toan 
+Alone No.48, and I want answer as soon as possible. 
+Now, do you connect Skype calls? 
+[8/6/14 12:19:31 PM] Nguyen Hoang Tuan (Toan): Yes. 
+[8/6/14 12:19:37 PM] Takurou Ogasawara | Ogasawara:> Team Hanoi
+Someone, can I connect Skype Talk? 
+[8/6/14 12:19:38 PM] Nguyen Hoang Tuan (Toan): How many photos can I upload? 
+You can upload about 1000 photos per album. 
+  Or would lunch break: Ogasawara | Takurou Ogasawara 
+  Nguyen Hoang Tuan (Toan): Yes. 
+  It's okay now: Nguyen Hoang Tuan (Toan). 
+  Nguyen Hoang Tuan (Toan): towards the FB has specified as 1,000 upper limit. 
+  Thank you: Ogasawara | Takurou Ogasawara. 
+Now, I'll connect. 
+  Takurou Ogasawara | Ogasawara: "The upper limit of the support of Fb has become a 1000 sheets" 
+  Takurou Ogasawara | Ogasawara: https://developers.facebook.com/apps/871419956220400/app-details/ 
+  Takurou Ogasawara | Ogasawara: Promotional Images 
+Screenshots 
+[8/6/14 12:27:49 PM] Takurou Ogasawara | Ogasawara: ↓ 
+https://www.facebook.com/games/?fbs=100&app_id=871419956220400 
+[8/6/14 1:40:06 PM] Nguyen Hoang Tuan (Toan): Mr. Ogasawara, 
+No.40 Error Case 1 [Fb_IN / Ggl_IN (nadia) / Yt_OUT] 
+Please be patient. 
+Did you check? 
+[8/6/14 1:43:27 PM] Takurou Ogasawara | Ogasawara: I'm sorry, not yet. 
+(No.40 is Pending the client waiting.) 
+
+In order to make progress on something, do I need to check for here? 
+[8/6/14 1:46:39 PM] Nguyen Hoang Tuan (Toan): No.40 Error Case 1 [Fb_IN / Ggl_IN (nadia) / Yt_OUT] 
+It was fixed this case, but by that this case can be by any chance, other cases also becomes to be able to, 
+[8/6/14 1:53:54 PM] Nguyen Hoang Tuan I (Toan): I looked No.48. 
+When changing Promotional Images, the screenshots, you want to update, you will need to submit again. This is because the FB side to check it, to approve. 
+From it, those changes will be published: (Toan) [8/6/14 1:54:32 PM] Nguyen Hoang Tuan. 
+[8/6/14 1:54:50 PM] Nguyen Hoang Tuan (Toan) sent a file to this group: 
+Screen Shot 2014-08-06 at 1.27.56 PM.png 
+Thank you: Ogasawara | [8/6/14 1:55:46 PM] Takurou Ogasawara! 
+> You need to submit again 
+By doing this, access to App will I only. Subscribers Dev temporarily? 
+  Nguyen Hoang Tuan (Toan): Yes, it is. 
+  Please to resubmit also app details also: Nguyen Hoang Tuan (Toan). 
+  Takurou Ogasawara | Ogasawara:> Mr. Toan 
+Now I want to Submit for Review to update the app details. 
+[8/6/14 2:28:07 PM] Takurou Ogasawara | Ogasawara:'s a confirmation, but access to the App will be limited to only the Developer is, or would the entire App? 
+  Please wait a little: (Toan) Nguyen Hoang Tuan. 
+  : Yes, Ogasawara | Takurou Ogasawara 
+  Nguyen Hoang Tuan (Toan): No, it is different. It is not limited to only Developer. 
+  Nguyen Hoang Tuan (Toan): Now, I can access anyone. 
+  Did you make any other submit: (Toan) Nguyen Hoang Tuan. 
+[8/6/14 2:39:02 PM] Takurou Ogasawara | Ogasawara Answer: Thank you! If you, it is no problem at all. 
+(I mon is no impact to the System Update application for app details) 
+  Takurou Ogasawara | Ogasawara: Now, you can Submit if you update Screenshot one. 
+  I Submit: Ogasawara | Takurou Ogasawara. It has become a pending review. 
+  Nguyen Hoang Tuan (Toan): Yes, I was able to confirm the img update. 
+  Takurou Ogasawara | Ogasawara: No, the update of the img It is still. 
+It is approved tomorrow, I hope that it is updated to reflect the following page. 
+https://www.facebook.com/games/?fbs=100&app_id=871419956220400 
+I think as you go approval cycle until now, that's okay. 
+[8/6/14 3:09:42 PM] Nguyen Hoang Tuan (Toan): Yes. 
+46 is ok: (Toan) [8/6/14 5:48:03 PM] Nguyen Hoang Tuan. 
+[8/6/14 5:48:30 PM] Takurou Ogasawara | Ogasawara:> Mr. Toan 
+Yes! Has been restored. And miscellaneous confirmation. 
+Ms. Ann and>: [8/6/14 6:23:07 PM] Yamaguchi Chika 
+Now that we've added 41 Edition, or available, or can not, you answer please. 
+https://docs.google.com/spreadsheets/d/1IgJBM9P8M7DmTcqK_CJIgSUXhqa4vM0ITkPQe5Rdfik/edit#gid=326146045
+  Although sorry for being late,: Nguyen Hoang Tuan (Toan) 
+  Nguyen Hoang Tuan (Toan): Now, so and so went engineer, I can not be confirmed. 
+[8/6/14 7:55:00 PM] Takurou Ogasawara | Ogasawara: I understand. 
+Tomorrow, please confirm the content in the morning. Although we described in QA Sheet in hurry, 
+You had better fix task transferred to the sheet I guess a good idea? 
+  Nguyen Hoang Tuan (Toan): Well. 
+  Is OK: Ogasawara | Takurou Ogasawara. 
+  Takurou Ogasawara | Ogasawara: today, Thank you for completing the modification of multiple (bow) 
+  Nguyen Hoang Tuan (Toan): Yes, welcome here. Thank you. 
+  Nguyen Hoang Tuan (Toan): So, it was cheers for good work. 
+  Takurou Ogasawara | Ogasawara: Tomorrow is the last day of remediation. 
+Was cheers for good work. 
+[8/7/14 9:01:17 AM] Takurou Ogasawara | Ogasawara:> Team Hanoi 
+Good morning !! 
+  Nguyen Hoang Tuan (Toan): was FB approve failure. 
+  Nguyen Hoang Tuan (Toan): https://developers.facebook.com/apps/871419956220400/app-details/ 
+  Nguyen Hoang Tuan (Toan): The cause was that of Banners. 
+Prominently include your app's name on all banners. See more here. 
+[8/7/14 9:05:56 AM] Takurou Ogasawara | Ogasawara: These are but I think App Name is enters neatly, 
+[. Dev]: | [8/7/14 9:07:07 AM] Takurou Ogasawara Ogasawara Apps> Settings> Basic 
+Display Name 
+: BoatRaceServer 
+
+Is there a possibility that has been recognized as the App Name is this? 
+[8/7/14 9:07:31 AM] Takurou Ogasawara | Ogasawara: BoatRaceServer => You can be BOATNYA! 
+It was changed and saved. 
+[8/7/14 9:20:04 AM] Nguyen Hoang Tuan (Toan): https://www.facebook.com/games/?fbs=-1&app_id=871419956220400
+In order to change, you will need to submit again. 
+[8/7/14 9:25:29 AM] Takurou Ogasawara | Ogasawara:> Mr. Toan 
+I want advice. 
+At present, whether you will need to modify img of Banners? 
+
+The cause of Unapproved, if you improve just by updating the App Name, and then submit again soon. 
+[8/7/14 9:43:01 AM] Nguyen Hoang Tuan (Toan): Yes, it is. 
+After that, I'm sorry: (Toan) [8/7/14 10:09:59 AM] Nguyen Hoang Tuan. 
+On the screen facebook · youtube of post completion], established a link to the log out screen of each site "log out here" as: (Toan) [8/7/14 10:11:09 AM] Nguyen Hoang Tuan can you? 
+  You can click here,: (Toan) Nguyen Hoang Tuan 
+  Nguyen Hoang Tuan (Toan): Flow of each is different. 
+  Ms. Ann and>: Ogasawara | Takurou Ogasawara 
+Yes, Can you Skype Talk? 
+You may want to hear some from me. 
+
+(In order to Re Submission of App Details) 
+If you click on the button of like "here logout" to return to the Screen10 Post in the case of Youtube: (Toan) [8/7/14 10:15:18 AM] Nguyen Hoang Tuan 
+  Is: I see Ogasawara | Takurou Ogasawara. 
+  Nguyen Hoang Tuan (Toan): Yes. 
+  Nguyen Hoang Tuan (Toan): Well then, let's connect to skype a little.
+  Thank you: Ogasawara | Takurou Ogasawara. 
+  Takurou Ogasawara | Ogasawara: after being logged out Youtube => button to move to the 10 post Screen 
+  Takurou Ogasawara | Ogasawara: After you log out state in Facebook => button to move to the TOP screen 
+  Is it possible to add "log out has been completed," the screen: Ogasawara | Takurou Ogasawara? 
+ Takurou Ogasawara | 小笠原: Review Submission Form 
+ Takurou Ogasawara | 小笠原: https://developers.facebook.com/apps/871419956220400/review-status/ 
+ Takurou Ogasawara | 小笠原: Review Submission Form 
+ Takurou Ogasawara | 小笠原: Review Instructions 
+
+Please include detailed instructions to assist our team in expediting your app review. The instructions should cover a basic overview of what your app is and does and where to locate your Facebook Login integration within your app. 
