@@ -1,0 +1,123 @@
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: RESET ALL;
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.077 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: INSERT INTO "ci_sessions" ("session_id", "ip_address", "user_agent", "last_activity") VALUES ('1a440dde2fb0f9e0fa6a92f6b6807d5e', '118.70.171.28', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1389334157)
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.365 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT 
+	                                login_id ,     
+	                                login_pass    ,
+	                                partner_tickets.affiliater_id 
+	                            FROM 
+	                                partner_ticket_members 
+	                                    LEFT JOIN 
+	                                        partner_tickets ON 
+	                                            partner_ticket_members.partner_tickets_id = partner_tickets.id 
+	                            WHERE 
+	                                login_id    = 'NF105001'   AND 
+	                                login_pass  = 'FdmdrjZL' AND 
+	                                (end_date IS NULL OR TO_CHAR(end_date , 'yyyy-mm-dd hh24:mi:ss') >= '2014-01-17 13:09:17')
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.577 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT COUNT(*) AS cnt FROM members WHERE login_id = 'NF105001' AND login_pass = 'FdmdrjZL'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.122 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT 
+	                        members.* 
+	                    FROM 
+	                        members  WHERE  members.login_id = 'NF105001'
+	                    ORDER BY 
+	                        members.regist_date DESC
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.178 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT 
+	                            end_date
+	                        FROM 
+	                            partner_ticket_members 
+	                                LEFT JOIN 
+	                                    partner_tickets ON 
+	                                        partner_ticket_members.partner_tickets_id = partner_tickets.id 
+	                        WHERE 
+	                            login_id    = 'NF105001'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.140 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: UPDATE "ci_sessions" SET "last_activity" = 1389334157, "user_data" = '' WHERE "session_id" = '1a440dde2fb0f9e0fa6a92f6b6807d5e'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.663 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: UPDATE "ci_sessions" SET "last_activity" = 1389334157, "user_data" = 'a:1:{s:9:"member_id";s:1:"7";}' WHERE "session_id" = '1a440dde2fb0f9e0fa6a92f6b6807d5e'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.608 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: UPDATE "ci_sessions" SET "last_activity" = 1389334157, "user_data" = 'a:2:{s:9:"member_id";s:1:"7";s:8:"login_id";s:8:"NF105001";}' WHERE "session_id" = '1a440dde2fb0f9e0fa6a92f6b6807d5e'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.366 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT price FROM fax_price_master_dear_member WHERE member_id = 7
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.082 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: UPDATE "ci_sessions" SET "last_activity" = 1389334157, "user_data" = 'a:2:{s:9:"member_id";s:1:"7";s:8:"login_id";s:8:"NF105001";}' WHERE "session_id" = '1a440dde2fb0f9e0fa6a92f6b6807d5e'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.725 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT 
+	                                    *
+	                                FROM 
+	                                    agencies 
+	                                        LEFT JOIN partners ON 
+	                                            agencies.partner_id = partners.id 
+	                                WHERE 
+	                                    partners.affiliater_id ='1'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.200 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: RESET ALL;
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.113 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT *
+	FROM "ci_sessions"
+	WHERE "session_id" = '1a440dde2fb0f9e0fa6a92f6b6807d5e'
+	AND "user_agent" = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.224 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT 
+	                        * 
+	                    FROM 
+	                        ci_sessions  WHERE  ci_sessions.session_id = '1a440dde2fb0f9e0fa6a92f6b6807d5e' 
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.125 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: RESET ALL;
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.078 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT *
+	FROM "ci_sessions"
+	WHERE "session_id" = '1a440dde2fb0f9e0fa6a92f6b6807d5e'
+	AND "user_agent" = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.213 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT
+	                                    *
+	                                FROM
+	                                    ci_sessions
+	                                WHERE
+	                                    ci_sessions.session_id = 'bddde457581b91a9f2f147475a3dd2fc'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.113 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: UPDATE
+	                                    ci_sessions
+	                                        SET
+	                                            ip_address    = '118.70.171.28' ,
+	                                            user_agent    = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K' ,
+	                                            last_activity = '1389325356' ,
+	                                            user_data     = ''
+	                                        WHERE
+	                                            session_id  = '1a440dde2fb0f9e0fa6a92f6b6807d5e'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.631 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT *
+	FROM "members"
+	WHERE "id" = '7'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.140 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT *
+	FROM "news"
+	WHERE "member_main" = 't'
+	AND "show_flg" = 't'
+	ORDER BY "regist_date" desc
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.124 ミリ秒
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  文: SELECT *
+	FROM "lists"
+	WHERE "member_id" = '7'
+	AND "list_type" = 'FAX'
+	AND "test_flg" = 't'
+2014-01-10 13:09:17 ICT netreal-netreal_test LOG:  期間: 0.112 ミリ秒
+2014-01-10 13:09:27 ICT netreal-netreal_test LOG:  文: RESET ALL;
+2014-01-10 13:09:27 ICT netreal-netreal_test LOG:  期間: 0.080 ミリ秒
+2014-01-10 13:09:27 ICT netreal-netreal_test LOG:  文: SELECT *
+	FROM "ci_sessions"
+	WHERE "session_id" = '1a440dde2fb0f9e0fa6a92f6b6807d5e'
+	AND "user_agent" = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K'
+2014-01-10 13:09:27 ICT netreal-netreal_test LOG:  期間: 0.203 ミリ秒
+2014-01-10 13:09:27 ICT netreal-netreal_test LOG:  文: RESET ALL;
+2014-01-10 13:09:27 ICT netreal-netreal_test LOG:  期間: 0.077 ミリ秒
+2014-01-10 13:09:27 ICT netreal-netreal_test LOG:  文: SELECT *
+	FROM "ci_sessions"
+	WHERE "session_id" = '1a440dde2fb0f9e0fa6a92f6b6807d5e'
+	AND "user_agent" = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K'
+2014-01-10 13:09:27 ICT netreal-netreal_test LOG:  期間: 0.188 ミリ秒
+
