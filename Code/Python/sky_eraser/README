@@ -1,0 +1,102 @@
+Sky Eraser demo 0.4.2
+By Prerisoft - http://prerisoft.cleverpun.com/
+
+---
+
+Well, here it is! From January to the very arse-end of December 2013, I have
+worked on this project, and I feel comfortable enough with its progress to
+release a demonstration of it, even with access to its horribly-written,
+unstandard and unoptimised source code for folks over on the UNIX end of
+things! Please forgive my many faults with this, and where you're interested in
+pointing out issues with the code, I would appreciate feedback.
+
+Yes, this is what I call "comfortable enough". I have low standards for myself.
+
+This is, again, a demo of the planned full game - it is largely feature
+complete, but it's limited in only having three enemy types, no bomb pickups,
+and no replay functionality. However, minor adjustments to existing gameplay
+material may still be made based on feedback, so this game is certainly not
+final!
+
+For users installing from source, the game depends on the following to run:
+
+* Python 2.7 ( http://python.org/ )
+* PyGame ( http://pygame.org/ )
+* PyYAML ( http://pyyaml.org/ )
+* Appdirs ( http://pypi.python.org/pypi/appdirs/ )
+
+---
+
+CONTROLS (default):
+
+Direction keys or Joystick X+Y/Hat Switch: Move
+Z or Joystick Button 1: Fire, OK
+X or Joystick Button 2: Bomb, cancel
+Tap fire, C or Joystick Button 3: Autofire
+ESC or Joystick Button 4: Pause
+
+Controls can be changed in the Input Assignments Menu, in Settings.
+
+---
+
+CONFIGURATION:
+
+Along with the settings menu and input assignments, there are also a small
+handful of configurable settings accessible only via the config file in the
+game's application data, which is stored dependent on your OS (subject to
+change).
+
+* For Windows 2000/XP, it's "<user>/Application Data/Prerisoft/sky_eraser".
+* For Windows Vista, 7 and 8 it's "<user>/AppData/Local/Prerisoft/sky_eraser".
+* For most UNIX or UNIX-derived systems, it's "~/.config/sky_eraser".
+* For Mac OS X, it's "/Users/<user>/Library/Application Support/sky_eraser".
+
+This may change in the future - the library I'm using to call the directories
+in question doesn't really seem to work all that well for me.
+
+The config file-exclusive settings are as follows.
+
+For video:
+* show_fps: Displays the FPS in the corner of the screen, updating every
+  second with the average over that period of time.
+
+For audio:
+* audio_buffer: Size of the buffer. A larger buffer allows less of a chance of
+  interference, but comes at the cost of latency and sounds mixing together.
+* audio_frequency: Range of the audio spectrum in hertz. I do not know just
+  what tolerances this has, but anything past 44100hz seems rather pointless.
+
+For controls:
+* joy_deadzone: The point that a joystick or gamepad's analogue X/Y axes have
+  to cross in order to register their state change.
+
+For gameplay:
+WARNING: if these are not on default values, high scores cannot be recorded!
+* starting_lives: How many extra lives you start with, from 0 to 5. Default 2.
+* starting_power: How much power your ship spawns with, from 0 to 2. This
+  includes when you respawn after dying. Default 0.
+* starting_bombs: How many bombs your ship spawns with, from 0 to 5. This
+  includes when you respawn after dying. Default 3.
+* wave_seed: Extra-hidden value. Takes any signed integer - this will be used
+  for the pseudo-RNG's seed when initialising the game. Remove to use default.
+
+---
+
+CHANGELOG:
+
+0.4.2 (released 2013-12-31)
+* First public demo release.
+
+---
+
+KNOWN ISSUES:
+
+None at this time.
+
+---
+
+CREDITS:
+
+Programming, graphics: Temia Eszteri
+Sound: Freesfx.co.uk, the Matchmakers, Pocketsound, Freesound, et al
+Music: "Energy" by Cyber-Rainforce - http://www.cyber-rainforce.net
