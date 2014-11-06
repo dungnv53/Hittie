@@ -42,10 +42,8 @@ def e_attack_ai(i):
         l = i
 
     # i1 wtf
-    # Có vẻ như ý tưởng AI ở đây cũng đơn giản như khi tìm cách để enermy tiến gần hero hoặc ít ra là snow(fire)
-    # Khi hẻro di chuyển thì enermy đi theo, ở đay có thể là cả ênrmy lẫn snow bay đến hero.
-    # j ở đay có thể là hướng hay step enermy di chuyển theo hero.
-    # Cơ bản là vậy nhưng để enermy đi lại smooth thì cần xem xét thêm.
+    # It seem simple like basic idea of ai when enermy move toward hero by distance value
+    # when hero move, based on distance to enermy, --> e move n fire follow him
 
     # Viec truyen i 102 101 va ham attack_ai ko cover het th khi runtime vi con nhieu argument khac 
     # cung thay doi khi enermy di chuyen, nem bong ...
