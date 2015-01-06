@@ -1,3 +1,7 @@
+// TODO tim moi lien he giua cac doan ma lam thay doi cac thong so 
+// hero enermy ... --> dan toi anh huong toi ham AI
+// Ko thi doan xem khi hero x,y thay doi , enemy x, y thay doi thi ham nay se tra ve data the nao
+
 public void e_attack_ai(int i) {
         int j = 0;
         int k = 0;

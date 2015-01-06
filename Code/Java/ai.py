@@ -29,6 +29,8 @@ e_move_dir = array('i',[1,2,3,4])
 #
 dis_count =  array('i',[1,2,3,4])
 
+e_wp = array('i',[0,1,2,3,4,5, 6, 7, 8]); # e_wp khoi tao la = new int(e_num); tuc so enemy
+
 def e_attack_ai(i):
     j = 0
     k = 0
@@ -197,5 +199,12 @@ def get_random1(i):
 print 'j  k  l  i1 : '
 # if(e_time == e_fire_time[i] && get_random(3) != 1 && e_ppang_item[i] != 2)
 # e_attack_ai(i)
-e_attack_ai(101)
-e_attack_ai(102)
+for x in range(101, 103):  # game chi co 2 lan goi e_attack_ai(102|101)
+    e_attack_ai(x)
+
+
+# if(e_move_dir[i] == 0 && e_hp[i] > 0 && e_ppang_item[i] != 2)
+#                                e_move_ai(i);
+# Doan nay cho thay co the chi khi enemy ko dinh dan effect, hoac nguoc lai no moi move_ai
+# e_ppang_item = 2 ro la special item --> bi dinh effect moi move_ai
+
