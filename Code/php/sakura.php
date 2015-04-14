@@ -20,7 +20,7 @@
 	$image['type'] = "hira_vowel/";
 	$image['sys_font'] = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf';
 
-	generate_text_img($vowel1, $image);
+	generate_text_img($vowel2, $image);
 	chmod_there();
 
 	function generate_text_img($vowel, $img) {
@@ -92,7 +92,43 @@
 
 				break;
 			case 'kya':
-				return [];
+				return [
+				'pya' => 'ぴゃ',
+				'bya' => 'びゃ',
+				'jya' => 'じゃ',
+				'gya' => 'ぎゃ',
+				'rya' => 'りゃ',
+				'mya' => 'みゃ',
+				'hya' => 'ひゃ',
+				'nya' => 'にゃ',
+				'cya' => 'ちゃ',
+				'shya' => 'しゃ',
+				'kya' => 'きゃ',
+
+				'pyu' => 'ぴゅ',
+				'byu' => 'びゅ',
+				'jyu' => 'じゅ',
+				'gyu' => 'ぎゅ',
+				'ryu' => 'りゅ',
+				'myu' => 'みゅ',
+				'hyu' => 'ひゅ',
+				'nyu' => 'にゅ',
+				'cyu' => 'ちゅ',
+				'shyu' => 'しゅ',
+				'kyu' => 'きゅ',
+
+				'pyo' => 'ぴょ',
+				'byo' => 'びょ',
+				'jyo' => 'じょ',
+				'gyo' => 'ぎょ',
+				'ryo' => 'りょ',
+				'myo' => 'みょ',
+				'hyo' => 'ひょ',
+				'nyo' => 'にょ',
+				'cyo' => 'ちょ',
+				'shyo' => 'しょ',
+				'kyo' => 'きょ',
+				];
 				break;
 			default:
 				return [];
