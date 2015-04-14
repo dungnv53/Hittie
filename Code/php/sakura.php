@@ -15,11 +15,12 @@
 	$image['pointsize'] = 36;
 	$image['word_font'] = '';
 	$image['annotate_font'] = '';
+	$image['anno_font_size'] = '18';
 	$image['pos'] = 'Center';
 	$image['type'] = "hira_vowel/";
 	$image['sys_font'] = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf';
 
-	generate_text_img($vowel2, $image);
+	generate_text_img($vowel1, $image);
 	chmod_there();
 
 	function generate_text_img($vowel, $img) {
@@ -32,15 +33,26 @@
 
 	function create_caption_img($roman, $japan, $img) {
 		exec(
-		// echo 
-		"convert -font ". $img['sys_font']. " -background grey -size ". $img['width']. "x".$img['height']. " -fill \"". $img['text_color'] . "\"  -pointsize ". $img['pointsize']. " -gravity ". $img['pos']. " caption:". $japan. " ". $img['type']. $roman. ".png"
+		"convert -font ". $img['sys_font']. " -background \"#d9d9d9\" -size ". $img['width']. "x".$img['height']. " -fill \"". $img['text_color'] . "\"  -pointsize ". $img['pointsize']. " -gravity ". $img['pos']. " caption:". $japan. " ". $img['type']. $roman. ".png"
 		);
+
+		if(file_exists($img['type']. $roman. ".png")) {
+			annotate_img($roman, $img);
+		}
 		echo '<br/>done '. $roman. "<br/>";
 		// echo "<br/>";
 	}
 
 	function chmod_there() {
 		exec('chmod -R 777 .');
+	}
+
+	function annotate_img($roman, $img) {
+		// echo
+		exec(
+		"convert ". $img['type'].$roman.".png". " -pointsize 16 -fill \"#ec9759\" ". $img['anno_font_size']. " -gravity South ". " -annotate +0+0 ". $roman. " ". $img['type']. $roman. ".png"
+		);
+		echo "<br/>";
 	}
 
 	function loadVowel($type) {
