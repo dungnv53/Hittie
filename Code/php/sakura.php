@@ -7,21 +7,22 @@
 	$vowel2 = loadVowel('kya');
 
 	$bg_color = '';
-	$image = array();
-	$image['width'] = 60;
-	$image['height'] = 60;
-	$image['name'] = '';
-	$image['text_color'] = '#aabb00';
-	$image['pointsize'] = 36;
-	$image['word_font'] = '';
-	$image['annotate_font'] = '';
-	$image['anno_font_size'] = '18';
-	$image['pos'] = 'Center';
-	$image['type'] = "hira_vowel/";
-	$image['sys_font'] = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf';
+	$image = array();     // Array store output image params.
+	$image['width'] = 60;  // output image width
+	$image['height'] = 60; // ouput image height
+	$image['name'] = '';   // output image name, (may be use key of array instead).
+	$image['text_color'] = '#aabb00';  // caption text color
+	$image['pointsize'] = 36;        // size of point
+	$image['word_font'] = '';        // font of word (or char, vowel)
+	$image['annotate_font'] = '';     // annotation text (smaller than caption text)
+	$image['anno_font_size'] = '18';  // annotation text size
+	$image['pos'] = 'Center';		  // Caption text align (Default is center)
+	$image['type'] = "hira_vowel/";   // type for seperate many image text, eg. hira for japanese hiragana...
+	$image['sys_font'] = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf'; // My system font
+	// if u do not have this font u can install it over Region&Language (Ubuntu)
 
-	generate_text_img($vowel2, $image);
-	chmod_there();
+	generate_text_img($vowel2, $image);  // Create list of text image
+	chmod_there(); // add permission (may not use)
 
 	function generate_text_img($vowel, $img) {
 		foreach($vowel as $roman => $japan) {
@@ -32,6 +33,7 @@
 	}
 
 	function create_caption_img($roman, $japan, $img) {
+		// roman is KEY of array eg. 'pu' => 'ぷ'
 		exec(
 		"convert -font ". $img['sys_font']. " -background \"#d9d9d9\" -size ". $img['width']. "x".$img['height']. " -fill \"". $img['text_color'] . "\"  -pointsize ". $img['pointsize']. " -gravity ". $img['pos']. " caption:". $japan. " ". $img['type']. $roman. ".png"
 		);
@@ -47,6 +49,9 @@
 		exec('chmod -R 777 .');
 	}
 
+	/**
+	* Add annotate for text image.
+	*/
 	function annotate_img($roman, $img) {
 		// echo
 		exec(
@@ -55,6 +60,9 @@
 		echo "<br/>";
 	}
 
+	/*
+	* Vowel
+	*/
 	function loadVowel($type) {
 		switch($type) {
 			case 'ga':
