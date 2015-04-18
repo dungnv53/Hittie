@@ -1,0 +1,77 @@
+
+// green
+convert hira_wairudo_grey2.png -font /usr/share/fonts/truetype/fonts-japanese-gothic.ttf -fill "aabb00"  -pointsize 24 -gravity South -annotate +0-24 'Wairudosaido no tomodachi ni' hira_wairudo_grey2.png
+
+// orange
+convert hira_wairudo_grey2.png -font /usr/share/fonts/truetype/fonts-japanese-gothic.ttf -fill orange  -pointsize 24 -gravity South -annotate +0+3 'Wairudosaido no tomodachi ni' hira_wairudo_grey2.png
+
+// caption
+convert -font /usr/share/fonts/truetype/fonts-japanese-gothic.ttf -background grey -size 420x100 -fill "#aabb00"  -pointsize 36 -gravity North caption:ワイルドサイドの友達に hira_wairudo_grey2.png
+
+pa
+ba
+da
+za
+ga
+pi
+bi
+ji
+jzi
+gi
+pu
+bu
+ju
+ju
+gu
+pe
+be
+de
+ze
+ge
+po
+bo
+do
+zo
+go
+
+
+pya
+bya
+jya
+gya
+rya
+mya
+hya
+nya
+cya
+shya
+kya
+pyu
+byu
+jyu
+gyu
+ryu
+myu
+hyu
+nyu
+cyu
+shyu
+kyu
+pyo
+byo
+jyo
+gyo
+ryo
+myo
+hyo
+nyo
+cyo
+shyo
+kyo
+
+// Game title in Katakana
+
+'Katakana' => 'カタカナ',
+'Konami' => 'コナミ',
+'Atari' => 'アタリ',
+'Castlevania' => 'キャッスルヴァニア',
