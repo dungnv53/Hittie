@@ -1,0 +1,1603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="ja" datatype="plaintext" original="messages" date="2011-03-18T18:18:05Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Login</source>
+        <target>ログイン</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Log out</source>
+        <target>ログアウト</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Username</source>
+        <target>ユーザ名</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Password</source>
+        <target>パスワード</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Main</source>
+        <target>メイン</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Product</source>
+        <target>物品管理</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Warehouse</source>
+        <target>在庫管理</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Member</source>
+        <target>会員管理</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Settings</source>
+        <target>基本設定</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Enter username and password.</source>
+        <target>
+          ユーザ名とパスワードを入力してください。
+        </target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>The username and password incorrect.</source>
+        <target>
+          ユーザ名とパスワードは正しくありません。
+        </target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Please input password with 4 letters or more.</source>
+        <target>
+          パスワードを４文字以上入力してください。
+        </target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Maker name</source>
+        <target>メーカ名</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Maker list</source>
+        <target>メーカ一覧</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Maker code</source>
+        <target>メーカコード</target>
+      </trans-unit> 
+      <trans-unit id="17">
+        <source>Tel</source>
+        <target>電話番号</target>
+      </trans-unit>  
+      <trans-unit id="18">
+      <source>Zipcode</source>
+      <target>郵便番号</target>
+      </trans-unit>
+      <trans-unit id="19">
+      <source>Address</source>
+      <target>住所</target>
+      </trans-unit>
+      <trans-unit id="20">
+      <source>Edit maker</source>
+      <target>メーカ編集</target>
+      </trans-unit>
+      <trans-unit id="21">
+      <source>Maker details</source>
+      <target>メーカ詳細</target>
+      </trans-unit>
+      <trans-unit id="22">
+      <source>Create new</source>
+      <target>新規登録</target>
+      </trans-unit>
+      <trans-unit id="23">
+      <source>Save</source>
+      <target>登録</target>
+      </trans-unit>
+      <trans-unit id="24">
+      <source>Edit</source>
+      <target>編集</target>
+      </trans-unit>
+      <trans-unit id="24">
+      <source>Delete</source>
+      <target>削除</target>
+      </trans-unit>
+      <trans-unit id="25">
+      <source>Back</source>
+      <target>戻る</target>
+      </trans-unit>
+      <trans-unit id="26">
+      <source>Created date</source>
+      <target>登録日</target>
+      </trans-unit>
+      <trans-unit id="27">
+      <source>Updated date</source>
+      <target>更新日</target>
+      </trans-unit>
+      <trans-unit id="28">
+      <source>Pref</source>
+      <target>都道府県</target>
+      </trans-unit>
+      <trans-unit id="29">
+      <source>Ward</source>
+      <target>市区町村</target>
+      </trans-unit>
+      <trans-unit id="30">
+      <source>Addr1</source>
+      <target>市区町村以下</target>
+      </trans-unit>
+      <trans-unit id="30">
+      <source>Addr2</source>
+      <target>住所の詳細</target>
+      </trans-unit>
+      <trans-unit id="31">
+      <source>Cancel</source>
+      <target>キャンセル</target>
+      </trans-unit>
+      <trans-unit id="32">
+      <source>Color list</source>
+      <target>色一覧</target>
+      </trans-unit>
+      <trans-unit id="33">
+      <source>Rgb</source>
+      <target>Rgbコード</target>
+      </trans-unit>
+      <trans-unit id="34">
+      <source>Color</source>
+      <target>色</target>
+      </trans-unit>
+      <trans-unit id="35">
+      <source>Color details</source>
+      <target>色詳細</target>
+      </trans-unit>
+      <trans-unit id="36">
+      <source>Color name</source>
+      <target>色</target>
+      </trans-unit> 
+      <trans-unit id="37">
+      <source>New maker</source>
+      <target>メーカの新規登録</target>
+      </trans-unit>
+      <trans-unit id="38">
+      <source>New color</source>
+      <target>色の新規登録</target>
+      </trans-unit>
+      <trans-unit id="39">
+      <source>Family list</source>
+      <target>続柄一覧</target>
+      </trans-unit>
+      <trans-unit id="40">
+      <source>Family name</source>
+      <target>続柄</target>
+      </trans-unit>
+      <trans-unit id="41">
+      <source>New family</source>
+      <target>続柄の新規登録</target>
+      </trans-unit>
+      <trans-unit id="42">
+      <source>Edit family</source>
+      <target>続柄の編集</target>
+      </trans-unit>
+      <trans-unit id="43">
+      <source>Family details</source>
+      <target>続柄詳細</target>
+      </trans-unit>
+      <trans-unit id="44">
+      <source>New knowing</source>
+      <target>きっかけの新規登録</target>
+      </trans-unit>
+      <trans-unit id="45">
+      <source>Edit knowing</source>
+      <target>きっかきの編集</target>
+      </trans-unit>
+      <trans-unit id="46">
+      <source>Knowing list</source>
+      <target>きっかけ一覧</target>
+      </trans-unit>
+      <trans-unit id="47">
+      <source>Knowing</source>
+      <target>きっかけ</target>
+      </trans-unit>
+      <trans-unit id="48">
+      <source>Knowing details</source>
+      <target>きっかけ詳細</target>
+      </trans-unit>
+      <trans-unit id="49">
+      <source>Rental list</source>
+      <target>レンタル一覧</target>
+      </trans-unit>
+      <trans-unit id="50">
+      <source>Rental name</source>
+      <target>レンタル名</target>
+      </trans-unit>
+      <trans-unit id="51">
+      <source>Rental</source>
+      <target>レンタル</target>
+      </trans-unit>
+      <trans-unit id="52">
+      <source>Fee</source>
+      <target>料金</target>
+      </trans-unit>
+      <trans-unit id="53">
+      <source>Rental description</source>
+      <target>レンタルの説明</target>
+      </trans-unit>
+      <trans-unit id="54">
+      <source>Description</source>
+      <target>説明</target>
+      </trans-unit>
+      <trans-unit id="55">
+      <source>Rental details</source>
+      <target>レンタル詳細</target>
+      </trans-unit>
+      <trans-unit id="56">
+      <source>New rental</source>
+      <target>レンタルの新規登録</target>
+      </trans-unit>
+      <trans-unit id="57">
+      <source>Service list</source>
+      <target>サービス一覧</target>
+      </trans-unit>
+      <trans-unit id="58">
+      <source>Service name</source>
+      <target>サービス名</target>
+      </trans-unit>
+      <trans-unit id="59">
+      <source>Service description</source>
+      <target>サービスの説明</target>
+      </trans-unit>
+      <trans-unit id="60">
+      <source>Edit service</source>
+      <target>サービスの説明</target>
+      </trans-unit>
+      <trans-unit id="61">
+      <source>Edit service</source>
+      <target>サービスの編集</target>
+      </trans-unit>
+      <trans-unit id="62">
+      <source>New service</source>
+      <target>サービスの新規登録</target>
+      </trans-unit>
+      <trans-unit id="63">
+      <source>Service details</source>
+      <target>サービスの詳細</target>
+      </trans-unit>
+      <trans-unit id="64">
+      <source>Size list</source>
+      <target>サイズ一覧</target>
+      </trans-unit>
+      <trans-unit id="65">
+      <source>Size name</source>
+      <target>サイズ</target>
+      </trans-unit>
+      <trans-unit id="66">
+      <source>Size description</source>
+      <target>サイズの説明</target>
+      </trans-unit>
+      <trans-unit id="67">
+      <source>New size</source>
+      <target>サイズの新規登録</target>
+      </trans-unit>
+      <trans-unit id="68">
+      <source>Edit size</source>
+      <target>サイズの編集</target>
+      </trans-unit>
+      <trans-unit id="69">
+      <source>Size details</source>
+      <target>サイズの詳細</target>
+      </trans-unit>
+      <trans-unit id="70">
+      <source>Product list</source>
+      <target>物品一覧</target>
+      </trans-unit>
+      <trans-unit id="71">
+      <source>Product name</source>
+      <target>物品名</target>
+      </trans-unit>
+      <trans-unit id="72">
+      <source>Product code</source>
+        <target>物品コード</target>
+      </trans-unit>
+      <trans-unit id="73">
+        <source>Member price</source>
+        <target>会員価格</target>
+      </trans-unit>
+      <trans-unit id="74">
+        <source>Maker</source>
+        <target>メーカ</target>
+      </trans-unit>
+      <trans-unit id="75">
+        <source>Supplier</source>
+        <target>仕入れ先</target>
+      </trans-unit>
+      <trans-unit id="76">
+        <source>Size</source>
+        <target>サイズ</target>
+      </trans-unit>
+      <trans-unit id="77">
+        <source>New product</source>
+        <target>物品の新規登録</target>
+      </trans-unit>
+      <trans-unit id="78">
+        <source>Product details</source>
+        <target>物品の詳細</target>
+      </trans-unit>
+      <trans-unit id="79">
+        <source>Edit product</source>
+        <target>物品の編集</target>
+      </trans-unit>
+      <trans-unit id="80">
+        <source>Notes</source>
+        <target>備考</target>
+      </trans-unit>
+      <trans-unit id="81">
+        <source>Shop code</source>
+        <target>店舗コード</target>
+      </trans-unit>
+      <trans-unit id="82">
+        <source>Shop name</source>
+        <target>店舗名</target>
+      </trans-unit>
+      <trans-unit id="83">
+        <source>Last login</source>
+        <target>最後にログイン</target>
+      </trans-unit>
+      <trans-unit id="84">
+        <source>Reset password</source>
+        <target>パスワードの変更</target>
+      </trans-unit>
+      <trans-unit id="85">
+        <source>Current password</source>
+        <target>現在のパスワード</target>
+      </trans-unit>
+      <trans-unit id="86">
+        <source>New password</source>
+        <target>新しいパスワード</target>
+      </trans-unit>
+      <trans-unit id="87">
+        <source>Confirm password</source>
+        <target>確認のパスワード</target>
+      </trans-unit>
+      <trans-unit id="88">
+        <source>Supplier name</source>
+        <target>仕入れ先</target>
+      </trans-unit>
+      <trans-unit id="89">
+        <source>Supplier code</source>
+        <target>仕入れ先コード</target>
+      </trans-unit>
+      <trans-unit id="90">
+        <source>Supplier list</source>
+        <target>仕入れ先一覧</target>
+      </trans-unit>
+      <trans-unit id="91">
+        <source>Supplier details</source>
+        <target>仕入れ先の詳細</target>
+      </trans-unit>
+      <trans-unit id="92">
+        <source>New supplier</source>
+        <target>仕入れ先の新規登録</target>
+      </trans-unit>
+      <trans-unit id="93">
+        <source>Edit supplier</source>
+        <target>仕入れ先の編集</target>
+      </trans-unit>
+      <trans-unit id="94">
+        <source>Customer type list</source>
+        <target>顧客種別一覧</target>
+      </trans-unit>
+      <trans-unit id="95">
+        <source>Customer type</source>
+        <target>種別</target>
+      </trans-unit>
+      <trans-unit id="96">
+        <source>Customer description</source>
+        <target>説明</target>
+      </trans-unit>
+      <trans-unit id="97">
+        <source>New customer type</source>
+        <target>種別の新規登録</target>
+      </trans-unit>
+      <trans-unit id="98">
+        <source>Edit customer type</source>
+        <target>種別の編集</target>
+      </trans-unit>
+      <trans-unit id="99">
+        <source>Customer type details</source>
+        <target>種別の詳細</target>
+      </trans-unit>
+      <trans-unit id="100">
+        <source>Service</source>
+        <target>サービス</target>
+      </trans-unit> 
+      <trans-unit id="101">
+        <source>New member</source>
+        <target>会員の新規登録</target>
+      </trans-unit>
+      <trans-unit id="102">
+        <source>Member list</source>
+        <target>会員一覧</target>
+      </trans-unit>
+      <trans-unit id="103">
+        <source>Edit member</source>
+        <target>会員の編集</target>
+      </trans-unit>
+      <trans-unit id="104">
+        <source>Member code</source>
+        <target>会員コード</target>
+      </trans-unit>
+      <trans-unit id="105">
+        <source>Member name</source>
+        <target>会員名</target>
+      </trans-unit>
+      <trans-unit id="106">
+        <source>Kana name</source>
+        <target>フリガナ</target>
+      </trans-unit>
+      <trans-unit id="107">
+        <source>Sex</source>
+        <target>性別</target>
+      </trans-unit>
+      <trans-unit id="113">
+        <source>Birth</source>
+        <target>生年月日</target>
+      </trans-unit>
+      <trans-unit id="108">
+        <source>Urgency tel</source>
+        <target>緊急連絡</target>
+      </trans-unit>
+      <trans-unit id="109">
+        <source>Family</source>
+        <target>続柄</target>
+      </trans-unit>
+      <trans-unit id="110">
+        <source>Blood type</source>
+        <target>血液型</target>
+      </trans-unit>  
+      <trans-unit id="111">
+        <source>Foot size</source>
+        <target>足サイズ</target>
+      </trans-unit>      
+      <trans-unit id="112">
+        <source>Age</source>
+        <target>年齢</target>
+      </trans-unit>
+      <trans-unit id="114">
+        <source>Registed shop</source>
+        <target>登録店舗</target>
+      </trans-unit>      
+      <trans-unit id="115">
+        <source>Member details</source>
+        <target>会員詳細</target>
+      </trans-unit>
+      <trans-unit id="116">
+        <source>Climbing year</source>
+        <target>クライミング歴</target>
+      </trans-unit>
+      <trans-unit id="117">
+        <source>New product</source>
+        <target>物品の新規登録</target>
+      </trans-unit>
+      <trans-unit id="118">
+        <source>Male</source>
+        <target>男性</target>
+      </trans-unit> 
+      <trans-unit id="119">
+        <source>Female</source>
+        <target>女性</target>
+      </trans-unit>
+      <trans-unit id="120">
+        <source>A type</source>
+        <target>A型</target>
+      </trans-unit>
+      <trans-unit id="121">
+        <source>B type</source>
+        <target>B型</target>
+      </trans-unit>
+      <trans-unit id="122">
+        <source>AB type</source>
+        <target>AB型</target>
+      </trans-unit>
+      <trans-unit id="123">
+        <source>O type</source>
+        <target>O型</target>
+      </trans-unit>      
+      <trans-unit id="123">
+        <source>不明 type</source>
+        <target>不明 型</target>
+      </trans-unit>      
+      <trans-unit id="118">
+        <source>Come to play</source>
+        <target>入場</target>
+      </trans-unit>      
+      <trans-unit id="119">
+        <source>Member type</source>
+        <target>種別</target>
+      </trans-unit>      
+      <trans-unit id="120">
+        <source>Member status</source>
+        <target>ステータス</target>
+      </trans-unit>  
+      <trans-unit id="121">
+        <source>Page</source>
+        <target>ページ</target>
+      </trans-unit>
+      <trans-unit id="122">
+        <source>First</source>
+        <target>最初</target>
+      </trans-unit>
+      <trans-unit id="123">
+        <source>Next</source>
+        <target>次へ</target>
+      </trans-unit>
+      <trans-unit id="124">
+        <source>Prev</source>
+        <target>前へ</target>
+      </trans-unit>
+      <trans-unit id="125">
+        <source>Last</source>
+        <target>最後</target>
+      </trans-unit>
+      <trans-unit id="126">
+        <source>Name</source>
+        <target>名前</target>
+      </trans-unit>
+      <trans-unit id="127">
+        <source>Edit Mst family</source>
+        <target>続柄の編集</target>
+      </trans-unit>
+      <trans-unit id="128">
+        <source>Search</source>
+        <target>検索</target>
+      </trans-unit>
+      <trans-unit id="129">
+        <source>Member search</source>
+        <target>会員検索</target>
+      </trans-unit>
+      <trans-unit id="130">
+        <source>In stock</source>
+        <target>入荷</target>
+      </trans-unit>
+      <trans-unit id="131">
+        <source>Out stock</source>
+        <target>出荷</target>
+      </trans-unit>
+      <trans-unit id="132">
+        <source>Production</source>
+        <target>物品</target>
+      </trans-unit>
+      <trans-unit id="133">
+        <source>Stock number</source>
+        <target>在庫数</target>
+      </trans-unit>
+      <trans-unit id="134">
+        <source>Available number</source>
+        <target>出荷可能数</target>
+      </trans-unit>
+      <trans-unit id="135">
+        <source>Stock list</source>
+        <target>在庫一覧</target>
+      </trans-unit> 
+      <trans-unit id="136">
+        <source>Online sale</source>
+        <target>取置</target>
+      </trans-unit>
+      <trans-unit id="137">
+        <source>Edit stock</source>
+        <target>在庫の編集</target>
+      </trans-unit>
+      <trans-unit id="138">
+        <source>Stock details</source>
+        <target>在庫の詳細</target>
+      </trans-unit>
+      <trans-unit id="139">
+        <source>Stock alert</source>
+        <target>品切れアラート</target>
+      </trans-unit>
+      <trans-unit id="140">
+        <source>Alert list</source>
+        <target>品切れアラート一覧</target>
+      </trans-unit>
+      <trans-unit id="141">
+        <source>Setting alert</source>
+        <target>アラート値設定</target>
+      </trans-unit>
+      <trans-unit id="142">
+        <source>Edit alert</source>
+        <target>アラート値の変更</target>
+      </trans-unit>
+      <trans-unit id="143">
+        <source>Stock alert:</source>
+        <target>現在のアラート値：</target>
+      </trans-unit>
+      <trans-unit id="144">
+        <source>Please input new config value</source>
+        <target>アラート値を入力してください</target>
+      </trans-unit>
+      <trans-unit id="145">
+        <source>Please input new config value as integer</source>
+        <target>アラート値に数字を入力してください</target>
+      </trans-unit>
+      <trans-unit id="146">
+        <source>Config name</source>
+        <target>設定名</target>
+      </trans-unit>
+      <trans-unit id="147">
+        <source>Config value</source>
+        <target>設定値</target>
+      </trans-unit>       
+      <trans-unit id="148">
+        <source>Used money</source>
+        <target>利用料</target>
+      </trans-unit>       
+      <trans-unit id="149">
+        <source>Purchased money</source>
+        <target>物販料金</target>
+      </trans-unit>       
+      <trans-unit id="150">
+        <source>Purchasing detail</source>
+        <target>購入詳細</target>
+      </trans-unit>       
+      <trans-unit id="151">
+        <source>Add rental</source>
+        <target>レンタル</target>
+      </trans-unit>       
+      <trans-unit id="152">
+        <source>Purchase product</source>
+        <target>物品購入</target>
+      </trans-unit>       
+      <trans-unit id="153">
+        <source>Came time</source>
+        <target>入場時刻</target>
+      </trans-unit>       
+      <trans-unit id="154">
+        <source>Come out</source>
+        <target>退場</target>
+      </trans-unit>       
+      <trans-unit id="155">
+        <source>Outside</source>
+        <target>未入場</target>
+      </trans-unit>       
+      <trans-unit id="156">
+        <source>Inside</source>
+        <target>入場中</target>
+      </trans-unit>
+      <trans-unit id="157">
+        <source>In number</source>
+        <target>入荷数</target>
+      </trans-unit>
+      <trans-unit id="158">
+        <source>Product id</source>
+        <target>物品ID</target>
+      </trans-unit>
+      <trans-unit id="159">
+        <source>Do in stock</source>
+        <target>入荷する</target>
+      </trans-unit>
+      <trans-unit id="160">
+        <source>Shop</source>
+        <target>店舗</target>
+      </trans-unit>
+      <trans-unit id="161">
+        <source>In stock details</source>
+        <target>入荷詳細</target>
+      </trans-unit> 
+      <trans-unit id="162">
+        <source>In stock list</source>
+        <target>入荷一覧</target>
+      </trans-unit>
+      <trans-unit id="163">
+        <source>Add</source>
+        <target>追加</target>
+      </trans-unit>      
+      <trans-unit id="164">
+        <source>Visitor number</source>
+        <target>ビジター数</target>
+      </trans-unit>      
+      <trans-unit id="165">
+        <source>Purchase</source>
+        <target>購入</target>
+      </trans-unit>      
+      <trans-unit id="166">
+        <source>Are you sure you want to close without saving?</source>
+        <target>閉じてよろしいでしょうか？</target>
+      </trans-unit>      
+      <trans-unit id="167">
+        <source>All</source>
+        <target>すべて</target>
+      </trans-unit>      
+      <trans-unit id="168">
+        <source>Over stock</source>
+        <target>在庫数を超えました。</target>
+      </trans-unit>      
+      <trans-unit id="169">
+        <source>Purchase number</source>
+        <target>購入数</target>
+      </trans-unit>      
+      <trans-unit id="171">
+        <source>Confirm purchase</source>
+        <target>購入確定</target>
+      </trans-unit>      
+      <trans-unit id="170">
+        <source>Purchased successfully</source>
+        <target>購入処理完了しました。</target>
+      </trans-unit>      
+      <trans-unit id="172">
+        <source>Reserve purchase</source>
+        <target>取置</target>
+      </trans-unit>
+      <trans-unit id="173">
+        <source>Reserved list</source>
+        <target>取置一覧</target>
+      </trans-unit>
+      <trans-unit id="174">
+        <source>Do purchasing process</source>
+        <target>販売処理</target>
+      </trans-unit>
+      <trans-unit id="175">
+        <source>Reserved details</source>
+        <target>取置詳細情報</target>
+      </trans-unit>
+      <trans-unit id="176">
+        <source>Reserved number</source>
+        <target>取置数量</target>
+      </trans-unit>
+      <trans-unit id="177">
+        <source>Reserved date</source>
+        <target>取置日付</target>
+      </trans-unit>
+      <trans-unit id="178">
+        <source>Reserved status</source>
+        <target>処理状況</target>
+      </trans-unit>
+      <trans-unit id="179">
+        <source>Reserved total</source>
+        <target>合計</target>
+      </trans-unit>
+      <trans-unit id="180">
+        <source>Purchased list</source>
+        <target>購入一覧</target>
+      </trans-unit>
+      <trans-unit id="181">
+        <source>Do purchasing</source>
+        <target>販売処理完了</target>
+      </trans-unit>
+      <trans-unit id="182">
+        <source>Finish reserved?</source>
+        <target>取置処理を完了してよろしいですか</target>
+      </trans-unit>      
+      <trans-unit id="183">
+        <source>Report</source>
+        <target>日報</target>
+      </trans-unit>      
+      <trans-unit id="184">
+        <source>Adjust fee</source>
+        <target>料金調整</target>
+      </trans-unit>      
+      <trans-unit id="184">
+        <source>Adjust number</source>
+        <target>購入数調整</target>
+      </trans-unit>      
+      <trans-unit id="185">
+        <source>Purchasing type</source>
+        <target>購入種別</target>
+      </trans-unit>
+      <trans-unit id="186">
+        <source>Virtual register list</source>
+        <target>仮登録一覧</target>
+      </trans-unit>      
+      <trans-unit id="187">
+        <source>Virtual register</source>
+        <target>仮登録</target>
+      </trans-unit>
+      <trans-unit id="188">
+        <source>Virtual</source>
+        <target>仮</target>
+      </trans-unit>
+      <trans-unit id="189">
+        <source>Normal</source>
+        <target>普通</target>
+      </trans-unit>
+      <trans-unit id="189">
+        <source>Is virtual register</source>
+        <target>仮登録</target>
+      </trans-unit>
+      <trans-unit id="190">
+        <source>Year</source>
+        <target>年</target>
+      </trans-unit> 
+      <trans-unit id="191">
+        <source>Month</source>
+        <target>月</target>
+      </trans-unit> 
+      <trans-unit id="192">
+        <source>Day</source>
+        <target>日</target>
+      </trans-unit> 
+      <trans-unit id="193">
+        <source>In stock date</source>
+        <target>入荷日</target>
+      </trans-unit>
+      <trans-unit id="194">
+        <source>Urgency name</source>
+        <target>緊急連絡者名</target>
+      </trans-unit>
+      <trans-unit id="195">
+        <source>Urgency kana</source>
+        <target>フリガナ</target>
+      </trans-unit>
+      <trans-unit id="196">
+        <source>Yen</source>
+        <target>円</target>
+      </trans-unit>
+      <trans-unit id="197">
+        <source>NOT FOUND!</source>
+        <target>ーーーー検索結果はありませんーーーー</target>
+      </trans-unit>      
+      <trans-unit id="198">
+        <source>Total</source>
+        <target>合計</target>
+      </trans-unit>      
+      <trans-unit id="199">
+        <source>Visitor</source>
+        <target>ビジター</target>
+      </trans-unit>      
+      <trans-unit id="200">
+        <source>Datetime</source>
+        <target>日時</target>
+      </trans-unit>      
+      <trans-unit id="201">
+        <source>Adjust staff</source>
+        <target>調整スタッフ</target>
+      </trans-unit>      
+      <trans-unit id="202">
+        <source>Adjust</source>
+        <target>調整</target>
+      </trans-unit>      
+      <trans-unit id="203">
+        <source>Are you sure to adjust report?</source>
+        <target>日報を調整してよろしいでしょうか？</target>
+      </trans-unit>
+      <trans-unit id="204">
+        <source>Are you sure to cancel?</source>
+        <target>キャンセルしてよろしいでしょうか？</target>
+      </trans-unit>
+      <trans-unit id="205">
+        <source>Adjust report done</source>
+        <target>日報調整完了しました。</target>
+      </trans-unit>
+      <trans-unit id="206">
+        <source>Come in detail</source>
+        <target>入場詳細</target>
+      </trans-unit>
+      <trans-unit id="207">
+        <source>Rental detail</source>
+        <target>レンタル詳細</target>
+      </trans-unit>
+      <trans-unit id="208">
+        <source>Rental time</source>
+        <target>レンタル日時</target>
+      </trans-unit>
+      <trans-unit id="209">
+        <source>All come out</source>
+        <target>全員退場</target>
+      </trans-unit>
+      <trans-unit id="210">
+        <source>This cannot be undo. Are you sure to make all outside?</source>
+        <target>全員退場処理します。取り消しは出来ませんのでご注意ください。</target>
+      </trans-unit>
+      <trans-unit id="211">
+        <source>Virtual regist</source>
+        <target>仮登録</target>
+      </trans-unit>
+      <trans-unit id="212">
+        <source>Do regist</source>
+        <target>登録</target>
+      </trans-unit>
+      <trans-unit id="213">
+        <source>Elapsed time</source>
+        <target>経過時間</target>
+      </trans-unit>
+      <trans-unit id="214">
+        <source>Process overtime</source>
+        <target>超過処理</target>
+      </trans-unit>
+      <trans-unit id="215">
+        <source>Change plan</source>
+        <target>変更</target>
+      </trans-unit>
+      <trans-unit id="216">
+        <source>Additional fee</source>
+        <target>追加料金</target>
+      </trans-unit>
+      <trans-unit id="217">
+        <source>Prepaid card</source>
+        <target>プリペイドカード</target>
+      </trans-unit>
+      <trans-unit id="218">
+        <source>Commuter ticket</source>
+        <target>定期券</target>
+      </trans-unit>
+      <trans-unit id="219">
+        <source>Prepaid list</source>
+        <target>プリペイド種類一覧</target>
+      </trans-unit>
+      <trans-unit id="220">
+        <source>Balance</source>
+        <target>額面</target>
+      </trans-unit>
+      <trans-unit id="221">
+        <source>Commuter ticket list</source>
+        <target>定期券種類一覧</target>
+      </trans-unit>
+      <trans-unit id="222">
+        <source>Valid months</source>
+        <target>有効期限（〜ヶ月）</target>
+      </trans-unit>
+      <trans-unit id="223">
+        <source>Prepaid new</source>
+        <target>プリペイドの新規登録</target>
+      </trans-unit>
+      <trans-unit id="224">
+        <source>Prepaid edit</source>
+        <target>プリペイドの編集</target>
+      </trans-unit>
+      <trans-unit id="225">
+        <source>Commuter ticket new</source>
+        <target>定期券の新規登録</target>
+      </trans-unit>
+      <trans-unit id="226">
+        <source>Commuter ticket edit</source>
+        <target>定期券の編集</target>
+      </trans-unit>
+      <trans-unit id="227">
+        <source>one month</source>
+        <target>1ヶ月</target>
+      </trans-unit>
+      <trans-unit id="228">
+        <source>two months</source>
+        <target>2ヶ月</target>
+      </trans-unit>
+       <trans-unit id="229">
+        <source>three months</source>
+        <target>3ヶ月</target>
+      </trans-unit>
+       <trans-unit id="230">
+        <source>four months</source>
+        <target>4ヶ月</target>
+      </trans-unit>
+      <trans-unit id="231">
+        <source>five months</source>
+        <target>5ヶ月</target>
+      </trans-unit>
+      <trans-unit id="232">
+        <source>six months</source>
+        <target>6ヶ月</target>
+      </trans-unit>
+      <trans-unit id="295">
+        <source>seven months</source>
+        <target>7ヶ月</target>
+     </trans-unit>
+      <trans-unit id="296">
+        <source>eight months</source>
+        <target>8ヶ月</target>
+      </trans-unit>
+      <trans-unit id="297">
+        <source>night months</source>
+        <target>9ヶ月</target>
+      </trans-unit>
+      <trans-unit id="298">
+        <source>ten month</source>
+        <target>10ヶ月</target>
+      </trans-unit>
+      <trans-unit id="299">
+        <source>eleven months</source>
+        <target>11ヶ月</target>
+      </trans-unit>
+      <trans-unit id="300">
+        <source>twelve months</source>
+        <target>1年間</target>
+      </trans-unit>
+      <trans-unit id="233">
+        <source>Reserved total number</source>
+        <target>取置件数</target>
+      </trans-unit>
+      <trans-unit id="234">
+        <source>Purchase prepaid</source>
+        <target>プリペイド購入</target>
+      </trans-unit>
+      <trans-unit id="234">
+        <source>Purchase ticket</source>
+        <target>定期券購入</target>
+      </trans-unit>  
+      <trans-unit id="235">
+        <source>Prepaid purchasing ok!</source>
+        <target>プリペイドの購入に成功しました。</target>
+      </trans-unit>
+      <trans-unit id="236">
+        <source>Ticket purchasing ok!</source>
+        <target>定期券の購入に成功しました。</target>
+      </trans-unit>      
+      <trans-unit id="237">
+        <source>Current balance</source>
+        <target>残高</target>
+      </trans-unit>      
+      <trans-unit id="238">
+        <source>Expire date</source>
+        <target>期日</target>
+      </trans-unit>      
+      <trans-unit id="239">
+        <source>Expired</source>
+        <target>切れた</target>
+      </trans-unit>      
+      <trans-unit id="240">
+        <source>Details</source>
+        <target>詳細</target>
+      </trans-unit>      
+      <trans-unit id="241">
+        <source>Member came to play</source>
+        <target>入場処理しました。</target>
+      </trans-unit>      
+      <trans-unit id="242">
+        <source>Member came to play already</source>
+        <target>会員は既に入場中です。</target>
+      </trans-unit>      
+      <trans-unit id="243">
+        <source>Contact note</source>
+        <target>連絡事項</target>
+      </trans-unit>
+      <trans-unit id="244">
+        <source>Add expired days for all:</source>
+        <target>全員の有効期限に日数追加:</target>
+      </trans-unit>      
+      <trans-unit id="245">
+        <source>Export to CSV</source>
+        <target>CSV出力</target>
+      </trans-unit>      
+      <trans-unit id="246">
+        <source>Prepaid money</source>
+        <target>プリペイド額</target>
+      </trans-unit>      
+      <trans-unit id="247">
+        <source>Cash</source>
+        <target>現金</target>
+      </trans-unit>      
+      <trans-unit id="248">
+        <source>Rental number</source>
+        <target>レンタル個数</target>
+      </trans-unit>      
+      <trans-unit id="249">
+        <source>Unit price</source>
+        <target>単価</target>
+      </trans-unit>      
+      <trans-unit id="250">
+        <source>Adding new record to report</source>
+        <target>日報に購入を追加</target>
+      </trans-unit>      
+      <trans-unit id="251">
+        <source>Go to report</source>
+        <target>日報へ戻る</target>
+      </trans-unit>      
+      <trans-unit id="252">
+        <source>Date</source>
+        <target>日付</target>
+      </trans-unit>      
+      <trans-unit id="253">
+        <source>Member history</source>
+        <target>利用履歴</target>
+      </trans-unit>      
+      <trans-unit id="254">
+        <source>Start date</source>
+        <target>開始日</target>
+      </trans-unit>      
+      <trans-unit id="255">
+        <source>To date</source>
+        <target>終了日</target>
+      </trans-unit>      
+      <trans-unit id="256">
+        <source>Import</source>
+        <target>インポート</target>
+      </trans-unit>      
+      <trans-unit id="257">
+        <source>CSV Import</source>
+        <target>CSVインポート</target>
+      </trans-unit>      
+      <trans-unit id="258">
+        <source>CSV file</source>
+        <target>CSVファイル</target>
+      </trans-unit>      
+      <trans-unit id="259">
+        <source>Upload error!</source>
+        <target>ファイルアップロードにエラーが発生しました。</target>
+      </trans-unit>      
+      <trans-unit id="260">
+        <source>CSV processed records</source>
+        <target>インポートされたレコード</target>
+      </trans-unit>      
+      <trans-unit id="261">
+        <source>Failed lines</source>
+        <target>失敗した行数</target>
+      </trans-unit>      
+      <trans-unit id="262">
+        <source>CSV processed records:</source>
+        <target>処理したレコード数:</target>
+      </trans-unit>      
+      <trans-unit id="263">
+        <source>Not processed lines</source>
+        <target>未処理行</target>
+      </trans-unit>      
+      <trans-unit id="264">
+        <source>Double code</source>
+        <target>コード重複</target>
+      </trans-unit>      
+      <trans-unit id="265">
+        <source>No-tax price</source>
+        <target>税抜価格</target>
+      </trans-unit>      
+      <trans-unit id="266">
+        <source>Tax price</source>
+        <target>税込価格</target>
+      </trans-unit>      
+      <trans-unit id="267">
+        <source>Member name is required.</source>
+        <target>会員名は入力必須です。</target>
+      </trans-unit>      
+      <trans-unit id="268">
+        <source>Tel is required.</source>
+        <target>電話番号は入力されていません。</target>
+      </trans-unit>      
+      <trans-unit id="269">
+        <source>Stock price</source>
+        <target>仕入れ値</target>
+      </trans-unit>      
+      <trans-unit id="270">
+        <source>Staff</source>
+        <target>スタッフ</target>
+      </trans-unit>      
+      <trans-unit id="271">
+        <source>Maker name is required.</source>
+        <target>メーカ名は入力必須です。</target>
+      </trans-unit>      
+      <trans-unit id="272">
+        <source>Maker code is required.</source>
+        <target>メーカコードは入力必須です。</target>
+      </trans-unit>      
+      <trans-unit id="273">
+        <source>Tax</source>
+        <target>税金</target>
+      </trans-unit>      
+      <trans-unit id="274">
+        <source>Tax setting</source>
+        <target>税金設定</target>
+      </trans-unit>
+      <trans-unit id="275">
+        <source>Size is required.</source>
+        <target>サイズは入力必須です。</target>
+      </trans-unit>      
+      <trans-unit id="276">
+        <source>Member tax</source>
+        <target>会員税</target>
+      </trans-unit>
+      <trans-unit id="277">
+        <source>Family name is required.</source>
+        <target>続柄は入力必須です。</target>
+      </trans-unit>
+      <trans-unit id="278">
+        <source>Supplier name is required.</source>
+        <target>仕入れ先は入力必須です。</target>
+      </trans-unit>
+      <trans-unit id="279">
+        <source>Supplier code is required.</source>
+        <target>仕入れ先コードは入力必須です。</target>
+      </trans-unit>
+      <trans-unit id="280">
+        <source>Color is required.</source>
+        <target>色は入力必須です。</target>
+      </trans-unit>  
+      <trans-unit id="281">
+        <source>Knowing is required.</source>
+        <target>きっかけは入力必須です。</target>
+      </trans-unit>
+      <trans-unit id="282">
+        <source>Customer type is required.</source>
+        <target>種別は入力必須です。</target>
+      </trans-unit>
+      <trans-unit id="283">
+        <source>Service name is required.</source>
+        <target>サービス名は入力必須です。</target>
+      </trans-unit>
+      <trans-unit id="284">
+        <source>Service fee is required.</source>
+        <target>料金は入力必須です。</target>
+      </trans-unit>
+      <trans-unit id="285">
+        <source>Fee is not an integer.</source>
+        <target>料金は整数ではありません。</target>
+      </trans-unit>
+      <trans-unit id="286">
+        <source>Rental name is required.</source>
+        <target>レンタル名は入力必須です。</target>
+      </trans-unit>
+      <trans-unit id="287">
+        <source>Rental fee is required.</source>
+        <target>料金は入力必須です。</target>
+      </trans-unit>
+      <trans-unit id="288">
+        <source>Product name is required.</source>
+        <target>物品名は入力必須です。</target>
+      </trans-unit>
+      <trans-unit id="289">
+        <source>Product code is required.</source>
+        <target>物品コードは入力必須です。</target>
+     </trans-unit>
+      <trans-unit id="290">
+        <source>Member price is required.</source>
+        <target>会員価格は入力必須です。</target>
+      </trans-unit>
+      <trans-unit id="291">
+        <source>Member price is not an integer.</source>
+        <target>会員価格は整数ではありません。</target>
+      </trans-unit>
+      <trans-unit id="292">
+        <source>Other</source>
+        <target>手入力</target>
+      </trans-unit>
+      <trans-unit id="293">
+        <source>Coupon</source>
+        <target>割引券</target>
+      </trans-unit>
+      <trans-unit id="264">
+        <source>Payment</source>
+        <target>支払い</target>
+      </trans-unit>
+      <trans-unit id="294">
+        <source>Member register</source>
+        <target>会員登録</target>
+      </trans-unit>
+      <trans-unit id="301">
+        <source>Close</source>
+        <target>閉じる</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Register fee</source>
+        <target>登録費</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>You have been not registered</source>
+        <target>この会員はこの店舗に登録されていません。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Do you want to register this shop?</source>
+        <target>会員登録してよろしいでしょうか？</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Register</source>
+        <target>登録</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Register to new shop</source>
+        <target>会員登録</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Registered shop:</source>
+        <target>登録された店舗：</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Current shop:</source>
+        <target>現店舗：</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Continue to come to play</source>
+        <target>続いて入場したい場合</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Registered shop</source>
+        <target>登録した店舗</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Purchase online</source>
+        <target>通販購入</target>
+      </trans-unit>
+       <trans-unit id="295">
+         <source>Please select products to purchase</source>
+         <target>購入物品を選択してください。</target>
+      </trans-unit>
+       <trans-unit id="296">
+         <source>Please enter the name</source>
+         <target>購入者の名前を入力してください。</target>
+       </trans-unit>
+       <trans-unit id="297">
+         <source>Payment method</source>
+         <target>支払方法</target>
+       </trans-unit>
+      <trans-unit id="303">
+        <source>Purchased date</source>
+        <target>購入日</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Payment fee</source>
+        <target>支払金額</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Are you sure to delete?</source>
+        <target>削除してよろしいでしょうか？</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Delete purchase online</source>
+        <target>通販全体を削除</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Are you sure to delete　all purchase online?</source>
+        <target>通販全体を削除してよろしいでしょうか？</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Double member code</source>
+        <target>入力された会員番号は既に使用されています。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Set expire date</source>
+        <target>期日を設定</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Ticket name</source>
+        <target>定期券名</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Change expire date success!</source>
+        <target>期日は設定されました。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Reset</source>
+        <target>リセット</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>per page</source>
+        <target>件／ページ</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Member second register</source>
+        <target>会員追加登録</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>like</source>
+        <target>部分マッチ</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>match</source>
+        <target>完全マッチ</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Set prepaid</source>
+        <target>プリペイドを設定</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Prepaid</source>
+        <target>プリペイド</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Prepaid set ok!</source>
+        <target>プリペイド額面設定されました。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Are you sure to cancel?</source>
+        <target>キャンセルしてよろしいでしょうか？</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Please enter a valid number.</source>
+        <target>英数値を入力してください</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Purchasing report</source>
+        <target>不明情報</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Report memo</source>
+        <target>メモ</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Money</source>
+        <target>金額</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Fail to update student card!</source>
+        <target>学生証更新に失敗しました</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Set student expire card</source>
+        <target>学生証の有効期限を設定</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Student expire date</source>
+        <target>学生証の有効期限</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Add 1 year from expire date or change customer type ?</source>
+        <target>学生証の有効期限を更新するか種別を変更しますか？</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Student card is expired</source>
+        <target>学生証の有効期限が過ぎました</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Add 1 year</source>
+        <target>有効期限を更新</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Change custumer type:</source>
+        <target>次の種別に変更</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Manual add report</source>
+        <target>追加情報</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Please enter a valid integer.</source>
+        <target>有効な整数を入力してください。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Member edited!</source>
+        <target>会員の編集は完了しました。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Failed to edit member!</source>
+        <target>会員の編集は失敗しました。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>You have reserved product</source>
+        <target>この会員には取置あります。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Go to reserved</source>
+        <target>販売処理へ</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Member infomation</source>
+        <target>会員情報</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Ticket list</source>
+        <target>定期券一覧</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Reserved product</source>
+        <target>連絡事項あります。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Note saved</source>
+        <target>日報の連絡事項を更新しました。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Daily Note</source>
+        <target>日報の連絡事項</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Product code exist</source>
+        <target>すでに物品コードが存在しています。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Copy</source>
+        <target>複製</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Adjust note</source>
+        <target>保存</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Send</source>
+        <target>送信</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>From date</source>
+        <target>開始日付</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>In stock id</source>
+        <target>入荷ID</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Not exists</source>
+        <target>存在しない</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>In stock cancel ok!</source>
+        <target>入荷取り消し完了しました。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Cancel in stock?</source>
+        <target>入荷取り消しますか。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>From date</source>
+        <target>開始日</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Other shop Member list</source>
+        <target>他店舗の定期券会員一覧</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Please input children !</source>
+        <target>子供の数を選んでください。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>This shop has no ticket for your member type</source>
+        <target>この店舗にはこの会員種別に適切な定期券はありません。</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Total visitor</source>
+        <target>ビジター数</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Total enter fee</source>
+        <target>入場料金 </target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Lose</source>
+        <target>損失</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Wholesale</source>
+        <target>卸販売</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Shop use</source>
+        <target>ジム用 </target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Forgot</source>
+        <target>打ち忘れ</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Unknown</source>
+        <target>不明</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Staff buy</source>
+        <target>社販</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Special purchasing</source>
+        <target>特殊な販売</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>Children</source>
+        <target>子供</target>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>member</source>
+        <target>会員</target>
+      </trans-unit>
+      <trans-unit id="303">
+          <source>Member/Visistor</source>
+          <target>会員/ビジター</target>
+      </trans-unit>    
+			<trans-unit id="303">
+       	  <source>Use other shop ticket</source>
+	        <target>他店定期会員利用料金</target>
+      </trans-unit>			
+			<trans-unit id="303">
+       	  <source>Other shop entry</source>
+	        <target>他店定期券</target>
+      </trans-unit>
+			<trans-unit id="303">
+         <source>Do you want to use ticket in this shop?</source>
+         <target>を利用しますか</target>
+      </trans-unit>
+			<trans-unit id="303">
+         <source>You have ticket in shop:</source>
+         <target>店の定期券を持っています</target>
+      </trans-unit>
+			<trans-unit id="303">
+         <source>Product not found</source>
+         <target>検索結果はありません</target>
+      </trans-unit>
+			<trans-unit id="303">
+         <source>Other shop registration</source>
+         <target>追加登録</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
