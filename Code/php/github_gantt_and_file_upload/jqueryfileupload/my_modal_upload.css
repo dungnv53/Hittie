@@ -1,0 +1,14 @@
+.cal-modal-container { 
+    width: auto; 
+    /*max-height: 320px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    /*overflow-y: scroll;*/
+}
+.modal-upload-tbl {
+    width: auto; 
+    max-height: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-y: auto;   
+}
