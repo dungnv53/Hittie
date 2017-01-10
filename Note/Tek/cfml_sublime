@@ -1,0 +1,7 @@
+⇧+# #SELECTION#	Ctrl+⇧+O <cfoutput>SELECTION</cfoutput>
+Ctrl+⇧+# <cfoutput>#SELECTION#</cfoutput>	Ctrl+Alt+A <cfabort />
+Ctrl+Alt+D <cfdump var="#SELECTION#">	Alt+⇧+R <cfscript>SELECTION</cfscript>
+Ctrl+⇧+/ block comment (cfml/cfscript) 	Ctrl+Alt+⇧+/ javadoc comment
+Alt+↩ terminates statement (cfscript)	Ctrl+⇧+= <cfset SELECTION />
+
+
