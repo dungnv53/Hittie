@@ -1,0 +1,10 @@
+http://mitchellh.com/
+
+Open Git Bash 
+$ vagrant up
+In case httpd failed to start, run the below code 
+$ sudo chcon -R -t httpd_log_t /opt/coldfusion11/config/wsconfig/1/*.log
+$ sudo chcon -R -t httpd_exec_t /opt/coldfusion11/config/wsconfig/1/mod_jk.so
+
+
+

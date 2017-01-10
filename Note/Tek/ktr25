@@ -1,0 +1,9 @@
+#sql_mode=TRADITIONAL,PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION
+#sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES 
+
+[client_host1]
+user=kotora
+password=Li49haku
+database=kotora_db
+
+
