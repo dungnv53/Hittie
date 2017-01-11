@@ -110,6 +110,52 @@ alias iptlistout='sudo /sbin/iptables -L OUTPUT -n -v --line-numbers'
 alias iptlistfw='sudo /sbin/iptables -L FORWARD -n -v --line-numbers'
 alias firewall=iptlist
 
+
+# Windows 8 pg
+alias c='clear'
+alias ll='ls -la'
+alias l.='ls -d .* --color=auto'
+alias c="clear"
+alias l.='ls -d .* --color=auto'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias duh='du -sh'
+alias dus='du -sh * |sort -n'
+alias findname='find . -name '
+alias findloc='/usr/local/bin/findloc.sh'
+alias grr='grep -r'
+alias grl='grep -rl'
+alias grn='grep -rn'
+alias grni='grep -rni'
+
+alias vg='vagrant'
+alias tailapc='tail -f /d/xampp/apache/logs/error.log'
+
+alias cdxam6='cd /e/setin/xampp_56/htdocs/'
+alias vihost='vim /c/Windows/System32/drivers/etc/hosts'
+alias cathost='cat /c/Windows/System32/drivers/etc/hosts'
+alias vivhost='vim /e/setin/xampp_56/apache/conf/extra/httpd-vhosts.conf'
+alias catvhost='cat /e/setin/xampp_56/apache/conf/extra/httpd-vhosts.conf'
+alias apcrst='/e/setin/xampp_56/apache/bin/httpd.exe -k restart'
+alias cdorg2='cd /e/setin/xampp_56/htdocs/Organizer/ServiceApi/OrganizerApi'
+alias cdorg='cd /e/setin/xampp_56/htdocs/Organizer/SourceCodeDemo/ServiceApi/OrganizerApi/'
+alias cdorgdemo='cd /e/setin/xampp_56/htdocs/Organizer/SourceCodeDemo'
+
+
+alias tailsql='tail -f /e/setin/xampp_56/mysql/data/mysql_query.log'
+
+alias hist='history'
+
+alias cdsbf='cd /e/ArchAngel/SnowBallFightLibGdx'
+
+alias sshblondie='ssh -p 3022 blondie@127.0.0.1'
+
+alias convert='/c/Program\ Files/ImageMagick-6.9.6-Q16-HDRI/convert.exe '
+
+alias catacc='cat ~/.COPY/account'
+
+#TODO update ubuntu alias about nginx apc
+
 export PATH="/usr/local/bin:$PATH"
 export PATH=/Applications/MAMP/bin/php/php5.4.10/bin:$PATH
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
