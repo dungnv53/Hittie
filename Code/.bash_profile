@@ -51,8 +51,6 @@ alias gitpufe='/Users/dungnv/bin/pull_feature.sh'
 alias gitpfe='/Users/dungnv/bin/push_feature.sh'
 alias gitstapl='git stash apply'
 
-alias cdnro='cd ~/Desktop/Netreal1.0/Source/NR_old/'
-alias cdnr='cd ~/Documents/SymApp/netreal-2.0/app/'
 alias cdmama='cd /Applications/MAMP/'
 
 alias sourcebash='source ~/.bash_profile'
@@ -67,7 +65,6 @@ alias tailsql='tail -f /Applications/MAMP/logs/mysql_sql.log'
 alias tailsql2='tail -f /Applications/MAMP/logs/mysql_error_log.err'
 alias tailphp='tail -f /Applications/MAMP/logs/php_error.log'
 alias tailapache='tail -f /Applications/MAMP/logs/apache_error.log'
-alias tailnr='tail -f ~/Documents/SymApp/netreal-2.0/app/logs/log-2014-03-25.php'
 alias tailemp_er='tail -f /Applications/MAMP/logs/emp_9demo_error_log'
 alias tailemp_ac='tail -f /Applications/MAMP/logs/emp_9demo_access.log'
 alias tailgc_er='tail -f /Applications/MAMP/logs/gcc_9demo_error_log'
@@ -79,15 +76,7 @@ alias tailjob_ac='tail -f /Applications/MAMP/logs/job_9demo_access.log'
 alias bc='bc-l'
 alias hist='history'
 alias j='jobs -l'
-alias sshnal='ssh dev.nal.vn'
-alias sshnrpd='ssh netreal@153.122.40.100'
-alias sshnal2='ssh netreal2@153.122.30.207'
-alias sshbnya='ssh boatnya@157.7.167.16'
 
-alias sshtuan='ssh tuandt@192.168.0.58'
-alias sshhuyen='ssh huyendt@192.168.0.62'
-alias sshcanh='ssh canhnnt@192.168.0.60'
-alias sshhung='ssh hungn@192.168.0.51'
 
 alias svi='sudo vi'
 alias vis='vim "+set si"'
@@ -109,6 +98,52 @@ alias iptlistin='sudo /sbin/iptables -L INPUT -n -v --line-numbers'
 alias iptlistout='sudo /sbin/iptables -L OUTPUT -n -v --line-numbers'
 alias iptlistfw='sudo /sbin/iptables -L FORWARD -n -v --line-numbers'
 alias firewall=iptlist
+
+
+# Windows 8 pg
+alias c='clear'
+alias ll='ls -la'
+alias l.='ls -d .* --color=auto'
+alias c="clear"
+alias l.='ls -d .* --color=auto'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias duh='du -sh'
+alias dus='du -sh * |sort -n'
+alias findname='find . -name '
+alias findloc='/usr/local/bin/findloc.sh'
+alias grr='grep -r'
+alias grl='grep -rl'
+alias grn='grep -rn'
+alias grni='grep -rni'
+
+alias vg='vagrant'
+alias tailapc='tail -f /d/xampp/apache/logs/error.log'
+
+alias cdxam6='cd /e/setin/xampp_56/htdocs/'
+alias vihost='vim /c/Windows/System32/drivers/etc/hosts'
+alias cathost='cat /c/Windows/System32/drivers/etc/hosts'
+alias vivhost='vim /e/setin/xampp_56/apache/conf/extra/httpd-vhosts.conf'
+alias catvhost='cat /e/setin/xampp_56/apache/conf/extra/httpd-vhosts.conf'
+alias apcrst='/e/setin/xampp_56/apache/bin/httpd.exe -k restart'
+alias cdorg2='cd /e/setin/xampp_56/htdocs/Organizer/ServiceApi/OrganizerApi'
+alias cdorg='cd /e/setin/xampp_56/htdocs/Organizer/SourceCodeDemo/ServiceApi/OrganizerApi/'
+alias cdorgdemo='cd /e/setin/xampp_56/htdocs/Organizer/SourceCodeDemo'
+
+
+alias tailsql='tail -f /e/setin/xampp_56/mysql/data/mysql_query.log'
+
+alias hist='history'
+
+alias cdsbf='cd /e/ArchAngel/SnowBallFightLibGdx'
+
+alias sshblondie='ssh -p 3022 blondie@127.0.0.1'
+
+alias convert='/c/Program\ Files/ImageMagick-6.9.6-Q16-HDRI/convert.exe '
+
+alias catacc='cat ~/.COPY/account'
+
+#TODO update ubuntu alias about nginx apc
 
 export PATH="/usr/local/bin:$PATH"
 export PATH=/Applications/MAMP/bin/php/php5.4.10/bin:$PATH
