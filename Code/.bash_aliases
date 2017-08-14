@@ -143,6 +143,24 @@ alias convert='/c/Program\ Files/ImageMagick-6.9.6-Q16-HDRI/convert.exe '
 
 alias catacc='cat ~/.COPY/account'
 
+# Nodejs
+alias cnode='clear && nodemon server.js'
+alias pmr0='clear && pm2 restart 0'
+alias frs='forever start server.js'
+alias frl='forever list'
+alias cdrt2='cd /mnt/OrganizerPhase2/TXP_Chat/rt2'
+alias synctxp='cd /home/cam_zink/Public/Project && rsync -ua --exclude 'node_modules' /mnt/PROJECT/rt2/* .'
+
+# Docker 
+alias dkim='sudo docker images'
+alias dkima='sudo docker images -a'
+alias dkinspt='sudo docker inspect '
+alias dkps='sudo docker ps'
+alias dkpsa='sudo docker ps -a'
+alias dkrm='sudo docker rm '
+alias dkrmi='sudo docker rmi '
+
+
 #TODO update ubuntu alias about nginx apc
 
 export PATH="/usr/local/bin:$PATH"
