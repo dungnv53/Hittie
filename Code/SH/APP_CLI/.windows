@@ -1,0 +1,4 @@
+net.exe stop "Windows search"
+net.exe stop superfetch
+chkdsk.exe /f /r
+

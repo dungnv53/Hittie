@@ -1,0 +1,9 @@
+ diff -r --brief app/ ../txp_chat/app/
+ diff -r --brief middleware/ ../txp_chat/middleware/
+ diff Dockerfile  ../txp_chat/Dockerfile 
+ diff package.json  ../txp_chat/package
+ diff package.json  ../txp_chat/package.json 
+ diff routes.js  ../txp_chat/routes.js 
+ diff server.js  ../txp_chat/server.js 
+ diff -r --brief views/ ../txp_chat/views/
+

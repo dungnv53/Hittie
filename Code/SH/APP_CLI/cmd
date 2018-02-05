@@ -1,0 +1,26 @@
+rsync -av --exclude='path1/to/exclude' --exclude='path2/to/exclude' source destination
+https://unix.stackexchange.com/questions/102211/rsync-ignore-owner-group-time-and-perms
+rsync -avz --no-perms --no-owner --no-group ...
+
+rsync -avz --no-perms --no-owner --no-group --exclude ".git" --exclude "files" --exclude "node_modules" --exclude "views"  /home/cam_zink/Public/TXP_Chat_Server/ .
+
+- mysqldump -P 3310 -h 127.0.0.1 -u mysql_user -p database_name table_name
+
+
+# git
+git push origin --delete <branch_name>
+
+# svn
+
+
+rsync -avz --exclude 'server/node_modules' ~/Music/Node/ionic-photo-gallery/server 
+
+$ rsync -avz --update --existing src/ dst.
+
+nohup aptible logs --app=txp_chat_demo >> ~/Desktop/txp_log &
+diff -r --brief --exclude="node_modules" --exclude=".git" --exclude="files" . ../txp_chat/
+
+nmap -sT 192.168.1.1
+nmap -sS 192.168.1.1
+nmap -sU -p 123,161,162 192.168.1.1
+nmap -Pn -F 192.168.1.1

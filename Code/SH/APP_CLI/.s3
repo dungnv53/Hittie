@@ -1,0 +1,4 @@
+aws s3 sync . s3://my-bucket/path
+http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html
+aws ec2 describe-regions
+

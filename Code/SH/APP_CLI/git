@@ -1,0 +1,22 @@
+# List branch order by last commit
+git for-each-ref --sort=-committerdate refs/heads/
+
+# or using git branch (since version 2.7.0)
+git branch --sort=-committerdate  # DESC
+git branch --sort=committerdate  # ASC
+#-----
+
+git log -Skeywords
+https://stackoverflow.com/questions/4468361/search-all-of-git-history-for-a-string
+
+git branch --contains <commit>
+# https://stackoverflow.com/questions/2706797/finding-what-branch-a-git-commit-came-from
+ git config --global alias.co checkout
+ git config --global alias.br branch
+ git config --global alias.ci commit
+ git config --global alias.st status
+
+git diff master
+
+git log --graph --decorate --pretty=oneline --abbrev-commit
+git config core.filemode true
