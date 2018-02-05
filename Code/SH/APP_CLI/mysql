@@ -1,0 +1,9 @@
+
+SELECT DISTINCT TABLE_NAME 
+    FROM INFORMATION_SCHEMA.COLUMNS
+    WHERE COLUMN_NAME IN ('alter_incharge_person_flag','ColumnB')
+        AND TABLE_SCHEMA='psi_live';
+
+mysql -e "select * from myTable" -u myuser -pxxxxxxxx mydatabase > mydumpfile.txt
+
+

@@ -1,0 +1,28 @@
+ 1890  gcloud config set compute/zone asia-southeast1-a
+ 1895  gcloud compute networks create jenkins --mode auto
+ 1896  gcloud container clusters create jenkins-cd   --network jenkins   --scopes "https://www.googleapis.com/auth/projecthosting,storage-rw"
+ 1897  gcloud container clusters get-credentials jenkins-cd
+ 1899  gcloud compute images create jenkins-home-image --source-uri https://storage.googleapis.com/solutions-public-assets/jenkins-cd/jenkins-home-v3.tar.gz
+ 1900  gcloud compute disks create jenkins-home --image jenkins-home-image --zone us-east1-d
+ 1901  gcloud compute disks create jenkins-home --image jenkins-home-image --zone asia-southeast1-a
+ 1960  gcloud help
+ 1961  gcloud dataproc help
+ 1962  gcloud clusters help
+ 1970  gcloud project list
+ 1971  gcloud projects list
+ 2007  gcloud projects ls
+ 2008  gcloud list projects
+ 2009  gcloud help
+ 2010  grn gcloud ~/.COPY
+ 2011  grn "gcloud" ~/.COPY
+ 2012  gcloud help
+ 2013  gcloud projects ls
+ 2014  gcloud projects list
+https://cloud.google.com/sdk/gcloud/reference/docker
+
+gcloud compute firewall-rules list
+gcloud compute firewall-rules update default-allow-internal --allow tcp:1-3305,udp:1-65535,icmp
+gcloud compute firewall-rules create "test-remote-access-8043" --allow tcp:8043 --source-tags "expressjs" --target-tags "expressjs"
+gcloud compute firewall-rules create "test-ssl-8043" --allow tcp:8043 --source-tags=de-dust-1 --source-ranges=0.0.0.0/0 --description="Test 8043 open port ssl"
+
+

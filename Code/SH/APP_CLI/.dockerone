@@ -1,0 +1,45 @@
+mysql -u dungnv -pDungnv -e "show databases"
+sudo docker-compose up -d
+sudo docker run --volumes-from txp1 -P quay.io/aptible/mysql
+sudo docker-machine ssh docker-sandbox
+sudo docker run -dt -p 8081:8081 0ff5d7a7635d
+sudo docker run -p 8083:8083 -dt --link adoring_beaver 0ff5d7a7635d
+
+docker-machine create --driver digitalocean --digitalocean-access-token xxxxx docker-sandbox
+token-do: BG442E36GDH3TFVCZUNU
+
+curl -X POST -H "Content-type: application/json" http://104.236.106.16:3000/data/into/db     -d '[ { "a": 1 }, { "b": 2 }, { "c": 3 } ]'
+curl -X POST -H "Content-type: application/json" http//localhost:3000/data/into/db     -d '[ { "a": 1 }, { "b": 2 }, { "c": 3 } ]'
+
+sudo docker push littlewing/docker-one:1.0a
+
+show status like 'Ssl_cipher';
+
+curl -X GET -H "Content-type: application/json" http//localhost:3000/data/from/db
+
+sudo docker run -d -p 3000:3000 --name  express-demo2 littlewing/docker-autobuild-demo
+
+sudo docker run -d -p 3000:3000 --name  express-demo2 image_name
+
+docker commit c3f279d17e0a[container_id]  svendowideit/testimage:version3
+
+sudo docker push littlewing/docker-autobuild-demo:1.0a
+
+sudo docker exec -i -t e807a7ddeb72 /bin/bash
+
+sudo docker run -i -dt -p 8083:8083 --name txp-nodejs-one txp-express-img-1
+
+dk run  -v $(pwd)/middleware:/app/middleware  -v $(pwd)/views:/app/views -v $(pwd)/app:/app/app -v $(pwd)/files:/app/files -i -dt -p 8084:8084 --name txp-nodejs-san txp-express-img:1.0c
+
+sudo docker build -t txp-express-img-1:1.0b .
+
+docker inspect -f '{{ .Mounts }}' containerid
+
+sudo docker run -d -p 8000:80 --name webserver-ng-er kitematic/hello-world-nginx
+
+dk port [CID]
+dk port [CID] port_number
+
+dk log -f [--follow] [container]
+echo "" > $( sudo docker inspect --format='{{.LogPath}}')
+

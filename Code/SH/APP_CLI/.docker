@@ -1,0 +1,20 @@
+sudo docker run -d -v /webroot:/var/www/html -v /ssl/certs:/etc/nginx/certs -v /etc/sites/etc:/etc/nginx/sites-enabled  -p 8095:80 --name mars-suveyor nginx_image
+sudo docker exec -i -t mars-suveyor /bin/bash
+
+docker volume ls -f dangling=true
+
+docker volume rm $(docker volume ls -f dangling=true -q)
+
+# Remove a container and its volume
+docker rm -v container_name
+
+dk network ls
+dk network inspect bridge
+dk volume prune
+
+docker inspect -f "{{ .Config.Env }}" c3f279d17e0a
+docker commit --change='CMD ["apachectl", "-DFOREGROUND"]' -c "EXPOSE 80" c3f279d17e0a  svendowideit/testimage:version4 f5283438590d
+
+dk run  -v $(pwd)/middleware:/app/middleware  -v $(pwd)/views:/app/views -v $(pwd)/app:/app/app -v $(pwd)/files:/app/files -v $(pwd)/server.js:/app/server.js -v $(pwd)/routes.js:/app/routes.js -v $(pwd)/routes-v11.js:/app/routes-v11.js -v $(pwd)/node_modules:/app/node_modules  -i -dt -p 8081:8081 --name dev-txp-uat-1 littlewing/dev-txp-api-img:1.0a
+
+

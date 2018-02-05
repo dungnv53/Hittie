@@ -1,0 +1,305 @@
+    1  sudo apt-get install tint2
+    2  nohup tint2 &
+    3  sudo apt-cache search chromium
+    4  sudo apt-get install chromium-browser
+    5  c
+    6  man aptible
+    7  clear
+    8  man 7 aptible
+    9  whereis aptible
+   10  df -k
+   11  sudo gem install aptible-cli
+   12  sudo apt-cache search gem
+   13  df -k
+   14  sudo apt-get install ruby-full
+   15  ls /mnt/
+   16  cd /mnt/
+   17  mkdir shareVM
+   18  sudo mkdir shareVM
+   19  ls
+   20  ll
+   21  sudo chown -R cam_zink:cam_zink shad
+   22  sudo chown -R cam_zink:cam_zink shareVM/
+   23  c
+   24  l
+   25  ll
+   26  sudo mount -t vboxsf ThirdCavalry /mnt/shareVM/
+   27  sudo apt-get install ruby-full
+   28  gem install aptible-cli
+   29  sudo gem install aptible-cli
+   30  c
+   31  man aptible
+   32  clear
+   33  apropos aptible
+   34  histoy
+   35  history
+   36  aptible help
+   37  history |grep mount
+   38  sudo mount -t vboxsf ThirdCavalry /mnt/shareVM/
+   39  ls /mnt/
+   40  sudo mount -t vboxsf ThirdCavalry /mnt/shareVM/
+   41  hist |grep mysql
+   42  aptible db:tunnel organizer-prod
+   43  hist |grep tunnel
+   44  aptible db:tunnel organizer
+   45  aptible db:tunnel organizer-prod
+   46  c
+   47  mysql -u aptible -h localhost.aptible.in -phxaPI5Hfjljc4B8wf1M54hDSZZmPhYWQ -P 45449
+   48  mysql -u aptible -h localhost.aptible.in -p9kVncfvySRJ3lVKH0DnW9AoVhnJ_VuRH -P 42681
+   49  mysql -u aptible -h localhost.aptible.in -phxaPI5Hfjljc4B8wf1M54hDSZZmPhYWQ -P 36659
+   50  pwd
+   51  ls
+   52  cd /mnt/shareVM/
+   53  ls
+   54  hist |grep mount
+   55  sudo mount -t vboxsf ThirdCavalry /mnt/shareVM/
+   56  ls
+   57  ls /mnt/shareVM/
+   58  ls
+   59  cd /mnt/shareVM/
+   60  cd Aptible_UAT/
+   61  ls
+   62  cd tmp/
+   63  ls
+   64  ..
+   65  ls
+   66  cd Backup/
+   67  ls
+   68  mkdir public
+   69  cd public/
+   70  mkdir upload
+   71  ls
+   72  cd upload/
+   73  ls
+   74  man convert
+   75  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id:  1: 1486464109.jpg .'  1486464109.jpg;
+   76  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id:  4: 1486522849.jpg .'  1486522849.jpg;
+   77  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id:  7: 1486542629.jpg .'  1486542629.jpg;
+   78  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 24: 1487148554.jpg .'  1487148554.jpg;
+   79  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 29: 1487157403.jpg .'  1487157403.jpg;
+   80  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 38: 1487213908.jpg .'  1487213908.jpg;
+   81  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 40: 1487275644.jpg .'  1487275644.jpg;
+   82  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 43: 1487306432.jpg .'  1487306432.jpg;
+   83  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 44: 1487315665.jpg .'  1487315665.jpg;
+   84  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 45: 1487357041.jpg .'  1487357041.jpg;
+   85  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 46: 1487359551.jpg .'  1487359551.jpg;
+   86  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 49: 1487363463.jpg .'  1487363463.jpg;
+   87  convert -background lightblue -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 50: 1487363626.jpg .'  1487363626.jpg;
+   88  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 52: 1487565240.jpg .'  1487565240.jpg;
+   89  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 65: 1487666480.jpg .'  1487666480.jpg;
+   90  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 69: 1487789905.jpg .'  1487789905.jpg;
+   91  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 72: 1487919582.jpg .'  1487919582.jpg;
+   92  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 74: 1487920363.jpg .'  1487920363.jpg;
+   93  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 79: 1487966419.jpg .'  1487966419.jpg;
+   94  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 82: 1488249665.jpg .'  1488249665.jpg;
+   95  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 83: 1488253544.jpg .'  1488253544.jpg;
+   96  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 84: 1488258868.jpg .'  1488258868.jpg;
+   97  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 85: 1488295559.jpg .'  1488295559.jpg;
+   98  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 90: 1488427071.jpg .'  1488427071.jpg;
+   99  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 91: 1488429537.jpg .'  1488429537.jpg;
+  100  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id:  1: 1486464109.jpg .'  1486464109.jpg;
+  101  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id:  4: 1486522849.jpg .'  1486522849.jpg;
+  102  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id:  7: 1486542629.jpg .'  1486542629.jpg;
+  103  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 24: 1487148554.jpg .'  1487148554.jpg;
+  104  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 29: 1487157403.jpg .'  1487157403.jpg;
+  105  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 38: 1487213908.jpg .'  1487213908.jpg;
+  106  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 40: 1487275644.jpg .'  1487275644.jpg;
+  107  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 43: 1487306432.jpg .'  1487306432.jpg;
+  108  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 44: 1487315665.jpg .'  1487315665.jpg;
+  109  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 45: 1487357041.jpg .'  1487357041.jpg;
+  110  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 46: 1487359551.jpg .'  1487359551.jpg;
+  111  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 49: 1487363463.jpg .'  1487363463.jpg;
+  112  convert -background lightblue -fill tomato -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 50: 1487363626.jpg .'  1487363626.jpg;
+  113  convert -background tomato -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 52: 1487565240.jpg .'  1487565240.jpg;
+  114  convert -background tomato -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 65: 1487666480.jpg .'  1487666480.jpg;
+  115  convert -background tomato -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 69: 1487789905.jpg .'  1487789905.jpg;
+  116  convert -background tomato -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 72: 1487919582.jpg .'  1487919582.jpg;
+  117  convert -background tomato -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 74: 1487920363.jpg .'  1487920363.jpg;
+  118  convert -background tomato -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 79: 1487966419.jpg .'  1487966419.jpg;
+  119  convert -background tomato -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 82: 1488249665.jpg .'  1488249665.jpg;
+  120  convert -background tomato -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 83: 1488253544.jpg .'  1488253544.jpg;
+  121  convert -background tomato -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 84: 1488258868.jpg .'  1488258868.jpg;
+  122  convert -background tomato -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 85: 1488295559.jpg .'  1488295559.jpg;
+  123  convert -background tomato -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 90: 1488427071.jpg .'  1488427071.jpg;
+  124  convert -background tomato -fill blue -font Candice -size 320x480  caption:'This text is resized to best fill the space given noti_id: 91: 1488429537.jpg .'  1488429537.jpg;
+  125  ...
+  126  ls
+  127  ..
+  128  cd org_uat/
+  129  ls
+  130  c
+  131  gitk app/Http/Controllers/NotificationController.php
+  132  ls -l  public/upload/
+  133  ...
+  134  ls
+  135  cd Live/
+  136  ls
+  137  cd Backup/
+  138  ls
+  139  mkdir-p  public/upload
+  140  mkdir -p  public/upload
+  141  cd public/upload/
+  142  wget api.organizerhope.com/upload/1488252964.jpg .
+  143  l
+  144  ls
+  145  wget api.organizerhope.com/upload/1487309012.jpg .
+  146  wget api.organizerhope.com/upload/1488254244.jpg .
+  147  ls
+  148  du -sh *
+  149  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488438527.jpg .'  1488438527.jpg
+  150  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488438577.jpg .'  1488438577.jpg
+  151  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488444833.jpg .'  1488444833.jpg
+  152  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488445055.jpg .'  1488445055.jpg
+  153  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488445111.jpg .'  1488445111.jpg
+  154  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488445644.jpg .'  1488445644.jpg
+  155  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488445672.jpg .'  1488445672.jpg
+  156  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488447493.jpg .'  1488447493.jpg
+  157  c
+  158  cd ~
+  159  ls
+  160  cd Public/
+  161  ls
+  162  ls ~/Documents/
+  163  ls ~
+  164  vim history
+  165  hist |grep mysql
+  166  vim history 
+  167  top
+  168  pwd
+  169  cd /mnt/shareVM/
+  170  ls
+  171  cd Aptible_UAT/org_uat/
+  172  cd public/upload/
+  173  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488438527.jpg .'  1488438527.jpg
+  174  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488438577.jpg .'  1488438577.jpg
+  175  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488444833.jpg .'  1488444833.jpg
+  176  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488445055.jpg .'  1488445055.jpg
+  177  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488445111.jpg .'  1488445111.jpg
+  178  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488445644.jpg .'  1488445644.jpg
+  179  ls
+  180  convert -background tomato -fill blue  -size 320x480  caption:'img  1488445644.jpg .'  1488445644.jpg
+  181  ls
+  182  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488438527.jpg .'  1488438527.jpg
+  183  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488438577.jpg .'  1488438577.jpg
+  184  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488444833.jpg .'  1488444833.jpg
+  185  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488445055.jpg .'  1488445055.jpg
+  186  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488445111.jpg .'  1488445111.jpg
+  187  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488445644.jpg .'  1488445644.jpg
+  188  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488445672.jpg .'  1488445672.jpg
+  189  convert -background tomato -fill blue -font Candice -size 320x480  caption:'img  1488447493.jpg .'  1488447493.jpg
+  190  hist |grep mount
+  191  sudo mount -t vboxsf ThirdCavalry /mnt/shareVM/
+  192  cdc /mnt/shareVM/
+  193  ls
+  194  cd /mnt/
+  195  cd shareVM/
+  196  ls
+  197  cd Aptible_UAT/
+  198  ls
+  199  duh
+  200  ls -a
+  201  duh .git
+  202  ls -a
+  203  cd org_uat/
+  204  duh
+  205  duh .git
+  206  ls -a
+  207  ls -l public/up
+  208  ls -l public/upload/
+  209  ls
+  210  cd public/upload/
+  211  ls
+  212  hist |grep wget
+  213  wget api.organizerhope.com/upload/1489506834.jpg
+  214  ...
+  215  ls
+  216  duh vendor/
+  217  ls
+  218  ls ..
+  219  ls ../Release_UAT/
+  220  mkdir ../Release_UAT/UAT_aptible_27Mar_rlease#3b
+  221  ls
+  222  ls -a
+  223  git st
+  224  ls
+  225  ls ..
+  226  ls ../Backup/
+  227  ls ../RE
+  228  ls ../Release_UAT/
+  229  c
+  230  comandos
+  231  source ~/.bash_aliases 
+  232  comandos
+  233  ls
+  234  sudo docker ps
+  235  sudo docker start dc9a253f9086
+  236  sudo docker ps -a
+  237  ls
+  238  ..
+  239  sudo docker ps
+  240  cd ~/Music/
+  241  ls
+  242  cat docker-cron-example/Procfile 
+  243  cat /mnt/shareVM/Aptible_UAT/org_uat/Procfile 
+  244  findname "*.sh"
+  245  sudo docker ps
+  246  sudo docker images
+  247  hist |grep run
+  248  sudo docker images
+  249  sudo docker run -i -t 402e248c88c0 /bin/sh
+  250  sudo docker run -i -t 402e248c88c0 /bin/bash
+  251  c
+  252  sudo docker ps
+  253  sudo docker images
+  254  sudo docker images -a
+  255  df -k
+  256  sudo docker rmi 402e248c88c0
+  257  sudo docker rmi 9926bdb3ac8a
+  258  c
+  259  sudo docker images
+  260  sudo docker images -a
+  261  sudo docker rmi 402e248c88c0
+  262  sudo docker rmi 402e248c88c0 76a44b473bb4 7394a10653c5 c063ccce5437 
+  263  sudo docker rmi 402e248c88c0
+  264  sudo docker ps -a
+  265  sudo docker rm $(docker ps -a -q)
+  266  sudo docker rm $(sudo docker ps -a -q)
+  267  c
+  268  sudo docker ps -a
+  269  sudo docker images -a
+  270  sudo docker ps -a
+  271  ping google.com
+  272  ping bing.com
+  273  sudo docker ps -a
+  274  sudo docker images -a
+  275  sudo docker run -i -t 127ef66f8d04 /bin/bash
+  276  sudo docker ps -a
+  277  hist |grep remove
+  278  hist |grep rmi
+  279  history |grep docker
+  280  sudo docker rm $(sudo docker ps -a -q)
+  281  sudo docker images -a
+  282  hist |grep rmi
+  283  sudo docker rmi  127ef66f8d04 2c22fa3f9c02 33944bbc83a2 73c20bc3addf 01f0892e7061 e105841b87cf 302cfb357ff0 52ec210a4987  c4551f9cea76 80d0d21c4fa2 0ef2ad2f5e57 
+  284  c
+  285  sudo docker images -a
+  286  sudo docker ps -a
+  287  sudo docker images -a
+  288  sudo docker run -i -t d600c8023d18 /bin/bash
+  289  cd /mnt/OrganizerPhase2/
+  290  cd organizer_api
+  291  gitk app/Http/Controllers/UserExtendController.php
+  292  php artisan route:list
+  293  gitk app/Http/routes.php
+  294  sudo docker ps -a
+  295  docker attach-to-stopped-container d600c8023d18 /bin/bash
+  296  docker attach d600c8023d18 /bin/bash
+  297  docker attach-to-d600c8023d18 /bin/bash
+  298  hist
+  299  ls -a ~
+  300  hist > ~/.COPY/history_28Mar
+
+udo mount -t vboxsf OrganizerPhase2 /mnt/OrganizerPhase2/
+sudo mount -t vboxsf PROJECT /mnt/PROJECT/
+sudo mount -t vboxsf XP2 /mnt/XP2/
+

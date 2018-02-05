@@ -1,0 +1,5 @@
+aws configure set default.s3.signature_version s3v4
+
+# Or for a specific profile
+aws configure set profile.<profilename>.s3.signature_version s3v4
+aws s3api head-object --bucket my-bucket --key index.html

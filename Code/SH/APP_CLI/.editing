@@ -1,0 +1,2 @@
+xclip="xclip -selection c"
+cat ~/Desktop/.bash_aliases | xclip -selection c

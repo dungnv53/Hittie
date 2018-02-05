@@ -1,0 +1,6 @@
+aptible config:set --app "live-txp-chat" "FORCE_SSL=true"
+rsync -avz --exclude ".git" --exclude "files" --exclude "node_modules" /home/cam_zink/Public/TXP_Chat_Server/ .
+rsync -avz --no-perms --no-owner --no-group ...
+
+https://unix.stackexchange.com/questions/102211/rsync-ignore-owner-group-time-and-perms
+

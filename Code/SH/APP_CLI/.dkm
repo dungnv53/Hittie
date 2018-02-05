@@ -1,0 +1,14 @@
+docker-machine ip docker-sandbox
+
+docker run -d -p 8000:80 --name webserver kitematic/hello-world-nginx
+
+$ docker-machine stop docker-sandbox
+$ docker-machine rm docker-sandbox
+
+$ docker-machine ls
+
+docker-machine create --driver digitalocean --digitalocean-access-token BG442E36GDH3TFVCZUNU docker-sandbox
+
+docker-machine ssh dev df -h
+
+
