@@ -10,3 +10,14 @@ ionic state clear -- plugins
 ionic state reset -- plugins
 ionic cordova run android --target=ef9c193e
 
+Here's what I did to get rid of this problem:
+
+Remove your platforms:
+ionic cordova platform remove ios
+ionic cordova platform remove android
+Remove the following directories in your app:
+\platforms
+\plugins
+re-add your platforms:
+ionic cordova platform add ios
+ionic cordova platform add android
