@@ -3,3 +3,6 @@ aws configure set default.s3.signature_version s3v4
 # Or for a specific profile
 aws configure set profile.<profilename>.s3.signature_version s3v4
 aws s3api head-object --bucket my-bucket --key index.html
+
+EC2_AVAIL_ZONE=`curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone`
+~/Music/Lyrics/Hittie/Code/SH/APP_CLI
