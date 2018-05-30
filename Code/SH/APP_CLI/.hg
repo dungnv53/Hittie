@@ -1,0 +1,26 @@
+hg pull && hg update default
+hg status --change 4d5d5a7481d7
+hg push --new-branch
+hg update REV
+hg branch BRANCHNAME
+...
+hg commit
+
+hg commit foo.c foo.h dir/
+hg commit --close-branch
+https://stackoverflow.com/questions/4957721/mercurial-how-to-discard-all-local-changes-including-to-unversioned-files
+
+sudo hg status --change 8f20236cba39
+https://stackoverflow.com/questions/13112280/mercurial-hg-equivalent-of-git-reset-mixed-or-soft
+hg status --change REV
+sudo hg revert ../../../wp-config.php
+
+
+sudo hg rollback
+
+sudo hg merge
+
+sudo hg update default
+# Abort hg commit
+# r = revision number get by `hg log --limit=5`
+hg update -C -r 3
