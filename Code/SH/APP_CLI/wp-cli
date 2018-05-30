@@ -1,0 +1,1 @@
+wp post list --post_type=product_variation --post_parent=56332
