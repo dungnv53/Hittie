@@ -24,3 +24,6 @@ sudo hg update default
 # Abort hg commit
 # r = revision number get by `hg log --limit=5`
 hg update -C -r 3
+
+# reset commit not pushed #similar as git reset hard ...
+hg strip --keep --rev .
