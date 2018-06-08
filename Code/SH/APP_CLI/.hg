@@ -27,3 +27,9 @@ hg update -C -r 3
 
 # reset commit not pushed #similar as git reset hard ...
 hg strip --keep --rev .
+
+# In case same branch forget pull before commit/push => use pull then merge
+sudo hg pull  # no branch name. y ?
+sudo hg add ...
+sudo hg ci -m "abc" # no file list here. if list file as normal commit use => error
+sudo hg push
