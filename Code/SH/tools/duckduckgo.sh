@@ -6,7 +6,7 @@ func(){
     done
     #echo ${str# }
     #echo $str
-    w3m https://www.duckduckgo.com/search?q=${str# }
+    w3m https://www.duckduckgo.com/?q=${str# }
 }
 
 #func
