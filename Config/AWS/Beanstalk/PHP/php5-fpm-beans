@@ -1,0 +1,182 @@
+# from http://www.mattzuba.com/2014/05/aws-elastic-beanstalk-with-apache-2-4-and-php-fpm-5-5/
+packages:
+    yum:
+        php55-fpm: []
+
+files:
+    "/opt/elasticbeanstalk/hooks/appdeploy/pre/26_phpfpm_config.sh":
+        mode: "000755"
+        owner: root
+        group: root
+        content: |
+            #!/usr/bin/env bash
+
+            # Configure PHP FPM based on the memory limits of this server
+            MAX_CHILDREN=$(free -m | awk 'FNR == 2 {print int(($2-200)/18 / 5) * 5}')
+            MIN_SPARE=$(($MAX_CHILDREN/5*1))
+            MAX_SPARE=$(($MAX_CHILDREN/5*2))
+            START=$(($MIN_SPARE + ($MAX_SPARE - $MIN_SPARE) / 2))
+
+            sed -i "s/pm.max_children.*/pm.max_children = $MAX_CHILDREN/" /etc/php-fpm.d/www.conf
+            sed -i "s/pm.start_servers.*/pm.start_servers = $START/" /etc/php-fpm.d/www.conf
+            sed -i "s/pm.min_spare.*/pm.min_spare_servers = $MIN_SPARE/" /etc/php-fpm.d/www.conf
+            sed -i "s/pm.max_spare.*/pm.max_spare_servers = $MAX_SPARE/" /etc/php-fpm.d/www.conf
+
+    "/opt/elasticbeanstalk/hooks/appdeploy/pre/27_phpfpm_start.sh":
+        mode: "000755"
+        owner: root
+        group: root
+        content: |
+            #!/usr/bin/env bash
+
+            . /opt/elasticbeanstalk/support/envvars
+
+            service php-fpm-5.5 start
+
+    "/opt/elasticbeanstalk/hooks/appdeploy/enact/99_reload_app_server.sh":
+        mode: "000755"
+        owner: root
+        group: root
+        content: |
+            #!/usr/bin/env bash
+
+            . /opt/elasticbeanstalk/support/envvars
+
+            if [ "$EB_FIRST_RUN" = "true" ]; then
+              # Hard restart on first app deploy
+              service httpd restart
+              service php-fpm-5.5 restart
+            else
+              # Graceful restart on other app deploys
+              service httpd graceful
+              service php-fpm-5.5 reload
+            fi
+
+    "/etc/php-fpm.d/www.conf":
+        mode: "000644"
+        owner: root
+        group: root
+        content: |
+            [www]
+            user = webapp
+            group = webapp
+
+            listen = /var/run/php-fpm/php5-fpm.sock
+            listen.owner = webapp
+            listen.group = webapp
+            listen.mode = 0666
+
+            ; These values are defauls, but dynamically configured by script above on deploymentsudo
+            pm = dynamic
+            pm.max_children = 20
+            pm.start_servers = 6
+            pm.min_spare_servers = 4
+            pm.max_spare_servers = 8
+            pm.max_requests = 1000
+            ping.path = /ping
+            pm.status_path = /status
+
+            chdir = /
+            catch_workers_output = yes
+
+            php_admin_value[error_log] = /var/log/httpd/php-fpm.www.log
+            php_admin_flag[log_errors] = on
+            php_admin_flag[display_errors] = off
+
+    "/etc/httpd/conf.d/php.conf":
+        mode: "000644"
+        owner: root
+        group: root
+        content: |
+            # Ping to make sure PHP is still alive (allow only from load balancers and localhost)
+            <LocationMatch "/(ping|status)$">
+                    Require ip 10.0.0.0/8
+                    Require ip 127.0.0.1
+            </LocationMatch>
+            ProxyPassMatch ^/(ping|status)$ unix:/var/run/php-fpm/php5-fpm.sock|fcgi://localhost/
+
+            #
+            # Cause the PHP interpreter to handle files with a .php extension.
+            #
+            <FilesMatch \.php$>
+                RewriteEngine on
+                RewriteCond %{REQUEST_FILENAME} !-f
+                RewriteRule ^ - [R=404,L]
+                SetHandler "proxy:unix:/var/run/php-fpm/php5-fpm.sock|fcgi://localhost"
+            </FilesMatch>
+
+            #
+            # Allow php to handle Multiviews
+            #
+            AddType text/html .php
+
+            #
+            # Add index.php to the list of files that will be served as directory
+            # indexes.
+            #
+            DirectoryIndex index.php
+
+    "/etc/httpd/conf.d/realip.conf":
+        mode: "000644"
+        owner: root
+        group: root
+        content: |
+            RemoteIPHeader X-Forwarded-For
+
+    "/etc/httpd/conf.d/mpm.conf":
+        mode: "000644"
+        owner: root
+        group: root
+        content: |
+            <IfModule mpm_event_module>
+            	StartServers 3
+            	MinSpareThreads 75
+            	MaxSpareThreads 150
+            	ThreadLimit 32
+            	ThreadsPerChild 32
+            	MaxRequestWorkers 512
+            	MaxConnectionsPerChild 0
+            	ServerLimit 16
+            </IfModule>
+
+
+commands:
+    01_adjust_configdeploy_reload_app_server_hook:
+        cwd: /opt/elasticbeanstalk/hooks/configdeploy/enact
+        test: "! grep -q php-fpm-5.5 99_reload_app_server.sh"
+        command: "echo service php-fpm-5.5 restart >> 99_reload_app_server.sh"
+
+    02_adjust_restartappserver_restart_hook:
+        cwd: /opt/elasticbeanstalk/hooks/restartappserver/enact
+        test: "! grep -q php-fpm-5.5 01_restart.sh"
+        command: "echo service php-fpm-5.5 restart >> 01_restart.sh"
+
+    03_fix_preinit_configure_php_hook:
+        cwd: /opt/elasticbeanstalk/hooks/preinit
+        command: "sed -i \"s~'AWS Settings' /etc/httpd/conf/httpd.conf~'AWS Settings' /etc/php.ini~g\" 04_configure_php.sh"
+
+    04a_use_event_mpm:
+        cwd: /etc/httpd/conf.modules.d
+        command: "sed -i 's/^LoadModule mpm_prefork_module/#LoadModule mpm_prefork_module/' 00-mpm.conf"
+    04b_use_event_mpm:
+        cwd: /etc/httpd/conf.modules.d
+        command: "sed -i 's/^#LoadModule mpm_event_module/LoadModule mpm_event_module/' 00-mpm.conf"
+
+    06_tail_php-fpm_logs:
+        cwd: /opt/elasticbeanstalk/tasks/taillogs.d
+        test: "! grep -q php-fpm webapp.conf"
+        command: "echo -e \"\n/var/log/httpd/php-fpm.www.log\" >> webapp.conf"
+
+    07_correct_log_format:
+        cwd: /etc/httpd/conf
+        command: "sed -i 's/LogFormat \"%h/LogFormat \"%a/g' httpd.conf"
+
+    08_turn_off_mod_php:
+        cwd: /etc/httpd/conf.modules.d/
+        ignoreErrors: true
+        command: "mv 10-php.conf 10-php.conf.disabled 2>/dev/null"
+
+    09_fix_upstart_script:
+        cwd: /etc/init
+        test: "! grep -q post-stop httpd.conf"
+        command: "echo -e \"post-stop script\n\tsleep 5\nend script\" >> /etc/init/httpd.conf"
