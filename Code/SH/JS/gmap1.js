@@ -19,7 +19,7 @@ function groupStudioByCountry($data) {
 }
 
 ?>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAoolWuVR4rZa68IhBVDuRE2NSWA0SccA&callback=initMap&libraries=places"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=key_here&callback=initMap&libraries=places"></script>
 <style type="text/css">
     .left-result {
         width: 27%;
@@ -638,6 +638,6 @@ function groupStudioByCountry($data) {
   jQuery(window).on('load', function () {
   });
 </script>
-<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMGPyL0Sl6kQc4ri9oVaLELjMgw1c2M5A&callback=initMap"></script>-->
+<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=key_here&callback=initMap"></script>-->
 <?php get_footer(); ?>
 
