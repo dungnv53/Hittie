@@ -126,16 +126,12 @@ alias cathost='cat /c/Windows/System32/drivers/etc/hosts'
 alias vivhost='vim /e/setin/xampp_56/apache/conf/extra/httpd-vhosts.conf'
 alias catvhost='cat /e/setin/xampp_56/apache/conf/extra/httpd-vhosts.conf'
 alias apcrst='/e/setin/xampp_56/apache/bin/httpd.exe -k restart'
-alias cdorg2='cd /e/setin/xampp_56/htdocs/Organizer/ServiceApi/OrganizerApi'
-alias cdorg='cd /e/setin/xampp_56/htdocs/Organizer/SourceCodeDemo/ServiceApi/OrganizerApi/'
-alias cdorgdemo='cd /e/setin/xampp_56/htdocs/Organizer/SourceCodeDemo'
 
 
 alias tailsql='tail -f /e/setin/xampp_56/mysql/data/mysql_query.log'
 
 alias hist='history'
 
-alias cdsbf='cd /e/ArchAngel/SnowBallFightLibGdx'
 
 alias sshblondie='ssh -p 3022 blondie@127.0.0.1'
 
@@ -148,7 +144,6 @@ alias cnode='clear && nodemon server.js'
 alias pmr0='clear && pm2 restart 0'
 alias frs='forever start server.js'
 alias frl='forever list'
-alias cdrt2='cd /mnt/OrganizerPhase2/TXP_Chat/rt2'
 alias synctxp='cd /home/cam_zink/Public/Project && rsync -ua --exclude 'node_modules' /mnt/PROJECT/rt2/* .'
 
 # Docker 
