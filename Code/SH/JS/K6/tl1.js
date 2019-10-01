@@ -39,11 +39,11 @@ export default function() {
     // Extract API session token from JSON response
     // let resJson = res.json();  // res.json() is cached between calls
     // let apiToken = resJson.data.jwt;
-    let apiToken = 'eyJhbGciOiJqd3QifQ.eyJpZCI6IjEiLCJmaXJzdG5hbWUiOiJEYXZlIiwibGFzdG5hbWUiOiJDdXJ0aXMiLCJlbWFpbCI6ImxldmkrY3NtQG9mZnNwcmluZ2RpZ2l0YWwuY29tIiwicmVnaXN0ZXJlZF9hdCI6IjIwMTMtMDctMjlUMDg6NDU6MDcrMDA6MDAiLCJnZW5kZXIiOiJNYWxlIiwiY291bnRyeV9jb2RlIjoiQVUiLCJkaWV0X3BsYW4iOiJtYWluc3RyZWFtIiwic3R1ZGlvIjoiRjQ1IERlZSBXaHkiLCJ0aW1lem9uZSI6IlVUQyIsImpvaW5fY2hhbGxlbmdlIjoiIn0.GbNzUnEp7Ey0CKA-DIBsdDoOFFd8jhbH-4bY7beDc8g';
+    let apiToken = 'eyJhbGciOiJqd3QifQGbNzUnEp7Ey0CKA-DIBsdDoOFFd8jhbH-4bY7beDc8g';
     // TODO random or list of big access_code list
     let access_code = 'k4m9';
     // let timeline_api = 'http://f45-challenge-api-staging.wwmwxb3tt7.us-west-1.elasticbeanstalk.com';
-    let timeline_api = 'http://timeline.api.f45training.com';
+    let timeline_api = 'http://timeline.api.krishna1.com';
 
     // console.log(apiToken);
     // Use session token to make API requests
@@ -165,9 +165,9 @@ function getRandomInt(min, max) {
 
 function getGoaldPointWeek(res, staging_chall_api, latencyMetric) {
     // user 14358
-    let apiToken2 = 'eyJhbGciOiJqd3QifQ.eyJpZCI6IjE0MzU4IiwiZmlyc3RuYW1lIjoiR29yZGFuYSIsImxhc3RuYW1lIjoiU3RlZmFub3Zza2kiLCJlbWFpbCI6ImxldmkrZ29yZGllc3RlZm9Ab2Zmc3ByaW5nZGlnaXRhbC5jb20iLCJyZWdpc3RlcmVkX2F0IjoiMjAxNS0wOS0wMVQwOToyMjoxMSswMDowMCIsImdlbmRlciI6IkZlbWFsZSIsImNvdW50cnlfY29kZSI6IkFVIiwiZGlldF9wbGFuIjoibWFpbnN0cmVhbSIsInN0dWRpbyI6IkY0NSBTaGVsbCBIYXJib3VyIiwidGltZXpvbmUiOiJBdXN0cmFsaWEvU3lkbmV5Iiwiam9pbl9jaGFsbGVuZ2UiOiIifQ.PtfeGWIHy7IhpiPqgbnlLZwCbbUPjqpmcWcjT7OuCUk';
+    let apiToken2 = 'eyJhbGciOiJqd3QifQPtfeGWIHy7IhpiPqgbnlLZwCbbUPjqpmcWcjT7OuCUk';
     let week = getRandomInt(1, 8);
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/goal_points/weeks/"+week,
+    res = http.get(staging_chall_api + "/wp-json/chlge/v2.1/users/goal_points/weeks/"+week,
     { headers: { "Authorization": "Bearer " + apiToken2 } } );
     check(res, {
         "status is 200": (res) => res.status === 200,
@@ -187,7 +187,7 @@ function getMealPlans(res, staging_chall_api, apiToken, latencyMetric) {
         rand_month = "0"+rand_month;
     }
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/meal_plans/daily/2018-"+rand_month + "-" +rand_date,
+    res = http.get(staging_chall_api + "/wp-json/chlge/v2.1/meal_plans/daily/2018-"+rand_month + "-" +rand_date,
     { headers: { "Authorization": "Bearer " + apiToken } } );
 
     check(res, {
@@ -202,7 +202,7 @@ function getGoalPointsDate(res, staging_chall_api, apiToken, latencyMetric) {
     let rand_month = getRandMonth();
     let rand_date = getRandDate();
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/goal_points/dates/2018-"+rand_month+"-"+rand_date,
+    res = http.get(staging_chall_api + "/wp-json/chlge/v2.1/users/goal_points/dates/2018-"+rand_month+"-"+rand_date,
     { headers: { "Authorization": "Bearer " + apiToken } });
     check(res, {
         "status is 200": (res) => res.status === 200,
@@ -213,7 +213,7 @@ function getGoalPointsDate(res, staging_chall_api, apiToken, latencyMetric) {
 }
 
 function getBodyStats(res, staging_chall_api, apiToken, latencyMetric) {
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/body_stats",
+    res = http.get(staging_chall_api + "/wp-json/chlge/v2.1/users/body_stats",
     { headers: { "Authorization": "Bearer " + apiToken } }
     );
     check(res, {
@@ -231,7 +231,7 @@ function getChallenge(res, staging_chall_api, apiToken, apiToken2, latencyMetric
     if(rand_api == 2) {
         tempToken = apiToken2;
     }
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/challenge",
+    res = http.get(staging_chall_api + "/wp-json/chlge/v2.1/users/challenge",
     { headers: { "Authorization": "Bearer " + tempToken } });
 
     check(res, {
@@ -244,7 +244,7 @@ function getChallenge(res, staging_chall_api, apiToken, apiToken2, latencyMetric
 
 function getUserGoalPointWeek(res, staging_chall_api, apiToken2, latencyMetric) {
     let rand_week = getRandomInt(1, 8);
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/goal_points/weeks/"+rand_week,
+    res = http.get(staging_chall_api + "/wp-json/chlge/v2.1/users/goal_points/weeks/"+rand_week,
     { headers: { "Authorization": "Bearer " + apiToken2 } }
     );
     check(res, {
@@ -258,10 +258,10 @@ function getUserGoalPointWeek(res, staging_chall_api, apiToken2, latencyMetric) 
 function getAPIToken() {
     let index = getRandomInt(0, 3);
     let apiTokens = [
-        'eyJhbGciOiJqd3QifQ.eyJpZCI6IjEiLCJmaXJzdG5hbWUiOiJEYXZlIiwibGFzdG5hbWUiOiJDdXJ0aXMiLCJlbWFpbCI6ImxldmkrY3NtQG9mZnNwcmluZ2RpZ2l0YWwuY29tIiwicmVnaXN0ZXJlZF9hdCI6IjIwMTMtMDctMjlUMDg6NDU6MDcrMDA6MDAiLCJnZW5kZXIiOiJNYWxlIiwiY291bnRyeV9jb2RlIjoiQVUiLCJkaWV0X3BsYW4iOiJtYWluc3RyZWFtIiwic3R1ZGlvIjoiRjQ1IERlZSBXaHkiLCJ0aW1lem9uZSI6IlVUQyIsImpvaW5fY2hhbGxlbmdlIjoiIn0.GbNzUnEp7Ey0CKA-DIBsdDoOFFd8jhbH-4bY7beDc8g', // levi
-        'eyJhbGciOiJqd3QifQ.eyJpZCI6IjE0MzU4IiwiZmlyc3RuYW1lIjoiR29yZGFuYSIsImxhc3RuYW1lIjoiU3RlZmFub3Zza2kiLCJlbWFpbCI6ImxldmkrZ29yZGllc3RlZm9Ab2Zmc3ByaW5nZGlnaXRhbC5jb20iLCJyZWdpc3RlcmVkX2F0IjoiMjAxNS0wOS0wMVQwOToyMjoxMSswMDowMCIsImdlbmRlciI6IkZlbWFsZSIsImNvdW50cnlfY29kZSI6IkFVIiwiZGlldF9wbGFuIjoibWFpbnN0cmVhbSIsInN0dWRpbyI6IkY0NSBTaGVsbCBIYXJib3VyIiwidGltZXpvbmUiOiJBdXN0cmFsaWEvU3lkbmV5Iiwiam9pbl9jaGFsbGVuZ2UiOiIifQ.PtfeGWIHy7IhpiPqgbnlLZwCbbUPjqpmcWcjT7OuCUk', // 8881 or 14358
-        'eyJhbGciOiJqd3QifQ.eyJpZCI6IjkxMTEiLCJmaXJzdG5hbWUiOiJEYXZlIiwibGFzdG5hbWUiOiJDdXJ0aXMiLCJlbWFpbCI6ImxldmkrZGF2ZWN1cnRpc0BvZmZzcHJpbmdkaWdpdGFsLmNvbSIsInJlZ2lzdGVyZWRfYXQiOiIyMDE1LTA1LTA1VDA0OjA2OjA4KzAwOjAwIiwiZ2VuZGVyIjoiTWFsZSIsImNvdW50cnlfY29kZSI6IkFVIiwiZGlldF9wbGFuIjoibWFpbnN0cmVhbSIsInN0dWRpbyI6IkY0NSBEZWUgV2h5IiwidGltZXpvbmUiOiJBdXN0cmFsaWEvU3lkbmV5Iiwiam9pbl9jaGFsbGVuZ2UiOiIifQ.zBiZbgNs5sx4b2j78hQYEeYP_3espex3maUYKafT-r0', // 9111
-        'eyJhbGciOiJqd3QifQ.eyJpZCI6Ijg5MjEiLCJmaXJzdG5hbWUiOiJQYXJhbWl0YSIsImxhc3RuYW1lIjoiQmFyaWsiLCJlbWFpbCI6ImxldmkrbmVyZHN0ZXJAb2Zmc3ByaW5nZGlnaXRhbC5jb20iLCJyZWdpc3RlcmVkX2F0IjoiMjAxNS0wNC0yOVQwNTo1NjoxNSswMDowMCIsImdlbmRlciI6IkZlbWFsZSIsImNvdW50cnlfY29kZSI6IklOIiwiZGlldF9wbGFuIjoidmVnZXRhcmlhbiIsInN0dWRpbyI6IkY0NSBQYWRkaW5ndG9uIiwidGltZXpvbmUiOiJBc2lhL0tvbGthdGEiLCJqb2luX2NoYWxsZW5nZSI6IiJ9.Fdsf1fBAckFkVALiQVh6NhZMr7bTD6pPriS13KHDuCs', // 8921
+        'eyJhbGciOiJqd3QifQ4bY7beDc8g', // lvl
+        'eyJhbGciOiJqd3QifQl9jaGFsbGVuZ2UiOiIifQ.PtfeGWIHy7IhpiPqgbnlLZwCbbUPjqpmcWcjT7OuCUk', // 8881 or 14358
+        'eyJhbGciOiJqd3QifQiZbgNs5sx4b2j78hQYEeYP_3espex3maUYKafT-r0', // 9111
+        'eyJhbGciOiJqd3QifQFdsf1fBAckFkVALiQVh6NhZMr7bTD6pPriS13KHDuCs', // 8921
     ];
 
     return apiTokens[index];
@@ -292,7 +292,7 @@ function postGoalPointsDate(res, staging_chall_api, latencyMetric) {
         goal_points: {"id": 1, "points": 15}
     };
     let headers = { "Content-Type": "application/x-www-form-urlencoded", "Authorization": "Bearer "+apiToken };
-    res = http.post(staging_chall_api + "/wp-json/f45challenge/v2.1/users/users/goal_points/dates/2018-"+rand_month + "-"+rand_date, formdata, { headers: headers });
+    res = http.post(staging_chall_api + "/wp-json/chlge/v2.1/users/users/goal_points/dates/2018-"+rand_month + "-"+rand_date, formdata, { headers: headers });
     check(res, {
         "status is 200": (res) => res.status === 200,
         "content OK": (res) => JSON.parse(res.body).hasOwnProperty('status')

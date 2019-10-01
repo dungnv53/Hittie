@@ -40,8 +40,8 @@ let optionsDo1 = {};
 
 export default function() {
     // Login to get API session token
-    // let res = http.post("http://f45-challenge-api-staging.wwmwxb3tt7.us-west-1.elasticbeanstalk.com/wp-json/f45challenge/v2.1/login",
-    //     JSON.stringify({ email: 'levi+csm@offspringdigital.com', pass: 'dung#1234' }),
+    // let res = http.post("http://kuailo-api-staging.krishna.us-west-1.elasticbeanstalk.com/wp-json/kuailo/v2.1/login",
+    //     JSON.stringify({ email: 'lv+csm@krishnadigital.com', pass: 'dung#1234' }),
     //     { headers: { "Content-Type": "application/json" } }
     // );
 
@@ -52,15 +52,15 @@ export default function() {
     // Extract API session token from JSON response
     // let resJson = res.json();  // res.json() is cached between calls
     // let apiToken = resJson.data.jwt;
-    let apiToken = 'eyJhbGciOiJqd3QifQ.eyJpZCI6IjEiLCJmaXJzdG5hbWUiOiJEYXZlIiwibGFzdG5hbWUiOiJDdXJ0aXMiLCJlbWFpbCI6ImxldmkrY3NtQG9mZnNwcmluZ2RpZ2l0YWwuY29tIiwicmVnaXN0ZXJlZF9hdCI6IjIwMTMtMDctMjlUMDg6NDU6MDcrMDA6MDAiLCJnZW5kZXIiOiJNYWxlIiwiY291bnRyeV9jb2RlIjoiQVUiLCJkaWV0X3BsYW4iOiJtYWluc3RyZWFtIiwic3R1ZGlvIjoiRjQ1IERlZSBXaHkiLCJ0aW1lem9uZSI6IlVUQyIsImpvaW5fY2hhbGxlbmdlIjoiIn0.GbNzUnEp7Ey0CKA-DIBsdDoOFFd8jhbH-4bY7beDc8g';
+    let apiToken = 'eyJhbGciOiJqd3QifQ.eyJpZCI6IjEiLCJmaXJzdG5hbWUiOiJEYXZlIiwibGFzdG5hbWUiOiJDdXJ0aXMiLCJlbWFpbCI6ImxldmkrY3NtQG9mZnNwcmluZ2RpZ2l0YWwuY29tIiwicmVnaXN0ZXJlZF9hdCI6IjIwMTMtMDctMjlUMDg6NDU6MDcrMDA6MDAiLCJnZW5kZXIiOiJNYWxlIiwiY291bnRyeV9jb2RlIjoiQVUiLCJkaWV0X3BsYW4iOiJtYWluc3RyZWFtIiwic3R1ZGlvIjoiRjQ1IERlZSBXaHkiLCJ0aW1lem9uZSI6IlVUQyIsImpvaW5fY2hhbGxlbmdlIjoiIn0.GbNzUnEp7Ey0CKA-kkkkkkkkhihihihih';
     // 14358
-    let apiToken2 = 'eyJhbGciOiJqd3QifQ.eyJpZCI6IjE0MzU4IiwiZmlyc3RuYW1lIjoiR29yZGFuYSIsImxhc3RuYW1lIjoiU3RlZmFub3Zza2kiLCJlbWFpbCI6ImxldmkrZ29yZGllc3RlZm9Ab2Zmc3ByaW5nZGlnaXRhbC5jb20iLCJyZWdpc3RlcmVkX2F0IjoiMjAxNS0wOS0wMVQwOToyMjoxMSswMDowMCIsImdlbmRlciI6IkZlbWFsZSIsImNvdW50cnlfY29kZSI6IkFVIiwiZGlldF9wbGFuIjoibWFpbnN0cmVhbSIsInN0dWRpbyI6IkY0NSBTaGVsbCBIYXJib3VyIiwidGltZXpvbmUiOiJBdXN0cmFsaWEvU3lkbmV5Iiwiam9pbl9jaGFsbGVuZ2UiOiIifQ.PtfeGWIHy7IhpiPqgbnlLZwCbbUPjqpmcWcjT7OuCUk';
-    // let staging_chall_api = 'http://f45-challenge-api-staging.wwmwxb3tt7.us-west-1.elasticbeanstalk.com';
-    let staging_chall_api = 'http://www2-staging.f45challenge.com';
+    let apiToken2 = 'eyJhbGciOiJqd3QifQ.eotuhoaesuahousth';
+    // let staging_chall_api = 'http://kuailo-api-staging.kkkk.us-west-1.elasticbeanstalk.com';
+    let staging_chall_api = 'http://www2-staging.kuailo.com';
 
     // console.log(apiToken);
     // Use session token to make API requests
-    let res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/dashboard?date=2018-10-22&gender=m&country=AU&diet=mainstream",
+    let res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/dashboard?date=2018-10-22&gender=m&country=AU&duo=mainstream",
         // { headers: { "Authorization": "Token " + apiToken } }
         { headers: { "Authorization": "Bearer " + apiToken } }
     );
@@ -101,7 +101,7 @@ export default function() {
     postGoalPointsDate(res, staging_chall_api, latencyMetric);
 
     // TODO may be loop from a list of API
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/challenge",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/challenge",
         { headers: { "Authorization": "Bearer " + apiToken } }
     );
 
@@ -116,7 +116,7 @@ export default function() {
         getBodyStats(res, staging_chall_api, apiToken, latencyMetric);
     }
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/challenge_meta",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/challenge_meta",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -130,7 +130,7 @@ export default function() {
         getGoaldPointWeek(res, staging_chall_api, latencyMetric);
     }
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/blog_posts",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/blog_posts",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -145,7 +145,7 @@ export default function() {
     latencyMetric.add(res.timings.waiting, {endpoint: "blog_posts"});
     sleep(3);
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/service_info",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/service_info",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
 
@@ -156,7 +156,7 @@ export default function() {
     latencyMetric.add(res.timings.waiting, {endpoint: "service_info"});
     sleep(3);
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/goals",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/goals",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
 
@@ -171,7 +171,7 @@ export default function() {
         getGoalPointsDate(res, staging_chall_api, apiToken, latencyMetric);
     }
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/faqs",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/faqs",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
 
@@ -186,7 +186,7 @@ export default function() {
         getChallenge(res, staging_chall_api, apiToken, apiToken2, latencyMetric);
     }
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/recipes",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/recipes",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -196,7 +196,7 @@ export default function() {
     latencyMetric.add(res.timings.waiting, {endpoint: "recipes"});
     sleep(3);
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/recipes_updated",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/recipes_updated",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -210,7 +210,7 @@ export default function() {
         getGoaldPointWeek(res, staging_chall_api, latencyMetric);
     }
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/meal_plans/suppliers",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/meal_plans/suppliers",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -224,7 +224,7 @@ export default function() {
         getChallenge(res, staging_chall_api, apiToken, apiToken2, latencyMetric);
     }
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/meal_plans/daily/2018-12-30",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/meal_plans/daily/2018-12-30",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -238,7 +238,7 @@ export default function() {
         getMealPlans(res, staging_chall_api, apiToken, latencyMetric);
     }
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/shopping_lists/weeks/3",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/shopping_lists/weeks/3",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -248,7 +248,7 @@ export default function() {
     latencyMetric.add(res.timings.waiting, {endpoint: "shopping_lists"});
     sleep(3);
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/body_stats",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/body_stats",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -261,7 +261,7 @@ export default function() {
     getUserGoalPointWeek(res, staging_chall_api, apiToken2, latencyMetric);
 
     // TODO move to function for flexible random params
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/goal_points/dates/2018-12-30",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/goal_points/dates/2018-12-30",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -275,7 +275,7 @@ export default function() {
         getGoaldPointWeek(res, staging_chall_api, latencyMetric);
     }
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/8446/challenge",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/8446/challenge",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -285,7 +285,7 @@ export default function() {
     latencyMetric.add(res.timings.waiting, {endpoint: "users/id/challenge"});
     sleep(3);
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/8446/shopping_lists/weeks/3",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/8446/shopping_lists/weeks/3",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -295,7 +295,7 @@ export default function() {
     latencyMetric.add(res.timings.waiting, {endpoint: "users/id/shopping_lists"});
     sleep(3);
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/8446/body_stats",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/8446/body_stats",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -309,7 +309,7 @@ export default function() {
         getMealPlans(res, staging_chall_api, apiToken, latencyMetric);
     }
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/8446/goal_points/weeks/3",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/8446/goal_points/weeks/3",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -319,7 +319,7 @@ export default function() {
     latencyMetric.add(res.timings.waiting, {endpoint: "users/id/goal_points"});
     sleep(3);
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/8446/goal_points/dates/2018-12-30",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/8446/goal_points/dates/2018-12-30",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -329,7 +329,7 @@ export default function() {
     latencyMetric.add(res.timings.waiting, {endpoint: "users/id/goal_points/dates"});
     sleep(3);
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/timezones",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/timezones",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -343,7 +343,7 @@ export default function() {
         getMealPlans(res, staging_chall_api, apiToken, latencyMetric);
     }
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/countries",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/countries",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
@@ -353,7 +353,7 @@ export default function() {
     latencyMetric.add(res.timings.waiting, {endpoint: "countries"});
     sleep(3);
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/studios",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/studios",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
 
@@ -393,7 +393,7 @@ function getGoaldPointWeek(res, staging_chall_api, latencyMetric) {
     // user 14358
     let apiToken2 = 'eyJhbGciOiJqd3QifQ.eyJpZCI6IjE0MzU4IiwiZmlyc3RuYW1lIjoiR29yZGFuYSIsImxhc3RuYW1lIjoiU3RlZmFub3Zza2kiLCJlbWFpbCI6ImxldmkrZ29yZGllc3RlZm9Ab2Zmc3ByaW5nZGlnaXRhbC5jb20iLCJyZWdpc3RlcmVkX2F0IjoiMjAxNS0wOS0wMVQwOToyMjoxMSswMDowMCIsImdlbmRlciI6IkZlbWFsZSIsImNvdW50cnlfY29kZSI6IkFVIiwiZGlldF9wbGFuIjoibWFpbnN0cmVhbSIsInN0dWRpbyI6IkY0NSBTaGVsbCBIYXJib3VyIiwidGltZXpvbmUiOiJBdXN0cmFsaWEvU3lkbmV5Iiwiam9pbl9jaGFsbGVuZ2UiOiIifQ.PtfeGWIHy7IhpiPqgbnlLZwCbbUPjqpmcWcjT7OuCUk';
     let week = getRandomInt(1, 8);
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/goal_points/weeks/"+week,
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/goal_points/weeks/"+week,
     { headers: { "Authorization": "Bearer " + apiToken2 } } );
     check(res, {
         "status is 200": (res) => res.status === 200,
@@ -413,7 +413,7 @@ function getMealPlans(res, staging_chall_api, apiToken, latencyMetric) {
         rand_month = "0"+rand_month;
     }
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/meal_plans/daily/2018-"+rand_month + "-" +rand_date,
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/meal_plans/daily/2018-"+rand_month + "-" +rand_date,
     { headers: { "Authorization": "Bearer " + apiToken } } );
 
     check(res, {
@@ -428,7 +428,7 @@ function getGoalPointsDate(res, staging_chall_api, apiToken, latencyMetric) {
     let rand_month = getRandMonth();
     let rand_date = getRandDate();
 
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/goal_points/dates/2018-"+rand_month+"-"+rand_date,
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/goal_points/dates/2018-"+rand_month+"-"+rand_date,
     { headers: { "Authorization": "Bearer " + apiToken } });
     check(res, {
         "status is 200": (res) => res.status === 200,
@@ -439,7 +439,7 @@ function getGoalPointsDate(res, staging_chall_api, apiToken, latencyMetric) {
 }
 
 function getBodyStats(res, staging_chall_api, apiToken, latencyMetric) {
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/body_stats",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/body_stats",
     { headers: { "Authorization": "Bearer " + apiToken } }
     );
     check(res, {
@@ -457,7 +457,7 @@ function getChallenge(res, staging_chall_api, apiToken, apiToken2, latencyMetric
     if(rand_api == 2) {
         tempToken = apiToken2;
     }
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/challenge",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/challenge",
     { headers: { "Authorization": "Bearer " + tempToken } });
 
     check(res, {
@@ -470,7 +470,7 @@ function getChallenge(res, staging_chall_api, apiToken, apiToken2, latencyMetric
 
 function getUserGoalPointWeek(res, staging_chall_api, apiToken2, latencyMetric) {
     let rand_week = getRandomInt(1, 8);
-    res = http.get(staging_chall_api + "/wp-json/f45challenge/v2.1/users/goal_points/weeks/"+rand_week,
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/goal_points/weeks/"+rand_week,
     { headers: { "Authorization": "Bearer " + apiToken2 } }
     );
     check(res, {
@@ -484,10 +484,10 @@ function getUserGoalPointWeek(res, staging_chall_api, apiToken2, latencyMetric) 
 function getAPIToken() {
     let index = getRandomInt(0, 3);
     let apiTokens = [
-        'eyJhbGciOiJqd3QifQ.eyJpZCI6IjEiLCJmaXJzdG5hbWUiOiJEYXZlIiwibGFzdG5hbWUiOiJDdXJ0aXMiLCJlbWFpbCI6ImxldmkrY3NtQG9mZnNwcmluZ2RpZ2l0YWwuY29tIiwicmVnaXN0ZXJlZF9hdCI6IjIwMTMtMDctMjlUMDg6NDU6MDcrMDA6MDAiLCJnZW5kZXIiOiJNYWxlIiwiY291bnRyeV9jb2RlIjoiQVUiLCJkaWV0X3BsYW4iOiJtYWluc3RyZWFtIiwic3R1ZGlvIjoiRjQ1IERlZSBXaHkiLCJ0aW1lem9uZSI6IlVUQyIsImpvaW5fY2hhbGxlbmdlIjoiIn0.GbNzUnEp7Ey0CKA-DIBsdDoOFFd8jhbH-4bY7beDc8g', // levi
-        'eyJhbGciOiJqd3QifQ.eyJpZCI6IjE0MzU4IiwiZmlyc3RuYW1lIjoiR29yZGFuYSIsImxhc3RuYW1lIjoiU3RlZmFub3Zza2kiLCJlbWFpbCI6ImxldmkrZ29yZGllc3RlZm9Ab2Zmc3ByaW5nZGlnaXRhbC5jb20iLCJyZWdpc3RlcmVkX2F0IjoiMjAxNS0wOS0wMVQwOToyMjoxMSswMDowMCIsImdlbmRlciI6IkZlbWFsZSIsImNvdW50cnlfY29kZSI6IkFVIiwiZGlldF9wbGFuIjoibWFpbnN0cmVhbSIsInN0dWRpbyI6IkY0NSBTaGVsbCBIYXJib3VyIiwidGltZXpvbmUiOiJBdXN0cmFsaWEvU3lkbmV5Iiwiam9pbl9jaGFsbGVuZ2UiOiIifQ.PtfeGWIHy7IhpiPqgbnlLZwCbbUPjqpmcWcjT7OuCUk', // 8881 or 14358
-        'eyJhbGciOiJqd3QifQ.eyJpZCI6IjkxMTEiLCJmaXJzdG5hbWUiOiJEYXZlIiwibGFzdG5hbWUiOiJDdXJ0aXMiLCJlbWFpbCI6ImxldmkrZGF2ZWN1cnRpc0BvZmZzcHJpbmdkaWdpdGFsLmNvbSIsInJlZ2lzdGVyZWRfYXQiOiIyMDE1LTA1LTA1VDA0OjA2OjA4KzAwOjAwIiwiZ2VuZGVyIjoiTWFsZSIsImNvdW50cnlfY29kZSI6IkFVIiwiZGlldF9wbGFuIjoibWFpbnN0cmVhbSIsInN0dWRpbyI6IkY0NSBEZWUgV2h5IiwidGltZXpvbmUiOiJBdXN0cmFsaWEvU3lkbmV5Iiwiam9pbl9jaGFsbGVuZ2UiOiIifQ.zBiZbgNs5sx4b2j78hQYEeYP_3espex3maUYKafT-r0', // 9111
-        'eyJhbGciOiJqd3QifQ.eyJpZCI6Ijg5MjEiLCJmaXJzdG5hbWUiOiJQYXJhbWl0YSIsImxhc3RuYW1lIjoiQmFyaWsiLCJlbWFpbCI6ImxldmkrbmVyZHN0ZXJAb2Zmc3ByaW5nZGlnaXRhbC5jb20iLCJyZWdpc3RlcmVkX2F0IjoiMjAxNS0wNC0yOVQwNTo1NjoxNSswMDowMCIsImdlbmRlciI6IkZlbWFsZSIsImNvdW50cnlfY29kZSI6IklOIiwiZGlldF9wbGFuIjoidmVnZXRhcmlhbiIsInN0dWRpbyI6IkY0NSBQYWRkaW5ndG9uIiwidGltZXpvbmUiOiJBc2lhL0tvbGthdGEiLCJqb2luX2NoYWxsZW5nZSI6IiJ9.Fdsf1fBAckFkVALiQVh6NhZMr7bTD6pPriS13KHDuCs', // 8921
+        'eyJhbGciOiJqd3QifQ.GbNzUnEp7Ey0CKAueoauoe', // lv
+        'eyJhbGciOiJqd3QifQ.oeauoehus', // 8881 or 14358
+        'eyJhbGciOiJqd3QifQ.ueoauths', // 9111
+        'eyJhbGciOiJqd3QifQosauhoaesuth', // 8921
     ];
 
     return apiTokens[index];
@@ -518,7 +518,7 @@ function postGoalPointsDate(res, staging_chall_api, latencyMetric) {
         goal_points: {"id": 1, "points": 15}
     };
     let headers = { "Content-Type": "application/x-www-form-urlencoded", "Authorization": "Bearer "+apiToken };
-    res = http.post(staging_chall_api + "/wp-json/f45challenge/v2.1/users/users/goal_points/dates/2018-"+rand_month + "-"+rand_date, formdata, { headers: headers });
+    res = http.post(staging_chall_api + "/wp-json/kuailo/v2.1/users/users/goal_points/dates/2018-"+rand_month + "-"+rand_date, formdata, { headers: headers });
     check(res, {
         "status is 200": (res) => res.status === 200,
         "content OK": (res) => JSON.parse(res.body).hasOwnProperty('status')
