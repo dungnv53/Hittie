@@ -4,16 +4,21 @@ import array as arr
 import datetime
 import os
 import codecs
+import sys
+
+# Unittest car data
+# TODO csv filename as param
+# Usage: Update csv filename to test
+# $ python CSV_Test.py
 
 class CarDataTest(unittest.TestCase):
-	# test_data_file_path =  sys.argv[0] if sys.argv[0] else './test.csv' # TODO use csv test filename as param
-	test_data_file_path = './stock_csv_20191009_2.csv' # test.csv
+	# test_data_file_path =  sys.argv[0] if sys.argv[0] else './test.csv'
+	test_data_file_path = './stock_csv_20191011_2.csv' # test.csv
 	test_data_file_object = None
 	test_data_json = None
 	test_data_row_list = list()
 	
-	header_list = ["stock_id", "goo_car_id", "car_name", "e_area_nm", "upload_date", "n_m_option", "hosyou_flg", "car_price_fob", "estimate_total_price", "debut_date", "e_color_nm", "e_distance", "exhaust_nm", "steering", "transmission", "fuel_cd", "drive", "e_door_nm", "repair_flag", "disp_navi_code", "katashiki", "kantei_syatai_id", "kantei_naisou_id", "kantei_kikan_id", "kantei_kokkaku_id", "hybrid_opt", "welfare_opt", "approved_by_offical_dealer_opt", "cold_district_spec_opt", "maitainace_record_opt", "one_owner_opt", "no_smocking_opt", "keyless_entry_opt", "air_condition_opt", "double_air_condition_opt", "power_steering_opt", "power_window_opt", "tv_navi_opt", "cd_changer_opt", "md_changer_opt", "cassette_opt", "seating_capacity", "sunroof_opt", "leather_seats_opt", "low_down_opt", "full_earo_kits_opt", "alloy_wheel", "sliding_door_opt", "power_adjustable_seats_opt", "bench_seats_opt", "full_flat_opt", "SRS_airbags_opt", "ABS_opt", "anti_theft_sys_opt", "ESC_opt", "rear_parking_camera_opt", "HID_opt", "smart_key_sys_opt", "photo_J_0", "photo_J_1", "photo_J_2", "photo_J_3", "photo_J_4", "photo_J_5", "photo_J_6", "photo_J_7", "photo_J_8", "photo_J_9", "photo_J_10", "photo_J_11", "photo_J_12", "photo_J_13", "photo_J_14", "photo_J_15", "photo_J_16", "photo_J_17", "photo_J_18", "photo_J_19", "photo_J_20", "photo_J_21", "photo_J_22", "photo_J_23", "photo_J_24", "photo_J_25", "photo_J_26", "photo_J_27", "photo_J_28", "photo_J_29", "photo_J_30", "photo_J_31", "photo_J_32", "photo_J_33", "photo_J_34", "photo_J_35", "photo_J_36", "photo_J_37", "photo_J_38", "photo_J_39", "photo_J_40", "photo_J_41", "photo_J_42", "photo_J_43", "photo_J_44", "photo_J_45", "photo_J_46", "photo_J_47", "photo_J_48", "photo_J_49", "photo_J_50", "photo_J_51", "photo_J_52", "photo_J_53", "photo_J_54", "photo_J_55", "photo_J_56", "photo_J_57", "photo_J_58", "photo_J_59", "photo_J_60", "photo_J_61", "photo_J_62", "photo_J_63", "photo_J_64", "photo_J_65", "photo_J_66", "photo_J_67", "photo_J_68", "photo_J_69", "photo_J_70", "photo_J_71", "photo_J_72", "photo_J_73", "photo_J_74", "photo_J_75", "photo_J_76", "photo_J_77", "photo_J_78", "photo_J_79", "photo_P_0", "photo_P_1", "photo_P_2", "photo_P_3", "photo_P_4", "photo_P_5", "photo_P_6", "photo_P_7", "photo_P_8", "photo_P_9", "photo_P_10", "photo_P_11", "photo_P_12", "photo_P_13", "photo_P_14", "photo_P_15", "photo_P_16", "photo_P_17", "photo_P_18", "photo_P_19", "photo_P_20", "photo_P_21", "photo_P_22", "photo_P_23", "photo_P_24", "photo_P_25", "photo_P_26", "photo_P_27", "photo_P_28", "photo_P_29", "photo_P_30", "photo_P_31", "photo_P_32", "photo_P_33", "photo_P_34", "photo_P_35", "photo_P_36", "photo_P_37", "photo_P_38", "photo_P_39", "photo_P_40", "photo_P_41", "photo_P_42", "photo_P_43", "photo_P_44", "photo_P_45", "photo_P_46", "photo_P_47", "photo_P_48", "photo_P_49", "photo_P_50", "photo_P_51", "photo_P_52", "photo_P_53", "photo_P_54", "photo_P_55", "photo_P_56", "photo_P_57", "photo_P_58", "photo_P_59", "photo_P_60", "photo_P_61", "photo_P_62", "photo_P_63", "photo_P_64", "photo_P_65", "photo_P_66", "photo_P_67", "photo_P_68", "photo_P_69", "photo_P_70", "photo_P_71", "photo_P_72", "photo_P_73", "photo_P_74", "photo_P_75", "photo_P_76", "photo_P_77", "photo_P_78", "photo_P_79", "movie_exists_flg", "movie_url", "movie_thumbnail_url", "n_cat_id", "recycle_flg", "recycle_add_flg"]
-	#header_arr = arr.array(str('u'), ["stock_id", "goo_car_id", "car_name", "e_area_nm", "upload_date", "n_m_option", "hosyou_flg", "car_price_fob", "estimate_total_price", "debut_date", "e_color_nm", "e_distance", "exhaust_nm", "steering", "transmission", "fuel_cd", "drive", "e_door_nm", "repair_flag", "disp_navi_code", "katashiki", "kantei_syatai_id", "kantei_naisou_id", "kantei_kikan_id", "kantei_kokkaku_id", "hybrid_opt", "welfare_opt", "approved_by_offical_dealer_opt", "cold_district_spec_opt", "maitainace_record_opt", "one_owner_opt", "no_smocking_opt", "keyless_entry_opt", "air_condition_opt", "double_air_condition_opt", "power_steering_opt", "power_window_opt", "tv_navi_opt", "cd_changer_opt", "md_changer_opt", "cassette_opt", "seating_capacity", "sunroof_opt", "leather_seats_opt", "low_down_opt", "full_earo_kits_opt", "alloy_wheel", "sliding_door_opt", "power_adjustable_seats_opt", "bench_seats_opt", "full_flat_opt", "SRS_airbags_opt", "ABS_opt", "anti_theft_sys_opt", "ESC_opt", "rear_parking_camera_opt", "HID_opt", "smart_key_sys_opt", "photo_J_0", "photo_J_1", "photo_J_2", "photo_J_3", "photo_J_4", "photo_J_5", "photo_J_6", "photo_J_7", "photo_J_8", "photo_J_9", "photo_J_10", "photo_J_11", "photo_J_12", "photo_J_13", "photo_J_14", "photo_J_15", "photo_J_16", "photo_J_17", "photo_J_18", "photo_J_19", "photo_J_20", "photo_J_21", "photo_J_22", "photo_J_23", "photo_J_24", "photo_J_25", "photo_J_26", "photo_J_27", "photo_J_28", "photo_J_29", "photo_J_30", "photo_J_31", "photo_J_32", "photo_J_33", "photo_J_34", "photo_J_35", "photo_J_36", "photo_J_37", "photo_J_38", "photo_J_39", "photo_J_40", "photo_J_41", "photo_J_42", "photo_J_43", "photo_J_44", "photo_J_45", "photo_J_46", "photo_J_47", "photo_J_48", "photo_J_49", "photo_J_50", "photo_J_51", "photo_J_52", "photo_J_53", "photo_J_54", "photo_J_55", "photo_J_56", "photo_J_57", "photo_J_58", "photo_J_59", "photo_J_60", "photo_J_61", "photo_J_62", "photo_J_63", "photo_J_64", "photo_J_65", "photo_J_66", "photo_J_67", "photo_J_68", "photo_J_69", "photo_J_70", "photo_J_71", "photo_J_72", "photo_J_73", "photo_J_74", "photo_J_75", "photo_J_76", "photo_J_77", "photo_J_78", "photo_J_79", "photo_P_0", "photo_P_1", "photo_P_2", "photo_P_3", "photo_P_4", "photo_P_5", "photo_P_6", "photo_P_7", "photo_P_8", "photo_P_9", "photo_P_10", "photo_P_11", "photo_P_12", "photo_P_13", "photo_P_14", "photo_P_15", "photo_P_16", "photo_P_17", "photo_P_18", "photo_P_19", "photo_P_20", "photo_P_21", "photo_P_22", "photo_P_23", "photo_P_24", "photo_P_25", "photo_P_26", "photo_P_27", "photo_P_28", "photo_P_29", "photo_P_30", "photo_P_31", "photo_P_32", "photo_P_33", "photo_P_34", "photo_P_35", "photo_P_36", "photo_P_37", "photo_P_38", "photo_P_39", "photo_P_40", "photo_P_41", "photo_P_42", "photo_P_43", "photo_P_44", "photo_P_45", "photo_P_46", "photo_P_47", "photo_P_48", "photo_P_49", "photo_P_50", "photo_P_51", "photo_P_52", "photo_P_53", "photo_P_54", "photo_P_55", "photo_P_56", "photo_P_57", "photo_P_58", "photo_P_59", "photo_P_60", "photo_P_61", "photo_P_62", "photo_P_63", "photo_P_64", "photo_P_65", "photo_P_66", "photo_P_67", "photo_P_68", "photo_P_69", "photo_P_70", "photo_P_71", "photo_P_72", "photo_P_73", "photo_P_74", "photo_P_75", "photo_P_76", "photo_P_77", "photo_P_78", "photo_P_79", "movie_exists_flg", "movie_url", "movie_thumbnail_url", "n_cat_id", "recycle_flg", "recycle_add_flg"])
+	header_list = ["stock_id", "goo_car_id", "car_name", "e_area_nm", "upload_date", "n_m_option", "hosyou_flg", "car_price_fob", "estimate_total_price", "debut_date", "e_color_nm", "e_distance", "exhaust_nm", "steering", "transmission", "fuel_cd", "drive", "e_door_nm", "repair_flag", "disp_navi_code", "katashiki", "kantei_syatai_id", "kantei_naisou_id", "kantei_kikan_id", "kantei_kokkaku_id", "hybrid_opt", "welfare_opt", "approved_by_official_dealer_opt", "cold_district_spec_opt", "maintenance_record_opt", "one_owner_opt", "no_smocking_opt", "keyless_entry_opt", "air_condition_opt", "double_air_condition_opt", "power_steering_opt", "power_window_opt", "tv_navi_opt", "cd_changer_opt", "md_changer_opt", "cassette_opt", "seating_capacity", "sunroof_opt", "leather_seats_opt", "low_down_opt", "full_earo_kits_opt", "alloy_wheel", "sliding_door_opt", "power_adjustable_seats_opt", "bench_seats_opt", "full_flat_opt", "SRS_airbags_opt", "ABS_opt", "anti_theft_sys_opt", "ESC_opt", "rear_parking_camera_opt", "HID_opt", "smart_key_sys_opt", "photo_J_0", "photo_J_1", "photo_J_2", "photo_J_3", "photo_J_4", "photo_J_5", "photo_J_6", "photo_J_7", "photo_J_8", "photo_J_9", "photo_J_10", "photo_J_11", "photo_J_12", "photo_J_13", "photo_J_14", "photo_J_15", "photo_J_16", "photo_J_17", "photo_J_18", "photo_J_19", "photo_J_20", "photo_J_21", "photo_J_22", "photo_J_23", "photo_J_24", "photo_J_25", "photo_J_26", "photo_J_27", "photo_J_28", "photo_J_29", "photo_J_30", "photo_J_31", "photo_J_32", "photo_J_33", "photo_J_34", "photo_J_35", "photo_J_36", "photo_J_37", "photo_J_38", "photo_J_39", "photo_J_40", "photo_J_41", "photo_J_42", "photo_J_43", "photo_J_44", "photo_J_45", "photo_J_46", "photo_J_47", "photo_J_48", "photo_J_49", "photo_J_50", "photo_J_51", "photo_J_52", "photo_J_53", "photo_J_54", "photo_J_55", "photo_J_56", "photo_J_57", "photo_J_58", "photo_J_59", "photo_J_60", "photo_J_61", "photo_J_62", "photo_J_63", "photo_J_64", "photo_J_65", "photo_J_66", "photo_J_67", "photo_J_68", "photo_J_69", "photo_J_70", "photo_J_71", "photo_J_72", "photo_J_73", "photo_J_74", "photo_J_75", "photo_J_76", "photo_J_77", "photo_J_78", "photo_J_79", "photo_P_0", "photo_P_1", "photo_P_2", "photo_P_3", "photo_P_4", "photo_P_5", "photo_P_6", "photo_P_7", "photo_P_8", "photo_P_9", "photo_P_10", "photo_P_11", "photo_P_12", "photo_P_13", "photo_P_14", "photo_P_15", "photo_P_16", "photo_P_17", "photo_P_18", "photo_P_19", "photo_P_20", "photo_P_21", "photo_P_22", "photo_P_23", "photo_P_24", "photo_P_25", "photo_P_26", "photo_P_27", "photo_P_28", "photo_P_29", "photo_P_30", "photo_P_31", "photo_P_32", "photo_P_33", "photo_P_34", "photo_P_35", "photo_P_36", "photo_P_37", "photo_P_38", "photo_P_39", "photo_P_40", "photo_P_41", "photo_P_42", "photo_P_43", "photo_P_44", "photo_P_45", "photo_P_46", "photo_P_47", "photo_P_48", "photo_P_49", "photo_P_50", "photo_P_51", "photo_P_52", "photo_P_53", "photo_P_54", "photo_P_55", "photo_P_56", "photo_P_57", "photo_P_58", "photo_P_59", "photo_P_60", "photo_P_61", "photo_P_62", "photo_P_63", "photo_P_64", "photo_P_65", "photo_P_66", "photo_P_67", "photo_P_68", "photo_P_69", "photo_P_70", "photo_P_71", "photo_P_72", "photo_P_73", "photo_P_74", "photo_P_75", "photo_P_76", "photo_P_77", "photo_P_78", "photo_P_79", "movie_exists_flg", "movie_url", "movie_thumbnail_url", "n_cat_id", "recycle_flg", "recycle_add_flg"]
 	test_header_lst = list()  # None 'None' lead to error in compare type(), it show 'method' instead of list ; damn this name should different from method name()
 	
 	header_list_col = [
@@ -44,9 +49,9 @@ class CarDataTest(unittest.TestCase):
 		'kantei_kokkaku_id',
 		'hybrid_opt',
 		'welfare_opt',
-		'approved_by_offical_dealer_opt',
+		'approved_by_official_dealer_opt',
 		'cold_district_spec_opt',
-		'maitainace_record_opt',
+		'maintenance_record_opt',
 		'one_owner_opt',
 		'no_smocking_opt',
 		'keyless_entry_opt',
@@ -242,32 +247,11 @@ class CarDataTest(unittest.TestCase):
 		'recycle_flg',
 		'recycle_add_flg'
 	]
-	
 
-	def __test_parse_data(self):
-		with open('./parsed.json', 'r') as f:
-			self.test_data_json = json.load(f)
-			#print(car_dict)
-			#self.__dict__ = json.load(f)
-
-	def my_test_DictReader(self):
-		with codecs.open(self.test_data_file_path, 'r', encoding='utf-8', errors='ignore') as csv_file:
-		# with open(self.test_data_file_path, mode='r') as csv_file: # Error with utf-8
-			csv_reader = csv.DictReader(csv_file)
-			line_count = 0
-			for row in csv_reader:
-				if line_count == 0:
-					print(f'Column names are {", ".join(row)}')
-					line_count += 1
-				print(f'\t{row["goo_car_id"]} | {row["katashiki"]} ')
-				line_count += 1
-			print(f'Processed {line_count} lines.')	   
-		
-
-	# TODO handle header (1st row)
 	# Read 1st row as header or ignore it and use hard coded array as header 
-	# aha it seem unittest have __init__ and it make sense, so temporary let it by default
+	# unittest have reserved __init__ name
 	def __my_init__(self):
+		# print(self.test_data_file_path)
 		# self.test_data_file_object = open(self.test_data_file_path, 'r')
 		self.test_data_file_object = codecs.open(self.test_data_file_path, 'r', encoding='utf-8', errors='ignore')
 		csv_reader = csv.reader(self.test_data_file_object, delimiter=',')
@@ -279,72 +263,21 @@ class CarDataTest(unittest.TestCase):
 			if i == 0:
 				self.test_header_lst = csv_reader[0]
 				# print(self.test_header_lst == self.header_list)
+				if (self.test_header_lst != self.header_list):
+					print("CSV Header not match")
+					diff_header = list(set(self.test_header_lst) - set(self.header_list))
+					# diff_header = set(self.header_list).symmetric_difference(self.test_header_lst) 
+					print(', \n'.join(diff_header) + ' <-- error header mismatch' )
+					exit()
 				# print(csv_reader[0]) # Be careful with concat str to list => can not use + ' ' + type here
 			else:
-				# print(row[23])
 				# yield [unicode(cell, 'utf-8') for cell in row]
 				self.test_data_row_list.append(csv_reader[i])
 
-		#print('open and load data from test.csv complete.') 	
-	
-	def is_length_in_range(self, value, min, max):
-		return assertTrue(min <= len(value) <= max)
-
-	# type() 'int', 'str'	
-	def in_range(serf, value, min, max):
-		#print(type(value))
-		if isinstance(value, int):
-			return min <= value <= max
-		else:
-			return min <= int(value) <= max # TODO handle type 'str' exception
-
-	def is_Int(self, value):
-		return isinstance(value, int)
-
-	def is_encoding(self, encode):
-		string.decode('utf-8')
-		return True
-
-	def is_ValueContains(self):
-		testList = [1,2,3]
-		value = main()
-		self.assertListEqual(testList, value)
-
-	def is_ValueInList(self, value, _list):
-		return int(value) in _list
-
-	def is_ListEqual(self, list1, list2):
-		# First way use set
-		# z = x.difference(y) # x, y is set from list1/list2
-		# Use sort() ==
-		# self.assertListEqual(testList,value)
-		list1.sort()
-		list2.sort()
-		return list1 == list2
-				
-
-	def print_list_data(self):
-		# print(self.header_list_col.index('stock_id'))
-		# TODO try associated array, index instead of find index in dictionary header first
-		for i in self.test_data_row_list:
-			print(i[self.header_list_col.index('stock_id')])
-
-	def is_number(self, s):
-		try:
-			float(s)
-			return True
-		except ValueError:
-			pass
- 
-		try:
-			import unicodedata
-			unicodedata.numeric(s)
-			return True
-		except (TypeError, ValueError):
-			pass
- 
-		return False	
-
+	# @test_data_file_path.setter
+	def set_test_data_file(self, filepath):
+		if filepath:
+			self.test_data_file_path = str(filepath)
 
 	def test_header(self):
 		print("Test header")
@@ -440,7 +373,7 @@ class CarDataTest(unittest.TestCase):
 			temp = i[self.header_list_col.index('hosyou_flg')]
 			if (temp is None):
 				continue
-			elif not(self.is_ValueInList(temp, [1, 2, 9])):
+			elif not(int(temp) in [1, 2, 9]):  # TODO if production database have different then update accepted_list
 				print('|' + temp + '| <-- error')
 				self.assertTrue(False)
 		self.assertTrue(True)
@@ -495,16 +428,65 @@ class CarDataTest(unittest.TestCase):
 	# It seem debut date should be as DB stored format; currently mm.YY seem not match; It is shown on Web version
 	def test_debut_date(self):
 		print("Test debut date")
-		return self.assertTrue(True)
-		return unittest.TestCase().fail("--> Update logic format date")
 
 		for i in self.test_data_row_list:
 			temp = i[self.header_list_col.index('debut_date')] 
-			if self.__check_date_format_M_dot_Y(temp): 
+			# print(temp)
+			if len(temp) == 4:
+				if not (temp.isdigit()):
+					print(temp + ' <-- error')
+					self.assertTrue(False)
+					continue
+			elif len(temp) < 4:
 				print(temp + ' <-- error')
 				self.assertTrue(False)
+				continue
+			else:  # Normal case date mm.yyyy
+				debut_date = temp.split('.')
+				cur_month = debut_date[0]
+				if not(1 <= int(cur_month) <= 12):
+					cur_month = 12 # TODO handle special case like 201598
+				cur_year = debut_date[1]
+				debut_date_test = int(str(cur_year) + str(cur_month))
+
+				# print(cur_month_year)
+				latest_month_year = self.get_month_year_ago([9, 0]) # We get newest car from 9 months ago
+				oldest_month_year = self.get_month_year_ago([-1, 5]) # We get oldest car from 5 years ago plus 1 month
+				latest_month_year = int(str(latest_month_year[1]) + str(latest_month_year[0]))
+				oldest_month_year = int(str(oldest_month_year[1]) + str(oldest_month_year[0]))
+
+				# print(oldest_month_year)
+				# print(latest_month_year)
+
+				if int(oldest_month_year) <= debut_date_test <= latest_month_year:
+					continue
+				else:
+					print(str(debut_date_test) + ' <-- error ' + str(i[self.header_list_col.index('stock_id')]))
+					self.assertTrue(False)
+
+				if self.__check_date_format_M_dot_Y(temp): 
+					print(temp + ' <-- error')
+					self.assertTrue(False)
 			
 		self.assertTrue(True)
+
+	# TODO read CSV name or somehow to get date range to test
+	def get_month_year_ago(self, month_year_ago = []):
+		nth_month_ago = month_year_ago[0]
+		nth_year_ago = month_year_ago[1] 
+		TODAY = datetime.datetime.now()
+		cur_year = TODAY.year
+		cur_month = TODAY.month
+
+		year_ago = cur_year - nth_year_ago
+		month_ago = cur_month - nth_month_ago
+		if month_ago <= 0:
+			month_ago = month_ago + 12 # previous year
+			year_ago = year_ago - 1 # as one year converted to 12 months
+		month_ago = '0'+str(month_ago) if (month_ago < 10) else month_ago
+
+		return [str(month_ago), str(year_ago)]
+
 
 	def test_e_color_nm(self):
 		print("Test e color nm")
@@ -516,8 +498,7 @@ class CarDataTest(unittest.TestCase):
 			
 		self.assertTrue(True)
 
-	# format ,000 # It seem let default is better 
-	# can be None, km unit; can be 'NoData'
+	# can be None, negative, km unit; can be 'NoData' in DB; in view it casted to int 
 	# After spread.php format, it use intval so value must be integer
 	def test_e_distance(self):
 		print("Test e distance <-- need fix format")
@@ -526,9 +507,9 @@ class CarDataTest(unittest.TestCase):
 			if not temp:  # Check empty string ==> should apply to other functions if work well
 				continue
 			else:
-				orig_temp = temp
 				temp = temp.replace(',', '')
 				temp = temp.replace(' ', '')
+				orig_temp = abs(int(temp))  # it can be negative
 				if not(temp.isdigit()):
 					print('|'+temp + '| <-- error')
 					self.assertTrue(False)
@@ -577,7 +558,7 @@ class CarDataTest(unittest.TestCase):
 	# 1: MT, 2: AT (auto)
 	def test_transmission(self):
 		print("Test Transmission")
-		accept_list = [1, 2]		
+		accept_list = [1, 2]
 		for i in self.test_data_row_list:
 			temp = i[self.header_list_col.index('transmission')]
 			if not temp:
@@ -607,23 +588,26 @@ class CarDataTest(unittest.TestCase):
 
 	# It seem can have any value (from DB)
 	# For now try use a list accept from DEV
+	# p_door_nm_en from door_master;
 	def test_e_door_nm(self):
-		print("Test e door")
-		# wtf 1D ? 0D :)
-		accept_list = ["OPEN", "COUPE", "2DHT", "0D", "1D", "2D", "3D", "4D", "5D", "6D", "****", "-1", "4DHT", "3D PANELVAN", "2D PANELVAN", "5D ROOTVAN", "5D PANELVAN", "4D PANELVAN", "4D ROOTVAN" ]
+		print("Test e door nm")
+		# select distinct(p_door_nm_en) from door_master; --as e_door_nm
+		accept_list = ["4D ROOTVAN", "5D PANELVAN", "COUPE", "0D", "2DHT", "5D ROOTVAN", "2D", "3D", "3D PANELVAN", "5D", "4D PANELVAN", "4D", "6D", "OPEN", "2D PANELVAN", "1D", "4DHT"]
+		# accept_list = ["OPEN", "COUPE", "2DHT", "0D", "1D", "2D", "3D", "4D", "5D", "6D", "****", "-1", "4DHT", "3D PANELVAN", "2D PANELVAN", "5D ROOTVAN", "5D PANELVAN", "4D PANELVAN", "4D ROOTVAN" ]
 		for i in self.test_data_row_list:
 			temp = i[self.header_list_col.index('e_door_nm')]
 			if not temp:
-				continue
+				continue	# TODO it can not be None ?
 			elif (temp not in accept_list): 
 				print('|'+ temp +'| <-- error')
 				self.assertTrue(False)
 		self.assertTrue(True)
 
-	# 1: None, 2: Yes
+	# 1: None, 2: Yes, 9: for what ?
+	# other seem mean not 'None' or "Yes" like unknown
 	def test_repair_flag(self):
 		print("Test repair flag")
-		accept_list = [1, 2]
+		accept_list = [1, 2, 9]  # In DB it can have '9' value, in Logic it only use 1, 2
 		for i in self.test_data_row_list:
 			temp = i[self.header_list_col.index('repair_flag')]
 			if not(temp.isdigit()) or (int(temp) not in accept_list): 
@@ -743,7 +727,7 @@ class CarDataTest(unittest.TestCase):
 		print("Test approved_by_official_dealer opt")
 		accept_list = [0, 1]
 		for i in self.test_data_row_list:
-			temp = i[self.header_list_col.index('approved_by_offical_dealer_opt')] # spelling official
+			temp = i[self.header_list_col.index('approved_by_official_dealer_opt')] # spelling official
 			if not(temp.isdigit()) or (int(temp) not in accept_list): 
 				print('|'+ temp +'| <-- error')
 				self.assertTrue(False)
@@ -760,11 +744,11 @@ class CarDataTest(unittest.TestCase):
 		self.assertTrue(True)
 
 	# Spelling maintenance ?
-	def test_maintainace_record_opt(self):
+	def test_maintenance_record_opt(self):
 		print("Test maintenance record opt")
 		accept_list = [0, 1]
 		for i in self.test_data_row_list:
-			temp = i[self.header_list_col.index('maitainace_record_opt')] # spelling
+			temp = i[self.header_list_col.index('maintenance_record_opt')] # spelling
 			if not(temp.isdigit()) or (int(temp) not in accept_list): 
 				print('|'+ temp +'| <-- error')
 				self.assertTrue(False)
@@ -884,9 +868,10 @@ class CarDataTest(unittest.TestCase):
 	
 	def test_seating_capacity(self):
 		print("Test seating_capacity opt")	
+		accept_list = [0, 6, 7, 8, 9, 10]
 		for i in self.test_data_row_list:
 			temp = i[self.header_list_col.index('seating_capacity')]
-			if not(temp.isdigit()) : 
+			if not(temp.isdigit()) or (int(temp) not in accept_list) : 
 				print('|'+ temp +'| <-- error')
 				self.assertTrue(False)
 		self.assertTrue(True)
@@ -1065,6 +1050,7 @@ class CarDataTest(unittest.TestCase):
 	# Test photos from 1 to 79
 	# TODO double check J/P and path; it seem spec have this path 
 	def test_photo_Js(self):
+		print("Test photo 1->79")
 		for ph_idx in range(1, 79):
 			# print("Test Photo "+ str(ph_idx) + " of 79")
 			for i in self.test_data_row_list:
@@ -1084,10 +1070,21 @@ class CarDataTest(unittest.TestCase):
 		self.assertTrue(True)	
 	
 	def test_Photo_P_0(self):
+		print("Test first thumbnail")	
+		for i in self.test_data_row_list:
+			goo_car_id = i[self.header_list_col.index('goo_car_id')]
+			temp = i[self.header_list_col.index('photo_P_0')]
+			# Why it can be empty ?
+			if (not temp) or (goo_car_id not in temp):
+				print(temp)
+				print('|'+ temp +'| <-- error')
+				self.assertTrue(False)
 		self.assertTrue(True)
 
 	# Test thumbnail	
+	# TODO more robust test on full path
 	def test_Photo_Ps(self):
+		print("Test thumbnail 1->79")
 		for ph_idx in range(1, 79):
 			# print("Test Thumbnail photo "+ str(ph_idx) + " of 79")
 			for i in self.test_data_row_list:
@@ -1162,7 +1159,7 @@ class CarDataTest(unittest.TestCase):
 	
 	def test_recycle_add_flg(self):
 		print("Test recycle add flag opt")	
-		accept_list = [0, 1 ] # From Dev DB
+		accept_list = [0, 1] # From Dev DB
 		for i in self.test_data_row_list:
 			temp = i[self.header_list_col.index('recycle_add_flg')]
 			if not temp:
@@ -1172,18 +1169,24 @@ class CarDataTest(unittest.TestCase):
 				self.assertTrue(False)
 		self.assertTrue(True)
 
+	# TODO uniq stock_id and/or goo_car_id
+	# def test_uniq_stock_id(self):
+	# 	pass
+	# def test_uniq_goo_car_id(self):
+	# 	pass
+
 	def __check_date_format_Ymd(self, date_text):
 		try:
 			datetime.datetime.strptime(date_text, '%Y/%m/%d')
 		except ValueError:
-			raise ValueError("Incorrect data format, should be YYYY/MM/DD")		
+			raise ValueError("Incorrect data format, should be YYYY/MM/DD")	
 	
 	def __check_date_format_M_dot_Y(self, date_text):
 		return datetime.datetime.strptime(date_text, '%m.%Y')
 		#try:
 		#	datetime.datetime.strptime(date_text, '%m.%Y')
 		#except ValueError:
-		#	raise ValueError("Incorrect data format, should be MM.YYYY")		
+		#	raise ValueError("Incorrect data format, should be MM.YYYY")
 
 	def getIntFromYen(self, price):
 		if(price == 'ASK'):
@@ -1194,18 +1197,70 @@ class CarDataTest(unittest.TestCase):
 			price = price.replace(' ', '')
 			return int(price)
 
+	def __test_parse_data(self):
+		with open('./parsed.json', 'r') as f:
+			self.test_data_json = json.load(f)
+			#print(car_dict)
+			#self.__dict__ = json.load(f)
+
+	def my_test_DictReader(self):
+		with codecs.open(self.test_data_file_path, 'r', encoding='utf-8', errors='ignore') as csv_file:
+		# with open(self.test_data_file_path, mode='r') as csv_file: # Error with utf-8
+			csv_reader = csv.DictReader(csv_file)
+			line_count = 0
+			for row in csv_reader:
+				if line_count == 0:
+					print(f'Column names are {", ".join(row)}')
+					line_count += 1
+				print(f'\t{row["goo_car_id"]} | {row["katashiki"]} ')
+				line_count += 1
+			print(f'Processed {line_count} lines.')
+
+	def is_encoding(self, encode):
+		string.decode('utf-8')
+		return True
+
+	def print_list_data(self):
+		# print(self.header_list_col.index('stock_id'))
+		# TODO try associated array, index instead of find index in dictionary header first
+		for i in self.test_data_row_list:
+			print(i[self.header_list_col.index('stock_id')])
+
+	def is_number(self, s):
+		try:
+			float(s)
+			return True
+		except ValueError:
+			pass
+		try:
+			import unicodedata
+			unicodedata.numeric(s)
+			return True
+		except (TypeError, ValueError):
+			pass
+		return False
 
 
-#if __name__ == '__main__':
-	#unittest.main()	
+
 cartest = CarDataTest()
+# Get csv filepath from command argv
+# try:
+# 	if sys.argv[1]:
+# 		cartest.set_test_data_file(str(sys.argv[1]))
+# 		# cartest.test_data_file_path = sys.argv[1]
+# except IndexError:
+# 	print('Default test.csv')
+# 	pass
+
 cartest.__my_init__()
 #print(cartest.my_test_DictReader())
 # cartest.print_list_data()
-# cartest.test_StockID()
 #print(cartest.test_data_row_list)
 #cartest.test_header()
 
 print("\n\n\n\n\n")
+print("Usage: Update csv filename to test\n")
+print ("Run: $python CSV_Test.py\n")
+
 if __name__ == '__main__':
-    unittest.main()
+	unittest.main()
