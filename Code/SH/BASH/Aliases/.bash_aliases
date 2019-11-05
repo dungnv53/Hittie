@@ -152,6 +152,61 @@ alias mountprj='sudo mount -t vboxsf PROJECT /mnt/PROJECT/'
 # Aptible
 alias mysql-dev-txp='mysql -u aptible -p3s0J92QkpcS-DkXtusU_YxSI405pvzlo -h localhost.aptible.in -P '
 
+
+# Search keyword with file extension
+findsrc2() {
+	if [ -z "$1" ]; then # In case empty file extension, set a default one to avoid other error
+		ext="*.sh"
+	else
+		ext="*."$1
+	fi
+
+	echo "$ext"
+	keyword=$2
+	if [ ${#keyword} -lt 2 ]; then
+		echo "${keyword}  have at least 2 character"
+		exit 1
+	fi
+
+    echo "$2"
+    find . -name "${ext}" -print0 | xargs -0 grep -rn "$2"
+}
+findsrci() {
+	if [ -z "$1" ]; then # In case empty file extension, set a default one to avoid other error
+		ext="*.sh"
+	else
+		ext="*."$1
+	fi
+
+	echo "$ext"
+	keyword=$2
+	if [ ${#keyword} -lt 2 ]; then
+		echo "${keyword}  have at least 2 character"
+		exit 1
+	fi
+
+    echo "$2"
+    find . -name "${ext}" -print0 | xargs -0 grep -rni "$2"
+}
+findsrc_l() {
+	if [ -z "$1" ]; then # In case empty file extension, set a default one to avoid other error
+		ext="*.sh"
+	else
+		ext="*."$1
+	fi
+
+	echo "$ext"
+	keyword=$2
+	if [ ${#keyword} -lt 2 ]; then
+		echo "${keyword}  have at least 2 character"
+		exit 1
+	fi
+
+    echo "$2"
+    find . -name "${ext}" -print0 | xargs -0 grep -rl "$2"
+}
+
+
 export PATH="/usr/local/bin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
