@@ -34,21 +34,19 @@ alias grn='grep -rn'
 alias grni='grep -rni'
 alias grni='grep -rni'
 
-#git
-alias gitst='git status'
+# Git
+# If one command used frequently and/or it often mis-typed then it should be shortened by the way that make it easier to type, remmeber ... and certainly avoid conflict with existing command.
+alias gst='git status'
 alias gitpom='git push origin master'
-alias gitpod='git push origin develop'
-alias gitpuom='git pull origin master'
 alias gitpuod='git pull origin develop'
-alias gitpuo='git push origin '
 alias gitpo='git pull origin '
 alias gitp='git pull'
-alias gitco='git checkout'
-alias gitdiff='git diff'
+alias gco='git checkout'
+alias gdf='git diff'
 alias gitlog='git log'
 alias gitcm='git commit -m '
 alias gitcmnr='git log |grep commit |wc -l'
-alias gitmerd='git merge develop'
+alias gitfc='git show --pretty="format:" --name-only ' # show commit files change only
 
 alias gitbrt='git br && git st'
 alias gitlog='git log --graph --decorate --pretty=oneline --abbrev-commit'
