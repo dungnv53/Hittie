@@ -92,7 +92,7 @@ export default function() {
         getBodyStats(res, staging_chall_api, apiToken, latencyMetric);
     }
 
-    // challenge
+    // chall
     for(var i = 0; i <= 3; i++) { // total 10
         getChallenge(res, staging_chall_api, apiToken, apiToken2, latencyMetric);
     }
@@ -101,7 +101,7 @@ export default function() {
     postGoalPointsDate(res, staging_chall_api, latencyMetric);
 
     // TODO may be loop from a list of API
-    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/challenge",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/chall",
         { headers: { "Authorization": "Bearer " + apiToken } }
     );
 
@@ -109,21 +109,21 @@ export default function() {
         "status is 200": (res) => res.status === 200,
         "content OK": (res) => JSON.parse(res.body).hasOwnProperty('status')
     });
-    latencyMetric.add(res.timings.waiting, {endpoint: "users/challenge"});
+    latencyMetric.add(res.timings.waiting, {endpoint: "users/chall"});
     sleep(3);
 
     for(var i = 0; i < 3; i++) { // total 10
         getBodyStats(res, staging_chall_api, apiToken, latencyMetric);
     }
 
-    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/challenge_meta",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/chall_meta",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
         "status is 200": (res) => res.status === 200,
         "content OK": (res) => JSON.parse(res.body).hasOwnProperty('status')
     });
-    latencyMetric.add(res.timings.waiting, {endpoint: "users/challenge_meta"});
+    latencyMetric.add(res.timings.waiting, {endpoint: "users/chall_meta"});
     sleep(3);
 
     for(var i = 0; i < 3; i++) { // total 12 units (25req per 1 unit)
@@ -275,14 +275,14 @@ export default function() {
         getGoaldPointWeek(res, staging_chall_api, latencyMetric);
     }
 
-    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/8446/challenge",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/8446/chall",
         { headers: { "Authorization": "Bearer " + apiToken } }
         );
     check(res, {
         "status is 200": (res) => res.status === 200,
         "content OK": (res) => JSON.parse(res.body).hasOwnProperty('status')
     });
-    latencyMetric.add(res.timings.waiting, {endpoint: "users/id/challenge"});
+    latencyMetric.add(res.timings.waiting, {endpoint: "users/id/chall"});
     sleep(3);
 
     res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/8446/shopping_lists/weeks/3",
@@ -457,14 +457,14 @@ function getChallenge(res, staging_chall_api, apiToken, apiToken2, latencyMetric
     if(rand_api == 2) {
         tempToken = apiToken2;
     }
-    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/challenge",
+    res = http.get(staging_chall_api + "/wp-json/kuailo/v2.1/users/chall",
     { headers: { "Authorization": "Bearer " + tempToken } });
 
     check(res, {
         "status is 200": (res) => res.status === 200,
         "content OK": (res) => JSON.parse(res.body).hasOwnProperty('status')
     });
-    latencyMetric.add(res.timings.waiting, {endpoint: "users/challenge"});
+    latencyMetric.add(res.timings.waiting, {endpoint: "users/chall"});
     sleep(3);
 }
 
@@ -523,6 +523,6 @@ function postGoalPointsDate(res, staging_chall_api, latencyMetric) {
         "status is 200": (res) => res.status === 200,
         "content OK": (res) => JSON.parse(res.body).hasOwnProperty('status')
     });
-    latencyMetric.add(res.timings.waiting, {endpoint: "users/challenge"});
+    latencyMetric.add(res.timings.waiting, {endpoint: "users/chall"});
     sleep(3);
 }
