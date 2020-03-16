@@ -42,7 +42,7 @@ export default function() {
     let apiToken = 'eyJhbGciOiJqd3QifQGbNzUnEp7Ey0CKA-DIBsdDoOFFd8jhbH-4bY7beDc8g';
     // TODO random or list of big access_code list
     let access_code = 'k4m9';
-    // let timeline_api = 'http://f45-challenge-api-staging.wwmwxb3tt7.us-west-1.elasticbeanstalk.com';
+    // let timeline_api = 'http://fff-chall-api-staging.wwmwxb3tt7.us-west-1.elasticbeanstalk.com';
     let timeline_api = 'http://timeline.api.krishna1.com';
 
     // console.log(apiToken);
@@ -72,7 +72,7 @@ export default function() {
 
 
 // curl -X POST \
-//   http://staging-f45timeline.us-west-1.elasticbeanstalk.com/v3/gym_logs/save \
+//   http://staging-ffftimeline.us-west-1.elasticbeanstalk.com/v3/gym_logs/save \
 //   -H 'Content-Type: application/x-www-form-urlencoded' \
 //   -H 'Postman-Token: fd12c506-34d4-4d5f-a4da-d5eec0416750' \
 //   -H 'cache-control: no-cache' \
@@ -231,14 +231,14 @@ function getChallenge(res, staging_chall_api, apiToken, apiToken2, latencyMetric
     if(rand_api == 2) {
         tempToken = apiToken2;
     }
-    res = http.get(staging_chall_api + "/wp-json/chlge/v2.1/users/challenge",
+    res = http.get(staging_chall_api + "/wp-json/chlge/v2.1/users/chall",
     { headers: { "Authorization": "Bearer " + tempToken } });
 
     check(res, {
         "status is 200": (res) => res.status === 200,
         "content OK": (res) => JSON.parse(res.body).hasOwnProperty('status')
     });
-    latencyMetric.add(res.timings.waiting, {endpoint: "users/challenge"});
+    latencyMetric.add(res.timings.waiting, {endpoint: "users/chall"});
     sleep(3);
 }
 
@@ -297,6 +297,6 @@ function postGoalPointsDate(res, staging_chall_api, latencyMetric) {
         "status is 200": (res) => res.status === 200,
         "content OK": (res) => JSON.parse(res.body).hasOwnProperty('status')
     });
-    latencyMetric.add(res.timings.waiting, {endpoint: "users/challenge"});
+    latencyMetric.add(res.timings.waiting, {endpoint: "users/chall"});
     sleep(3);
 }
