@@ -42,7 +42,7 @@ export default function() {
     let apiToken = 'eyJhbGciOiJqd3QifQ.eusaouhs';
     // TODO random or list of big access_code list
     let access_code = 'k4m9';
-    // let tlnr_api = 'http://f45-chlg-api-staging.wwmwxb3tt7.us-west-1.elasticbeanstalk.com';
+    // let tlnr_api = 'http://fff-chlg-api-staging.wwmwxb3tt7.us-west-1.elasticbeanstalk.com';
     let tlnr_api = 'http://tlnr.api.krishna1.com';
 
     // console.log(apiToken);
