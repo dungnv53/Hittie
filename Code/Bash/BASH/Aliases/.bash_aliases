@@ -101,10 +101,8 @@ alias cnode='clear && nodemon server.js'
 alias pmr0='clear && pm2 restart 0'
 alias frs='forever start server.js'
 alias frl='forever list'
-alias cdrt2='cd /mnt/OrganizerPhase2/TXP_Chat/rt2'
 alias cdprj='cd /mnt/PROJECT/Cargo/AVCONV/'
-alias synctxp='cd /home/cam_zink/Public/TXP-Chat && rsync --no-perms --no-owner --no-group -ua --exclude 'node_modules' --exclude '.git' --exclude 'files'  /mnt/OrganizerPhase2/TXP_Chat/rt3/* .'
-alias synctxpb='cd /mnt/OrganizerPhase2/TXP_Chat/rt3/ && rsync -ua --exclude 'node_modules' --exclude '.git' --exclude 'files' /home/cam_zink/Public/TXP-Chat/* .'
+alias synctxpb='cd /mnt/PROJ/rt3/ && rsync -ua --exclude 'node_modules' --exclude '.git' --exclude 'files' /home/cam_zink/Public/PROJ/* .'
 
 
 # Docker
@@ -144,11 +142,10 @@ alias pmsta='pm2 start '
 alias pml='pm2 log '
 
 #mount
-alias mounttxp='sudo mount -t vboxsf OrganizerPhase2 /mnt/OrganizerPhase2/'
 alias mountprj='sudo mount -t vboxsf PROJECT /mnt/PROJECT/'
 
 # Aptible
-alias mysql-dev-txp='mysql -u aptible -p3s0J92QkpcS-DkXtusU_YxSI405pvzlo -h localhost.aptible.in -P '
+alias aptinst='sudo apt-get install -y '
 
 
 # Search keyword with file extension
