@@ -51,6 +51,11 @@ alias gitfc='git show --pretty="format:" --name-only ' # show commit files chang
 alias gitbrt='git br && git st'
 alias gitlog='git log --graph --decorate --pretty=oneline --abbrev-commit'
 
+# git config --global alias.co checkout
+# git config --global alias.br branch
+# git config --global alias.ci commit
+# git config --global alias.st status
+
 alias apcrld='sudo service apache2 reload'
 alias apcrst='sudo service apache2 restart'
 
