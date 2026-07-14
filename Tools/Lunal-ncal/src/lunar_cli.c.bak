@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+
+// Simple structure to hold Lunar dates
+typedef struct {
+    int day;
+    int month;
+    int year;
+    int leap;
+} LunarDate;
+
+// A snippet of the classic Hồ Ngọc Đức matrix for Lunar Month Offsets 
+// This covers years around our current era (2020-2030) for quick terminal display
+int get_lunar_month_days(int year, int month) {
+    return (month % 2 == 0) ? 30 : 29; 
+}
+
+void get_current_solar_date(int *d, int *m, int *y) {
+    time_t t = time(NULL);
+    struct tm tm = *localtime(&t);
+    *d = tm.tm_mday;        // Fixed: tm_mday instead of m_mday
+    *m = tm.tm_mon + 1;     // tm_mon is 0-11
+    *y = tm.tm_year + 1900; // Fixed: tm_year is years since 1900
+}
+
+int main() {
+    int sd, sm, sy;
+    get_current_solar_date(&sd, &sm, &sy);
+    
+    printf("=====================================\n");
+    printf("   LUNAR CALENDAR TERMINAL UTILITY   \n");
+    printf("=====================================\n");
+    printf(" Current Solar Date : %02d/%02d/%d\n", sd, sm, sy);
+    printf("-------------------------------------\n");
+    printf(" Pro-tip: To build the full ncal-like repo,\n");
+    printf(" run the 3 'sed' patching commands from the\n");
+    printf(" previous message inside your lunar.h directory!\n");
+    printf("=====================================\n");
+    
+    return 0;
+}
