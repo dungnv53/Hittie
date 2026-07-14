@@ -1,10 +1,9 @@
-# Lunar Calendar ncal alike command.
 # Thank Ho Ngoc Duc (YB)
 
-gcc -o lunar_cli lunar_cli.c
+gcc -o lunar_cli lunar.c lunar_cli.c -lm
 ./lunar_cli
 
-gcc -o lunar_cli_month lunar_cli_month.c
+gcc -o lunar_cli_month lunar.c lunar_cli_month.c -lm
 ./lunar_cli_month
 
 Tháng 6 [Nhuận] (Năm Bính Ngọ)
